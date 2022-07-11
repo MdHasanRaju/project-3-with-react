@@ -6,25 +6,12 @@
 }
 .seeker-testimonial h3 {
   font-size: 40px;
-}
-.seeker-testimonial h3 {
-  color: #0e101a;
-  /* font-size: 48px; */
+  color: #0e101a; 
   font-weight: 700;
   line-height: normal;
-  text-align: left;
-  /* margin-bottom: 30px; */
+  text-align: left; 
   margin-bottom: 70px;
 }
-
-/* .seeker-testimonial .slick-initialized .slick-slide {
-    display: block;
-}
-.seeker-testimonial .slick-slide {
-    float: left;
-    height: 100%;
-    min-height: 1px;
-} */
 
 .seeker-testimonial .testimonial-card1 {
   padding: 25px;
@@ -175,7 +162,7 @@
     margin-left: 10px;
   }
   .seeker-testimonial .testimonial-card1 {
-    width: 91% !important;
+    width: 90% !important;
   }
 
   .testimonial-card1 {

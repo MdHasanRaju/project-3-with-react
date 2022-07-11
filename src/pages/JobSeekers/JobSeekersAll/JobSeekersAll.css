@@ -80,8 +80,7 @@ h2.title-big {
     margin-bottom: 30px;
   }
   .jobseeker-banner-content h1 {
-    text-align: center;
-    /* margin-bottom: 20px; */
+    text-align: center; 
   }
   h1,
   h2.title-big {
@@ -110,8 +109,7 @@ h3.title-md.mb-65 {
   margin-bottom: 65px;
 }
 h3.title-md {
-  font-size: 32px;
-  /* margin-bottom: 30px; */
+  font-size: 32px; 
 }
 h3.title-md {
   font-weight: 700;
@@ -149,8 +147,7 @@ h3.title-md {
     margin-bottom: 50px !important;
   }
   h3.title-md {
-    font-size: 23px !important;
-    /* margin-bottom: 20px; */
+    font-size: 23px !important; 
   }
   .bordered-btn,
   .default-btn {
@@ -179,8 +176,7 @@ h3.title-md {
   }
   h3.title-md {
     font-size: 23px !important;
-    color: #121127;
-    /* margin-bottom: 25px; */
+    color: #121127; 
   }
   .building-profile-content button.btn {
     margin: auto;
@@ -214,8 +210,7 @@ h3.title-md.mb-65 {
 }
 h3.title-md {
   font-size: 32px;
-  color: #121127;
-  /* margin-bottom: 30px; */
+  color: #121127; 
 }
 
 /*  profile-building-section responsiveness with media query
@@ -230,8 +225,7 @@ h3.title-md {
     margin-bottom: 50px;
   }
   h3.title-md {
-    font-size: 23px !important;
-    /* margin-bottom: 20px; */
+    font-size: 23px !important; 
   }
   .bordered-btn,
   .default-btn {
@@ -257,8 +251,7 @@ h3.title-md {
     margin-bottom: 30px;
   }
   h3.title-md {
-    font-size: 23px;
-    /* margin-bottom: 25px; */
+    font-size: 23px; 
   }
 
   .connect-instantly-content button.btn {
@@ -289,8 +282,7 @@ h3.title-md.mb-65 {
 }
 
 h3.title-md {
-  font-size: 32px;
-  /* margin-bottom: 30px; */
+  font-size: 32px; 
 }
 h3.title-md {
   color: #121127;
@@ -312,8 +304,7 @@ h3.title-md {
     margin-bottom: 50px;
   }
   h3.title-md {
-    font-size: 23px;
-    /* margin-bottom: 20px; */
+    font-size: 23px; 
   }
   .bordered-btn,
   .default-btn {
@@ -342,8 +333,7 @@ h3.title-md {
     margin-bottom: 30px;
   }
   h3.title-md {
-    font-size: 23px;
-    /* margin-bottom: 25px; */
+    font-size: 23px; 
   }
   .verified-recruiters-content .btn {
     margin: auto;

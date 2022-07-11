@@ -7,11 +7,11 @@
   .direct-banner .row {
     align-items: flex-end;
   }
-  .direct-banner h1,
+  /* .direct-banner h1,
   .direct-text h2,
   .hire-now h2 {
     font-size: 32px;
-  }
+  } */
   .direct-banner h1 {
     color: #0e101a;
     font-size: 36px;
@@ -51,8 +51,7 @@
   }
   .direct-img img {
     max-width: 100%;
-  }
-
+  } 
   .button-sm {
     width: 174px;
     height: 40px;
@@ -77,7 +76,7 @@
     text-decoration: none;
     vertical-align: middle;
     cursor: pointer;
-    user-select: none;
+    /* user-select: none; */
   }
 
   .direct-Candidates.two {
@@ -115,11 +114,7 @@
     .direct-text h2 {
       margin-bottom: 15px;
     }
-    .direct-banner h1,
-    .direct-text h2,
-    .hire-now h2 {
-      font-size: 26px;
-    }
+     
     .bordered-btn,
     .default-btn {
       font-size: 14px;
