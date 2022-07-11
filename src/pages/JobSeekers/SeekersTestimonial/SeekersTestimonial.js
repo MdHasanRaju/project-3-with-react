@@ -1,7 +1,5 @@
 import React from "react";
 import "./SeekersTestimonial.css";
-
-import hemant from "../../../assets/images/hemant-shah.0647a77.png";
 import palak from "../../../assets/images/palak-sharma.2ab3146.png";
 import pratyush from "../../../assets/images/pratyush.ebff6dd.png";
 import rudra from "../../../assets/images/rudra.5da3717.png";
@@ -23,7 +21,7 @@ const SeekersTestimonial = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: true,
+          infinite:  true,
           dots: true,
         },
       },
@@ -32,7 +30,6 @@ const SeekersTestimonial = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          //   initialSlide: 2
         },
       },
       {
@@ -171,7 +168,7 @@ const SeekersTestimonial = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-12 col-md-12 seeker-column">
+            <div className="col-lg-12 col-md-12 seeker-column hidden-column">
               <div
                 tabindex="-1"
                 data-index="-3"
@@ -198,7 +195,7 @@ const SeekersTestimonial = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-12 col-md-12 seeker-column">
+            <div className="col-lg-12 col-md-12 seeker-column hidden-column">
               <div
                 tabindex="-1"
                 data-index="-3"

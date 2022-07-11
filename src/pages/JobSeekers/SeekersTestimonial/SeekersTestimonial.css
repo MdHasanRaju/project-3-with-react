@@ -115,9 +115,9 @@
   .testimonial-carousel {
     padding: 25px 0 0;
   }
-
   .seeker-column .slick-slide {
     width: 393px !important;
+    margin-left: 10px;
   }
   .testimonial-card1 {
     width: 100% !important;

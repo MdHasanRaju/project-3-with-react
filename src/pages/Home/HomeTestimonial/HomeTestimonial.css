@@ -176,7 +176,8 @@
     width: 100% !important;
   }
   .testimonial-card {
-    margin: 0;
+    margin-left: 22px !important;
+    /* margin: 0; */
     height: auto;
     padding: 30px 20px;
   }
