@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import logo from "../../../assets/icons/hirect-logo.png";
+import {Link} from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -40,14 +41,15 @@ const Navbar = () => {
               
             >
               <li class="nav-item" >
-                <a
+                {/* <a
                   href="/"
                   aria-current="page"
                   class="nav-link nuxt-link-exact-active nuxt-link-active"
                   
                 >
                   Home
-                </a>
+                </a> */}
+                <Link to="/" class="nav-link nuxt-link-exact-active nuxt-link-active">Home</Link>
               </li>
               <li class="nav-item" >
                 <a href="/aboutus" class="nav-link" >
@@ -66,9 +68,10 @@ const Navbar = () => {
                 </a>
               </li>
               <li class="nav-item" >
-                <a href="/job-seeker" class="nav-link" >
+                {/* <a href="/job-seeker" class="nav-link" >
                   Job Seekers
-                </a>
+                </a> */}
+                <Link class="nav-link" to='/job-seeker'>Job Seekers</Link>
               </li>
               <li class="nav-item" >
                 <a
