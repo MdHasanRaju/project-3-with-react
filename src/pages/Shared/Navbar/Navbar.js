@@ -7,14 +7,14 @@ const Navbar = () => {
   return (
     <>
       <nav
-        class="navbar navbar-expand-lg navbar-light bg-light sticky-top"
+        className="navbar navbar-expand-lg navbar-light bg-light sticky-top"
         
       >
-        <div class="container" >
+        <div className="container" >
           <a
             href="/"
             aria-current="page"
-            class="navbar-brand nuxt-link-exact-active nuxt-link-active"
+            className="navbar-brand menu-link-exact-active menu-link-active"
             
           >
             <img src={logo} alt=""  />
@@ -26,82 +26,82 @@ const Navbar = () => {
             aria-controls="navbarScroll"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            class="navbar-toggler"
+            className="navbar-toggler"
             
           >
-            <span class="navbar-toggler-icon" ></span>
+            <span className="navbar-toggler-icon" ></span>
           </button>
           <div
             id="navbarScroll"
-            class="collapse navbar-collapse"
+            className="collapse navbar-collapse"
             
           >
             <ul
-              class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll nav-dropdown-link"
+              className="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll nav-dropdown-link"
               
             >
-              <li class="nav-item" >
-                {/* <a
+              <li className="nav-item" >
+                <a
                   href="/"
                   aria-current="page"
-                  class="nav-link nuxt-link-exact-active nuxt-link-active"
+                  className="nav-link menu-link-exact-active menu-link-active"
                   
                 >
                   Home
-                </a> */}
-                <Link to="/" class="nav-link nuxt-link-exact-active nuxt-link-active">Home</Link>
+                </a>
+                {/* <Link to="/" className="nav-link menu-link-exact-active menu-link-active">Home</Link> */}
               </li>
-              <li class="nav-item" >
-                <a href="/aboutus" class="nav-link" >
+              <li className="nav-item" >
+                <a href="/aboutus" className="nav-link" >
                   About us
                 </a>
               </li>
-              <li class="nav-item" >
-                <a href="/features-in" class="nav-link" >
+              <li className="nav-item" >
+                <a href="/features-in" className="nav-link" >
                   {" "}
                   Features
                 </a>
               </li>
-              <li class="nav-item" >
-                <a href="/connect" class="nav-link" >
+              <li className="nav-item" >
+                <a href="/connect" className="nav-link" >
                   Recruiters
                 </a>
               </li>
-              <li class="nav-item" >
-                {/* <a href="/job-seeker" class="nav-link" >
+              <li className="nav-item" >
+                {/* <a href="/job-seeker" className="nav-link" >
                   Job Seekers
                 </a> */}
-                <Link class="nav-link" to='/job-seeker'>Job Seekers</Link>
+                <Link className="nav-link" to='/job-seeker'>Job Seekers</Link>
               </li>
-              <li class="nav-item" >
+              <li className="nav-item" >
                 <a
                   href="https://www.hirect.in/blog/"
-                  class="nav-link"
+                  className="nav-link"
                   
                 >
                   {" "}
                   Blog
                 </a>
               </li>
-              <li class="nav-item" >
+              <li className="nav-item" >
                 <button
                   type="button"
-                  class="btn default-btn button-sm download-btn"
+                  className="btn default-btn button-sm download-btn"
                   
                 >
                   Download App
                 </button>
               </li>
-              <li class="nav-item" >
+              <li className="nav-item" >
                 <button
                   type="button"
-                  class="btn bordered-btn button-sm watch-demobtn"
+                  className="btn bordered-btn button-sm watch-demobtn"
                   
                 >
-                  <span class="text" >
+                  <span className="text" >
                     Watch demo
                   </span>{" "}
-                  <span class="icon" >
+                  <span className="icon" >
                     <svg
                       aria-hidden="true"
                       focusable="false"
@@ -110,14 +110,14 @@ const Navbar = () => {
                       role="img"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
-                      class="svg-inline--fa fa-play"
+                      className="svg-inline--fa fa-play"
                       
                     >
                       <path
                         fill="currentColor"
                         d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"
                         
-                        class=""
+                        className=""
                       ></path>
                     </svg>
                   </span>

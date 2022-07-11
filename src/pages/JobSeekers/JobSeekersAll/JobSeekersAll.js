@@ -7,62 +7,62 @@ import verified from "../../../assets/images/100verified-new.28f66bb.png";
 
 const JobSeekersAll = () => {
   return (
-    <section class="job-seeker">
-      <div class="job-seeker-banner job-seeker-banner-old">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="jobseeker-banner-content">
+    <section className="job-seeker">
+      <div className="job-seeker-banner job-seeker-banner-old">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="jobseeker-banner-content">
                 <h1>
                   Looking <br />
                   For a Job
                 </h1>
               </div>
             </div>{" "}
-            <div class="col-md-6">
-              <div class="jobseeker-banner-img">
+            <div className="col-md-6">
+              <div className="jobseeker-banner-img">
                 <img src={banner} alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>{" "}
-      <div class="building-profile">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-7">
-              <div class="building-profile-content">
-                <h3 class="title-md mb-65">
+      <div className="building-profile">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-7">
+              <div className="building-profile-content">
+                <h3 className="title-md mb-65">
                   Building The Profile and Landing the Right Job Takes Just 5
                   minutes.
                 </h3>{" "}
-                <button type="button" class="btn default-btn button-sm">
+                <button type="button" className="btn default-btn button-sm">
                   Search Jobs
                 </button>
               </div>
             </div>{" "}
-            <div class="col-md-5">
-              <div class="building-profile-img">
+            <div className="col-md-5">
+              <div className="building-profile-img">
                 <img src={resume} alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>{" "}
-      <div class="connect-instantly">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="connect-instantly-img">
+      <div className="connect-instantly">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="connect-instantly-img">
                 <img src={connect} alt="" />
               </div>
             </div>{" "}
-            <div class="col-md-6">
-              <div class="connect-instantly-content">
-                <h3 class="title-md mb-65">
+            <div className="col-md-6">
+              <div className="connect-instantly-content">
+                <h3 className="title-md mb-65">
                   Connect Instantly with Startup Founders and Get Hired.
                 </h3>{" "}
-                <button type="button" class="btn default-btn button-sm">
+                <button type="button" className="btn default-btn button-sm">
                   Direct Chat
                 </button>
               </div>
@@ -70,21 +70,21 @@ const JobSeekersAll = () => {
           </div>
         </div>
       </div>{" "}
-      <div class="verified-recruiters">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="verified-recruiters-content">
-                <h3 class="title-md mb-65">
+      <div className="verified-recruiters">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="verified-recruiters-content">
+                <h3 className="title-md mb-65">
                   100% Verified Recruiters and 150K+ Startups trust Hirect.
                 </h3>{" "}
-                <button type="button" class="btn default-btn button-sm">
+                <button type="button" className="btn default-btn button-sm">
                   Get Started
                 </button>
               </div>
             </div>{" "}
-            <div class="col-md-6">
-              <div class="verified-recruiters-img">
+            <div className="col-md-6">
+              <div className="verified-recruiters-img">
                 <img src={verified} alt="" />
               </div>
             </div>

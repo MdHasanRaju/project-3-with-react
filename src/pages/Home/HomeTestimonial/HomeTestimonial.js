@@ -15,23 +15,23 @@ const HomeTestimonial = () => {
         <div className="row responsive ">
           <div className="col-lg-12">
             <div
-              tabindex="-1"
+              tabIndex="-1"
               data-index="0"
               aria-hidden="false"
-              class="slick-slide home-slider slick-active slick-current"
+              className="slick-slide home-slider slick-active slick-current"
               style={{ outline: "none", width: "372px" }}
             >
               <div>
                 <div
-                  tabindex="-1"
-                  class="testimonial-card"
+                  tabIndex="-1"
+                  className="testimonial-card"
                   style={{ width: "100%", display: "inline-block" }}
                 >
-                  <div class="testimonial-card-user">
-                    <div class="client-img">
+                  <div className="testimonial-card-user">
+                    <div className="client-img">
                       <img src={hemant} alt="" />
                     </div>{" "}
-                    <div class="testimonial-info">
+                    <div className="testimonial-info">
                       <h4>Hemant Shah</h4>{" "}
                       <h5>
                         Founder <br />
@@ -53,23 +53,23 @@ const HomeTestimonial = () => {
           </div>
           <div className="col-lg-12">
             <div
-              tabindex="-1"
+              tabIndex="-1"
               data-index="0"
               aria-hidden="false"
-              class="slick-slide home-slider slick-active slick-current"
+              className="slick-slide home-slider slick-active slick-current"
               style={{ outline: "none", width: "372px" }}
             >
               <div>
                 <div
-                  tabindex="-1"
-                  class="testimonial-card"
+                  tabIndex="-1"
+                  className="testimonial-card"
                   style={{ width: "100%", display: "inline-block" }}
                 >
-                  <div class="testimonial-card-user">
-                    <div class="client-img">
+                  <div className="testimonial-card-user">
+                    <div className="client-img">
                       <img src={rhea} alt="" />
                     </div>{" "}
-                    <div class="testimonial-info">
+                    <div className="testimonial-info">
                       <h4>Rhea Nair</h4>{" "}
                       <h5>Recruitment Executive Expertrons</h5>
                     </div>
@@ -88,23 +88,23 @@ const HomeTestimonial = () => {
           </div>
           <div className="col-lg-12">
             <div
-              tabindex="-1"
+              tabIndex="-1"
               data-index="0"
               aria-hidden="false"
-              class="slick-slide home-slider slick-active slick-current"
+              className="slick-slide home-slider slick-active slick-current"
               style={{ outline: "none", width: "372px" }}
             >
               <div>
                 <div
-                  tabindex="-1"
-                  class="testimonial-card"
+                  tabIndex="-1"
+                  className="testimonial-card"
                   style={{ width: "100%", display: "inline-block" }}
                 >
-                  <div class="testimonial-card-user">
-                    <div class="client-img">
+                  <div className="testimonial-card-user">
+                    <div className="client-img">
                       <img src={pravin} alt="" />
                     </div>{" "}
-                    <div class="testimonial-info">
+                    <div className="testimonial-info">
                       <h4>Pravin Vidhyadharan</h4>{" "}
                       <h5>
                         Founder &amp; CEO <br />
@@ -124,23 +124,23 @@ const HomeTestimonial = () => {
           </div>
           <div className="col-lg-12">
             <div
-              tabindex="-1"
+              tabIndex="-1"
               data-index="0"
               aria-hidden="false"
-              class="slick-slide home-slider slick-active slick-current"
+              className="slick-slide home-slider slick-active slick-current"
               style={{ outline: "none", width: "372px" }}
             >
               <div>
                 <div
-                  tabindex="-1"
-                  class="testimonial-card"
+                  tabIndex="-1"
+                  className="testimonial-card"
                   style={{ width: "100%", display: "inline-block" }}
                 >
-                  <div class="testimonial-card-user">
-                    <div class="client-img">
+                  <div className="testimonial-card-user">
+                    <div className="client-img">
                       <img src={younus} alt="" />
                     </div>{" "}
-                    <div class="testimonial-info">
+                    <div className="testimonial-info">
                       <h4>Younus Shaik</h4>{" "}
                       <h5>
                         Senior HR-Specialist <br />
@@ -160,23 +160,23 @@ const HomeTestimonial = () => {
           </div>
           <div className="col-lg-12">
             <div
-              tabindex="-1"
+              tabIndex="-1"
               data-index="0"
               aria-hidden="false"
-              class="slick-slide home-slider slick-active slick-current"
+              className="slick-slide home-slider slick-active slick-current"
               style={{ outline: "none", width: "372px" }}
             >
               <div>
                 <div
-                  tabindex="-1"
-                  class="testimonial-card"
+                  tabIndex="-1"
+                  className="testimonial-card"
                   style={{ width: "100%", display: "inline-block" }}
                 >
-                  <div class="testimonial-card-user">
-                    <div class="client-img">
+                  <div className="testimonial-card-user">
+                    <div className="client-img">
                       <img src={ved} alt="" />
                     </div>{" "}
-                    <div class="testimonial-info">
+                    <div className="testimonial-info">
                       <h4>Ved Anand</h4> <h5>TripCart</h5>
                     </div>
                   </div>{" "}
@@ -195,23 +195,23 @@ const HomeTestimonial = () => {
           </div>
           <div className="col-lg-12">
             <div
-              tabindex="-1"
+              tabIndex="-1"
               data-index="0"
               aria-hidden="false"
-              class="slick-slide home-slider slick-active slick-current"
+              className="slick-slide home-slider slick-active slick-current"
               style={{ outline: "none", width: "372px" }}
             >
               <div>
                 <div
-                  tabindex="-1"
-                  class="testimonial-card"
+                  tabIndex="-1"
+                  className="testimonial-card"
                   style={{ width: "100%", display: "inline-block" }}
                 >
-                  <div class="testimonial-card-user">
-                    <div class="client-img">
+                  <div className="testimonial-card-user">
+                    <div className="client-img">
                       <img src={akshay} alt="" />
                     </div>{" "}
-                    <div class="testimonial-info">
+                    <div className="testimonial-info">
                       <h4>Akshay Chavan</h4> <h5>Bosch India</h5>
                     </div>
                   </div>{" "}

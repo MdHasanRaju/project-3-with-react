@@ -53,19 +53,19 @@ const SeekersTestimonial = () => {
           <Slider {...settings}>
             <div className="col-lg-12 col-md-12 seeker-column">
               <div
-                tabindex="-1"
+                tabIndex="-1"
                 data-index="-3"
                 aria-hidden="true"
-                class="slick-slide slick-cloned"
+                className="slick-slide slick-cloned"
                 style={{ width: "372px" }}
               >
                 <div>
                   <div
-                    tabindex="-1"
-                    class="testimonial-card1"
+                    tabIndex="-1"
+                    className="testimonial-card1"
                     style={{ width: "100%", display: "inline-block" }}
                   >
-                    <div class="seeker-img">
+                    <div className="seeker-img">
                       <img src={palak} alt="" />
                     </div>{" "}
                     <h4>Palak Sharma</h4>{" "}
@@ -80,19 +80,19 @@ const SeekersTestimonial = () => {
             </div>
             <div className="col-lg-12 col-md-12 seeker-column">
               <div
-                tabindex="-1"
+                tabIndex="-1"
                 data-index="-3"
                 aria-hidden="true"
-                class="slick-slide slick-cloned"
+                className="slick-slide slick-cloned"
                 style={{ width: "372px" }}
               >
                 <div>
                   <div
-                    tabindex="-1"
-                    class="testimonial-card1"
+                    tabIndex="-1"
+                    className="testimonial-card1"
                     style={{ width: "100%", display: "inline-block" }}
                   >
-                    <div class="seeker-img">
+                    <div className="seeker-img">
                       <img src={pratyush} alt="" />
                     </div>{" "}
                     <h4>Pratyush R.</h4>{" "}
@@ -110,19 +110,19 @@ const SeekersTestimonial = () => {
             </div>
             <div className="col-lg-12 col-md-12 seeker-column">
               <div
-                tabindex="-1"
+                tabIndex="-1"
                 data-index="-3"
                 aria-hidden="true"
-                class="slick-slide slick-cloned"
+                className="slick-slide slick-cloned"
                 style={{ width: "372px" }}
               >
                 <div>
                   <div
-                    tabindex="-1"
-                    class="testimonial-card1"
+                    tabIndex="-1"
+                    className="testimonial-card1"
                     style={{ width: "100%", display: "inline-block" }}
                   >
-                    <div class="seeker-img">
+                    <div className="seeker-img">
                       <img src={rudra} alt="" />
                     </div>{" "}
                     <h4>Rudraksh Parihar</h4>{" "}
@@ -140,19 +140,19 @@ const SeekersTestimonial = () => {
             </div>
             <div className="col-lg-12 col-md-12 seeker-column">
               <div
-                tabindex="-1"
+                tabIndex="-1"
                 data-index="-3"
                 aria-hidden="true"
-                class="slick-slide slick-cloned"
+                className="slick-slide slick-cloned"
                 style={{ width: "372px" }}
               >
                 <div>
                   <div
-                    tabindex="-1"
-                    class="testimonial-card1"
+                    tabIndex="-1"
+                    className="testimonial-card1"
                     style={{ width: "100%", display: "inline-block" }}
                   >
-                    <div class="seeker-img">
+                    <div className="seeker-img">
                       <img src={ayush} alt="" />
                     </div>{" "}
                     <h4>Ayush Parmar</h4>{" "}
@@ -170,19 +170,19 @@ const SeekersTestimonial = () => {
             </div>
             <div className="col-lg-12 col-md-12 seeker-column hidden-column">
               <div
-                tabindex="-1"
+                tabIndex="-1"
                 data-index="-3"
                 aria-hidden="true"
-                class="slick-slide slick-cloned"
+                className="slick-slide slick-cloned"
                 style={{ width: "372px" }}
               >
                 <div>
                   <div
-                    tabindex="-1"
-                    class="testimonial-card1"
+                    tabIndex="-1"
+                    className="testimonial-card1"
                     style={{ width: "100%", display: "inline-block" }}
                   >
-                    <div class="seeker-img">
+                    <div className="seeker-img">
                       <img src={palak} alt="" />
                     </div>{" "}
                     <h4>Palak Sharma</h4>{" "}
@@ -197,19 +197,19 @@ const SeekersTestimonial = () => {
             </div>
             <div className="col-lg-12 col-md-12 seeker-column hidden-column">
               <div
-                tabindex="-1"
+                tabIndex="-1"
                 data-index="-3"
                 aria-hidden="true"
-                class="slick-slide slick-cloned"
+                className="slick-slide slick-cloned"
                 style={{ width: "372px" }}
               >
                 <div>
                   <div
-                    tabindex="-1"
-                    class="testimonial-card1"
+                    tabIndex="-1"
+                    className="testimonial-card1"
                     style={{ width: "100%", display: "inline-block" }}
                   >
-                    <div class="seeker-img">
+                    <div className="seeker-img">
                       <img src={pratyush} alt="" />
                     </div>{" "}
                     <h4>Pratyush R.</h4>{" "}

@@ -33,7 +33,7 @@
     cursor: pointer;
   }
   
-  .navbar-light .navbar-nav .nav-link.nuxt-link-active:before,
+  .navbar-light .navbar-nav .nav-link.menu-link-active:before,
   .navbar-light .navbar-nav .nav-link:hover:before {
     content: "";
     background-color: #2ce2a2;
@@ -162,7 +162,7 @@
       text-align: center;
     }
   
-    .navbar-light .navbar-nav .nav-link.nuxt-link-active:before,
+    .navbar-light .navbar-nav .nav-link.menu-link-active:before,
     .navbar-light .navbar-nav .nav-link:hover:before {
       bottom: -3px;
     }
@@ -208,7 +208,7 @@
       width: 100%;
       background: #f1f4f7;
     }
-    .navbar-light .navbar-nav .nav-link.nuxt-link-active:before,
+    .navbar-light .navbar-nav .nav-link.menu-link-active:before,
     .navbar-light .navbar-nav .nav-link:hover:before {
       bottom: -3px;
     }
