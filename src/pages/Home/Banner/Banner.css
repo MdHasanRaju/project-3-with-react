@@ -75,8 +75,7 @@
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
-    cursor: pointer;
-    /* user-select: none; */
+    cursor: pointer; 
   }
 
   .direct-Candidates.two {
@@ -101,8 +100,8 @@
       padding: 170px 0 70px;
     }
     .direct-banner h1,
-    .direct-text h2,
-    .hire-now h2 {
+    .direct-text h2 
+    {
       font-size: 26px;
     }
     .direct-Candidates.first {

@@ -8,9 +8,7 @@
   }
   .hire-chat .row {
     align-items: center;
-  }
-  .direct-banner h1,
-  .direct-text h2,
+  } 
   .hire-now h2 {
     font-size: 32px;
   }
@@ -64,9 +62,7 @@
   @media only screen and (min-width: 601px) and (max-width: 991px) {
     .hire-chat {
       padding-bottom: 60px;
-    }
-    .direct-banner h1,
-    .direct-text h2,
+    } 
     .hire-now h2 {
       font-size: 26px;
     }
