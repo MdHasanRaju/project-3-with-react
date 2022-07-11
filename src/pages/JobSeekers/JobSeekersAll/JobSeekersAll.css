@@ -3,6 +3,9 @@
 section.job-seeker {
   padding-bottom: 50px;
 }
+section.job-seeker {
+  padding-top: 118px;
+}
 .building-profile,
 .job-seeker-banner {
   padding: 60px 0;
@@ -40,6 +43,9 @@ h2.title-big {
 -------------------------------------------------------------- */
 /* job-seekers-banner-section for tablet device */
 @media only screen and (min-width: 601px) and (max-width: 991px) {
+  section.job-seeker {
+    padding-top: 100px ;
+  }
   .building-profile,
   .job-seeker-banner {
     padding: 60px 0;
@@ -58,6 +64,9 @@ h2.title-big {
 
 /* job-seekers-banner-section for mobile device */
 @media only screen and (max-width: 600px) {
+  section.job-seeker {
+    padding-top: 70px ;
+  }
   section.job-seeker {
     padding-bottom: 20px;
   }

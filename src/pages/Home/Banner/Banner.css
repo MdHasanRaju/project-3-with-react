@@ -1,7 +1,8 @@
 /* banner-section
 ---------------------- */
+ 
 .direct-banner {
-    padding: 80px 0;
+    padding: 198px 0 80px;
   }
   .direct-banner .row {
     align-items: flex-end;
@@ -98,7 +99,7 @@
   /* banner-section for tablet device */
   @media only screen and (min-width: 601px) and (max-width: 991px) {
     .direct-banner {
-      padding: 70px 0;
+      padding: 170px 0 70px;
     }
     .direct-banner h1,
     .direct-text h2,
@@ -142,7 +143,7 @@
   /* banner-section for mobile device */
   @media only screen and (max-width: 600px) {
     .direct-banner {
-      padding: 50px 0 70px;
+      padding: 130px 0 70px;
     }
     .direct-banner h1 {
       font-size: 23px !important;
