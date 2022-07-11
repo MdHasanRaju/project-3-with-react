@@ -68,10 +68,10 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item" >
-                {/* <a href="/job-seeker" className="nav-link" >
+                <a href="/job-seeker" className="nav-link" >
                   Job Seekers
-                </a> */}
-                <Link className="nav-link" to='/job-seeker'>Job Seekers</Link>
+                </a>
+                {/* <Link className="nav-link" to='/job-seeker'>Job Seekers</Link> */}
               </li>
               <li className="nav-item" >
                 <a
