@@ -130,10 +130,7 @@ h3.title-md {
     padding-top: 40px;
     padding-right: 0;
   }
-  h3.title-md {
-    font-size: 23px;
-    margin-bottom: 20px;
-  }
+
   .about-section p br {
     display: none;
   }
@@ -148,15 +145,7 @@ h3.title-md {
   .about-image {
     padding-top: 70px;
   }
-  h3.title-md {
-    font-size: 23px;
-    margin-bottom: 20px;
-  }
-  .about-section p {
-    font-size: 15px;
-    line-height: 22px;
-    margin-bottom: 15px;
-  }
+
   .button-sm {
     width: 160px;
   }
