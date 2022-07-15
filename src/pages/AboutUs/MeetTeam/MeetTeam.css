@@ -76,6 +76,103 @@ h1, h2.title-big {
 
 
 
+/* meet-team-section-responsiveness with media query
+------------------------------------------------- */
+/* meet-team-section for tablet device
+------------------------------------------- */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+    h1, h2.title-big {
+        font-size: 36px;
+        margin-bottom: 35px;
+    }
+    .meet-team-list {
+        padding: 20px 0;
+    }
+    .meet-team-list ul li {
+        width: 49%;
+        margin: 20px 2% 20px 0;
+    }
+    .meet-team-list ul li:nth-child(2n) {
+        margin-right: 0;
+    }
+    .meet-team-card {
+        padding: 16px 15px;
+        height: 495px;
+    }
+    .team-details {
+        margin-bottom: 15px;
+    }
+    .team-img img {
+        width: 100px;
+        height: 100px;
+    }
+    .team-info {
+        width: calc(100% - 100px);
+        padding-left: 15px;
+    }
+    .team-info h5 {
+        font-size: 20px;
+    }
+    .team-info h6 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .meet-team-card p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+ 
+}
+
+/* meet-team-section for mobile device
+------------------------------------------- */
+@media only screen and  (max-width: 600px) {
+    section.meet-team-section {
+        padding: 20px 0 40px;
+        text-align: center;
+    }
+    h1, h2.title-big {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .meet-team-list ul li {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .meet-team-card {
+        height: auto;
+        padding: 25px 15px;
+    }
+    .team-details {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .team-img {
+        text-align: center;
+    }
+    .team-img img {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
+    .team-info {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .team-info h5 {
+        font-size: 22px;
+        text-align: center;
+    }
+    .meet-team-card p, .team-info h6 {
+        text-align: center;
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+
 
 
 
