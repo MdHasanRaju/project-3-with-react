@@ -62,7 +62,7 @@ h3.title-md {
 -------------------------------------- */
 @media only screen and (max-width: 600px) {
   section.feature-section {
-    padding: 130px 0 30px;
+    padding: 136px 0 30px;
   }
   .feature-list {
     padding-bottom: 15px;
