@@ -56,9 +56,6 @@ h1, h2.title-big {
     width: calc(100% - 137px);
     padding-left: 30px;
 }
-/* .team-info h5 {
-    font-size: 26px;
-} */
 .team-info h6 {
     color: #0e101a;
     line-height: 24px;
