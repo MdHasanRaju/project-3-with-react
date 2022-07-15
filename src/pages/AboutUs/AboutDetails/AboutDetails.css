@@ -1,7 +1,6 @@
 /*about-details-section
 ------------------------*/
-.about-section {
-  /* padding: 70px 0; */
+.about-section { 
   padding: 190px 0 70px;
 }
 .about-details {
@@ -59,15 +58,7 @@ h3.title-md {
 .get-hired-section .row {
   align-items: center;
 }
-
-/* 
-h1,
-h2.title-big,
-h3.title-md {
-  font-weight: 700;
-  line-height: normal;
-  margin-bottom: 40px;
-} */
+ 
 .about-section p {
   color: grey;
   font-size: 18px;

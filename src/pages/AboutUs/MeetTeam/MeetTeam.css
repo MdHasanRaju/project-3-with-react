@@ -1,5 +1,89 @@
 /* meet-team-section
 --------------------- */
-section.meet-team-section[data-v-72d37d21] {
+section.meet-team-section {
+  padding: 20px 0;
+}
+h1, h2.title-big {
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+.meet-team-list {
     padding: 20px 0;
 }
+.meet-team-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.meet-team-list ul li {
+    width: 47.5%;
+    margin: 20px 5% 20px 0;
+}
+.meet-team-list ul li:nth-child(2n) {
+    margin-right: 0;
+}
+ 
+.meet-team-card {
+    height: 460px;
+    border-radius: 10px;
+    background-color: rgba(44,226,162,.05);
+    padding: 25px 30px;
+}
+.team-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.meet-team-card p {
+    color: grey;
+    line-height: 23px;
+} 
+.meet-team-card p, .team-info h6 {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+.team-img img {
+    width: 137px;
+    height: 137px;
+    border-radius: 50%;
+}
+.team-info {
+    width: calc(100% - 137px);
+    padding-left: 30px;
+}
+/* .team-info h5 {
+    font-size: 26px;
+} */
+.team-info h6 {
+    color: #0e101a;
+    line-height: 24px;
+    margin: 0;
+}
+
+.team-info h5 {
+    color: #333;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
