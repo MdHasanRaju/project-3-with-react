@@ -5,7 +5,6 @@ import videoCall from "../../../assets/images/Updatedvideocall.8928d8a.png";
 import instantChat from "../../../assets/images/instant-chat-ceo1.e16699e.png";
 import featureChat from "../../../assets/images/feature-chat-directly1.849a2de.png";
 import matching1 from "../../../assets/images/algo-matching1.3e4eada.png";
-// import featureChat from "../../../assets/images/algo-matching1.3e4eada.png";
 
 const FeaturesAll = () => {
   return (
