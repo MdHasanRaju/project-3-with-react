@@ -14,24 +14,24 @@ import simran from "../../../assets/images/img_simran.3ce6010.png";
 
 const MeetTeam = () => {
   return (
-    <section class="meet-team-section" >
-      <div class="container" >
-        <div class="row" >
-          <div class="col-md-12" >
+    <section className="meet-team-section" >
+      <div className="container" >
+        <div className="row" >
+          <div className="col-md-12" >
             <h1 >Meet The Team</h1>{" "}
-            <div class="meet-team-list" >
+            <div className="meet-team-list" >
               <ul >
                 <li >
-                  <div class="meet-team-card" >
-                    <div class="team-details" >
-                      <div class="team-img" >
+                  <div className="meet-team-card" >
+                    <div className="team-details" >
+                      <div className="team-img" >
                         <img
                           src={raj}
                           alt=""
                           
                         />
                       </div>{" "}
-                      <div class="team-info" >
+                      <div className="team-info" >
                         <h5 >Raj Das</h5>{" "}
                         <h6 >
                           Global Co-Founder and <br  />
@@ -54,16 +54,16 @@ const MeetTeam = () => {
                   </div>
                 </li>{" "}
                 <li >
-                  <div class="meet-team-card" >
-                    <div class="team-details" >
-                      <div class="team-img" >
+                  <div className="meet-team-card" >
+                    <div className="team-details" >
+                      <div className="team-img" >
                         <img
                           src={avishek}
                           alt=""
                           
                         />
                       </div>{" "}
-                      <div class="team-info" >
+                      <div className="team-info" >
                         <h5 >Abhishek Singh</h5>{" "}
                         <h6 >
                           Senior Vice President - Marketing
@@ -86,16 +86,16 @@ const MeetTeam = () => {
                   </div>
                 </li>{" "}
                 <li >
-                  <div class="meet-team-card" >
-                    <div class="team-details" >
-                      <div class="team-img" >
+                  <div className="meet-team-card" >
+                    <div className="team-details" >
+                      <div className="team-img" >
                         <img
                           src={ramani}
                           alt=""
                           
                         />
                       </div>{" "}
-                      <div class="team-info" >
+                      <div className="team-info" >
                         <h5 >Ramani Ganesh</h5>{" "}
                         <h6 >
                           Senior Vice President - Human Resources
@@ -117,16 +117,16 @@ const MeetTeam = () => {
                   </div>
                 </li>{" "}
                 <li >
-                  <div class="meet-team-card" >
-                    <div class="team-details" >
-                      <div class="team-img" >
+                  <div className="meet-team-card" >
+                    <div className="team-details" >
+                      <div className="team-img" >
                         <img
                           src={shantanu}
                           alt=""
                           
                         />
                       </div>{" "}
-                      <div class="team-info" >
+                      <div className="team-info" >
                         <h5 >Shantanu Pandey</h5>{" "}
                         <h6 >
                           Sr. Vice President - Business Development
@@ -149,16 +149,16 @@ const MeetTeam = () => {
                   </div>
                 </li>{" "}
                 <li >
-                  <div class="meet-team-card" >
-                    <div class="team-details" >
-                      <div class="team-img" >
+                  <div className="meet-team-card" >
+                    <div className="team-details" >
+                      <div className="team-img" >
                         <img
                           src={popli}
                           alt=""
                           
                         />
                       </div>{" "}
-                      <div class="team-info" >
+                      <div className="team-info" >
                         <h5 >Abhishek Popli</h5>{" "}
                         <h6 >
                           Vice President - Business Development
@@ -181,16 +181,16 @@ const MeetTeam = () => {
                   </div>
                 </li>{" "}
                 <li >
-                  <div class="meet-team-card" >
-                    <div class="team-details" >
-                      <div class="team-img" >
+                  <div className="meet-team-card" >
+                    <div className="team-details" >
+                      <div className="team-img" >
                         <img
                          src={sanche}
                           alt=""
                           
                         />
                       </div>{" "}
-                      <div class="team-info" >
+                      <div className="team-info" >
                         <h5 >Sanche Joao</h5>{" "}
                         <h6 >Vice President - Operations</h6>
                       </div>
@@ -212,16 +212,16 @@ const MeetTeam = () => {
                   </div>
                 </li>{" "}
                 <li >
-                  <div class="meet-team-card" >
-                    <div class="team-details" >
-                      <div class="team-img" >
+                  <div className="meet-team-card" >
+                    <div className="team-details" >
+                      <div className="team-img" >
                         <img
                           src={rajeev}
                           alt=""
                           
                         />
                       </div>{" "}
-                      <div class="team-info" >
+                      <div className="team-info" >
                         <h5 >Rajeev Ranjan</h5>{" "}
                         <h6 >
                           Associate Vice President - Digital Marketing
@@ -242,16 +242,16 @@ const MeetTeam = () => {
                   </div>
                 </li>{" "}
                 <li >
-                  <div class="meet-team-card" >
-                    <div class="team-details" >
-                      <div class="team-img" >
+                  <div className="meet-team-card" >
+                    <div className="team-details" >
+                      <div className="team-img" >
                         <img
                          src={manoj}
                           alt=""
                           
                         />
                       </div>{" "}
-                      <div class="team-info" >
+                      <div className="team-info" >
                         <h5 >Manoj Goplani</h5>{" "}
                         <h6 >
                           Associate Vice President - Design
@@ -275,16 +275,16 @@ const MeetTeam = () => {
                   </div>
                 </li>{" "}
                 <li >
-                  <div class="meet-team-card" >
-                    <div class="team-details" >
-                      <div class="team-img" >
+                  <div className="meet-team-card" >
+                    <div className="team-details" >
+                      <div className="team-img" >
                         <img
                           src={vishal}
                           alt=""
                           
                         />
                       </div>{" "}
-                      <div class="team-info" >
+                      <div className="team-info" >
                         <h5 >Vishal Gupta</h5>{" "}
                         <h6 >
                           AVP-Product Management &amp; Business Intelligence
@@ -305,16 +305,16 @@ const MeetTeam = () => {
                   </div>
                 </li>{" "}
                 <li >
-                  <div class="meet-team-card" >
-                    <div class="team-details" >
-                      <div class="team-img" >
+                  <div className="meet-team-card" >
+                    <div className="team-details" >
+                      <div className="team-img" >
                         <img
                           src={akanksha}
                           alt=""
                           
                         />
                       </div>{" "}
-                      <div class="team-info" >
+                      <div className="team-info" >
                         <h5 >Akanksha Tyagi</h5>{" "}
                         <h6 >Manager-Influencer Marketing</h6>
                       </div>
@@ -333,16 +333,16 @@ const MeetTeam = () => {
                   </div>
                 </li>{" "}
                 <li >
-                  <div class="meet-team-card" >
-                    <div class="team-details" >
-                      <div class="team-img" >
+                  <div className="meet-team-card" >
+                    <div className="team-details" >
+                      <div className="team-img" >
                         <img
                           src={simran}
                           alt=""
                           
                         />
                       </div>{" "}
-                      <div class="team-info" >
+                      <div className="team-info" >
                         <h5 >Simran Saswani</h5>{" "}
                         <h6 >
                           Manager- Business Development

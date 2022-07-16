@@ -13,24 +13,24 @@ import download8 from "../../../assets/icons/download (8).png";
 
 const RecruiterStartup = () => {
   return (
-    <section class="recruiter-startup-section startup-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="startup-section-heading">
-              <h3 class="title-md">
+    <section className="recruiter-startup-section startup-section">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="startup-section-heading">
+              <h3 className="title-md">
                 Direct and Instant Hiring. Join the list of leading companies.
               </h3>
             </div>
           </div>
         </div>
       </div>
-      <div class="startups-logo">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="jobs-list">
-                <ul class="startups-logo-list">
+      <div className="startups-logo">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="jobs-list">
+                <ul className="startups-logo-list">
                   <li>
                     <img src={lenskart} alt="" />
                   </li>

@@ -8,39 +8,39 @@ import matching1 from "../../../assets/images/algo-matching1.3e4eada.png";
 
 const FeaturesAll = () => {
   return (
-    <section class="feature-section">
-      <div class="container">
-        <div class="feature-list one-1">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="feature-content feature-left-content">
-                <h3 class="title-md">
+    <section className="feature-section">
+      <div className="container">
+        <div className="feature-list one-1">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="feature-content feature-left-content">
+                <h3 className="title-md">
                   Instant Chat with the <br />
                   Founders/ CEO’s and Get <br />
                   Hired Directly
                 </h3>
               </div>
             </div>{" "}
-            <div class="col-md-6">
-              <div class="feature-content-img">
+            <div className="col-md-6">
+              <div className="feature-content-img">
                 <img src={instantChat} alt="" />
               </div>
             </div>
           </div>
         </div>{" "}
-        <div class="feature-list">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="feature-content-img">
+        <div className="feature-list">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="feature-content-img">
                 <img
                   src={featureChat}
                   alt=""
                 />
               </div>
             </div>{" "}
-            <div class="col-md-6">
-              <div class="feature-content feature-right-content">
-                <h3 class="title-md">
+            <div className="col-md-6">
+              <div className="feature-content feature-right-content">
+                <h3 className="title-md">
                   Chat Directly to Get <br />
                   Quick Response
                 </h3>{" "}
@@ -55,15 +55,15 @@ const FeaturesAll = () => {
             </div>
           </div>
         </div>{" "}
-        <div class="feature-list">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="feature-content">
-                <h3 class="title-md">
+        <div className="feature-list">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="feature-content">
+                <h3 className="title-md">
                   AI-Algorithm Matching <br />
                   Candidate Recommendations
                 </h3>{" "}
-                <div class="feature-left-content">
+                <div className="feature-left-content">
                   <p>
                     Hirect's Intelligent AI-powered algorithm matches the job
                     profiles with the right candidates. When a job is posted,
@@ -75,17 +75,17 @@ const FeaturesAll = () => {
                 </div>
               </div>
             </div>{" "}
-            <div class="col-md-6">
-              <div class="feature-content-img">
+            <div className="col-md-6">
+              <div className="feature-content-img">
                 <img src={matching1} alt="" />
               </div>
             </div>
           </div>
         </div>{" "}
-        <div class="feature-list">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="feature-content-img">
+        <div className="feature-list">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="feature-content-img">
                 <img
                   src={videoCall}
                   alt=""
@@ -93,9 +93,9 @@ const FeaturesAll = () => {
                 />
               </div>
             </div>{" "}
-            <div class="col-md-6">
-              <div class="feature-content feature-right-content">
-                <h3 class="title-md">
+            <div className="col-md-6">
+              <div className="feature-content feature-right-content">
+                <h3 className="title-md">
                   100% Secure Video <br />
                   Interviews
                 </h3>{" "}
@@ -109,11 +109,11 @@ const FeaturesAll = () => {
             </div>
           </div>
         </div>{" "}
-        <div class="feature-list">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="feature-content feature-left-content">
-                <h3 class="title-md">
+        <div className="feature-list">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="feature-content feature-left-content">
+                <h3 className="title-md">
                   Direct and Quick <br />
                   Notifications
                 </h3>{" "}
@@ -126,8 +126,8 @@ const FeaturesAll = () => {
                 </p>
               </div>
             </div>{" "}
-            <div class="col-md-6">
-              <div class="feature-content-img">
+            <div className="col-md-6">
+              <div className="feature-content-img">
                 <img src={notification} alt="" />
               </div>
             </div>

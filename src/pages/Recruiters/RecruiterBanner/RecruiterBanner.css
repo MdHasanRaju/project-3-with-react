@@ -104,6 +104,7 @@ h3.title-md {
 }
 .schedule-a-call .el-input__inner {
     height: 48px;
+    /* width: 100%; */
     border-radius: 2px;
     background-color: #f7f7f7;
     color: #0e101a;
@@ -168,7 +169,7 @@ h3.title-md {
     width: 100%;
 }
 .schedule-a-call.contact-ue-form .el-select.inner-input-item {
-    /* width: 100%; */
+    width: 100%;
     margin-top: 20px;
 }
 .el-select {
@@ -185,6 +186,18 @@ h3.title-md {
 
 .el-checkbox:last-of-type {
     margin-right: 0;
+}
+.schedule-a-call .el-checkbox__input.is-checked+.el-checkbox__label {
+    color: #0e101a;
+}
+.schedule-a-call.contact-ue-form .el-checkbox__input.is-checked+.el-checkbox__label {
+    color: grey;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
 }
 .schedule-a-call.contact-ue-form .submitButton {
     border-radius: 2px;
