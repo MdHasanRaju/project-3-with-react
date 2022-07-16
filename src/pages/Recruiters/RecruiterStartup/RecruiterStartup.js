@@ -24,7 +24,7 @@ const RecruiterStartup = () => {
             </div>
           </div>
         </div>
-      </div>{" "}
+      </div>
       <div class="startups-logo">
         <div class="container">
           <div class="row">
@@ -33,31 +33,31 @@ const RecruiterStartup = () => {
                 <ul class="startups-logo-list">
                   <li>
                     <img src={lenskart} alt="" />
-                  </li>{" "}
+                  </li>
                   <li>
                     <img src={download} alt="" />
-                  </li>{" "}
+                  </li>
                   <li>
                     <img src={download1} alt="" />
-                  </li>{" "}
+                  </li>
                   <li>
                     <img src={download2} alt="" />
-                  </li>{" "}
+                  </li>
                   <li>
                     <img src={download3} alt="" />
-                  </li>{" "}
+                  </li>
                   <li>
                     <img src={download4} alt="" />
-                  </li>{" "}
+                  </li>
                   <li>
                     <img src={download5} alt="" />
-                  </li>{" "}
+                  </li>
                   <li>
                     <img src={download6} alt="" />
-                  </li>{" "}
+                  </li>
                   <li>
                     <img src={download7} alt="" />
-                  </li>{" "}
+                  </li>
                   <li>
                     <img src={download8} alt="" />
                   </li>
