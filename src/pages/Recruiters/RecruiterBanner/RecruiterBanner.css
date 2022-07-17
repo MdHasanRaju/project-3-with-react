@@ -1,197 +1,77 @@
 /* recruiter-banner-section
 ----------------------------- */
 .recruiter-banner {
-  padding: 180px 0 80px;
-}
-.row {
-  flex-direction: row;
-}
-.recruiter-banner-details {
-  width: 100%;
-  max-width: 540px;
-  padding-top: 35px;
-}
-h3.title-md {
-  font-size: 32px;
-  margin-bottom: 30px;
-  color: #121127;
-}
-.recruiter-banner-details p {
-  font-size: 20px;
-  line-height: 32px;
-  font-weight: 400;
-  color: grey;
-}
-.recruiter-banner-img {
-  text-align: center;
-  padding-top: 45px;
-}
-.Schedule-call {
-  background: #fff;
-  box-shadow: 6px 6px 30px rgb(109 141 173 / 15%);
-  border-radius: 12px;
-  padding: 20px 20px 30px;
-  max-width: 526px;
-  margin-left: auto;
-}
-.schedule-a-call {
-  background-color: #fff;
-  border-radius: 16px;
-  text-align: left;
-}
-.schedule-a-call.contact-ue-form p.schedule-title {
-  color: #333;
-  font-family: Helvetica;
-  font-size: 36px;
-  font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  margin: 0;
-}
-.schedule-a-call.contact-ue-form p.schedule-text {
-  color: grey;
-  font-size: 18px;
-  line-height: 24px;
-  margin-bottom: 25px;
-}
-
-/* 
-.input-container {
-    position: relative;
-}
-
-.input-item {
-  margin-bottom: 15px;
-}
-.el-input {
-  position: relative;
-  font-size: 14px;
-  display: inline-block;
-  width: 100%;
-}
-
-.schedule-a-call.contact-ue-form p.alertText {
-  top: 47px;
-  left: 11px;
-}
-.alertText {
-    position: absolute;
-    font-size: 15px;
-    color: #ef444f;
-    top: 65px;
-}
-.el-input-group {
-    line-height: normal;
-    display: inline-table;
+    padding: 180px 0 80px;
+  }
+  .row {
+    flex-direction: row;
+  }
+  .recruiter-banner-details {
     width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-}
-.schedule-a-call.contact-ue-form .el-input-group__append, .schedule-a-call.contact-ue-form .el-input-group__prepend {
-    width: 70px;
-    background-color: #e0e0e0;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    display: flex;
-    align-items: center;
-    border-radius: 2px 0 0 2px;
-    border: 0;
-}
-
-.schedule-a-call.contact-ue-form input#phone-number {
-    padding-left: 77px;
-}
-.schedule-a-call .el-input__inner {
-    height: 48px; 
-    border-radius: 2px;
-    background-color: #f7f7f7;
-    color: #0e101a;
-    font-family: Helvetica;
-    font-size: 16px;
+    max-width: 540px;
+    padding-top: 35px;
+  }
+  h3.title-md {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #121127;
+  }
+  .recruiter-banner-details p {
+    font-size: 20px;
+    line-height: 32px;
     font-weight: 400;
+    color: grey;
+  }
+  .recruiter-banner-img {
+    text-align: center;
+    padding-top: 45px;
+  }
+  .Schedule-call {
+    background: #fff;
+    box-shadow: 6px 6px 30px rgb(109 141 173 / 15%);
+    border-radius: 12px;
+    padding: 20px 20px 30px;
+    max-width: 526px;
+    margin-left: auto;
+  }
+  .schedule-a-call {
+    background-color: #fff;
+    border-radius: 16px;
+    text-align: left;
+  }
+  .schedule-a-call.contact-ue-form p.schedule-title {
+    color: #333;
+    font-family: Helvetica;
+    font-size: 36px;
+    font-weight: 700;
     font-style: normal;
     letter-spacing: normal;
+    line-height: normal;
+    margin: 0;
+  }
+  .schedule-a-call.contact-ue-form p.schedule-text {
+    color: grey;
+    font-size: 18px;
     line-height: 24px;
-    border-color: #f7f7f7!important;
-}
-.el-input-group__append .el-button, .el-input-group__append .el-select, .el-input-group__prepend .el-button, .el-input-group__prepend .el-select {
-    display: inline-block;
-    margin: -10px -20px;
-}
-.el-input-group__append .el-button, .el-input-group__append .el-input, .el-input-group__prepend .el-button, .el-input-group__prepend .el-input {
-    font-size: inherit;
-}
-.el-select>.el-input {
-    display: block;
-}
-.schedule-a-call.contact-ue-form .el-input--suffix .el-input__inner {
-    padding-right: 20px!important;
-}
-.el-input-group__append button.el-button, .el-input-group__append div.el-select .el-input__inner, .el-input-group__append div.el-select:hover .el-input__inner, .el-input-group__prepend button.el-button, .el-input-group__prepend div.el-select .el-input__inner, .el-input-group__prepend div.el-select:hover .el-input__inner {
-    border-color: transparent;
-    background-color: transparent;
-    color: inherit;
-    border-top: 0;
-    border-bottom: 0;
-}
-.el-input__suffix {
-    position: absolute;
-    height: 100%;
-    right: 5px;
-    top: 0;
-    text-align: center;
-    color: #c0c4cc;
-    transition: all .3s;
-    pointer-events: none;
-}
-.el-input__suffix-inner {
-    pointer-events: all;
-}
-.el-select .el-input .el-select__caret {
-    color: #c0c4cc;
-    font-size: 14px;
-    transition: transform .3s;
-    transform: rotate(180deg);
-    cursor: pointer;
-}
-.el-input__icon {
-    width: 25px;
-    line-height: 40px;
-}
-.el-input__icon, .el-input__prefix {
-    height: 100%;
-    text-align: center;
-    transition: all .3s;
-}
-.recruiter-banner .contact-ue-form .input-container-bottom .inner-input-item {
-    width: 100%;
-}
-.schedule-a-call.contact-ue-form .el-select.inner-input-item {
-    width: 100%;
-    margin-top: 20px;
-}
-.el-select {
-    display: inline-block;
-    position: relative;
-}
-.schedule-checkbox {
+    margin-bottom: 25px;
+  }
+   
+  .schedule-checkbox {
     font-size: 20px;
     font-weight: 400;
     color: #0e101a;
     line-height: 24px;
     margin-top: 20px;
-}
-
-.el-checkbox:last-of-type {
+  }
+  .el-checkbox:last-of-type {
     margin-right: 0;
-}
-.schedule-a-call .el-checkbox__input.is-checked+.el-checkbox__label {
+  }
+  .schedule-a-call .el-checkbox__input.is-checked + .el-checkbox__label {
     color: #0e101a;
-}
-.schedule-a-call.contact-ue-form .el-checkbox__input.is-checked+.el-checkbox__label {
+  }
+  .schedule-a-call.contact-ue-form
+    .el-checkbox__input.is-checked
+    + .el-checkbox__label {
     color: grey;
     font-family: Helvetica;
     font-size: 14px;
@@ -199,113 +79,8 @@ h3.title-md {
     font-style: normal;
     letter-spacing: normal;
     line-height: 24px;
-} */
-
-.input-container {
-    position: relative;
-}
-.input-item {
-    margin-bottom: 25px;
-}
-.el-input {
-    position: relative;
-    font-size: 14px;
-    display: inline-block;
-    width: 100%;
-}
-.schedule-a-call  .el-input__inner {
-    height: 42px;
-    /* border-radius: 50px; */
-    border-radius: 2px;
-    background-color: #f2f4f8;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: normal;
-    line-height: 24px;
-    border-color: #f7f7f7!important;
-} 
-.el-input__inner {
-    background-image: none; 
-    border: 1px solid #dcdfe6;
-    box-sizing: border-box;
-    color: #606266;
-    display: inline-block; 
-    outline: 0;
-    padding: 0 15px;
-    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
-    width: 100%;
-}
-.el-input-group {
-    line-height: normal;
-    display: inline-table;
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-}
-.schedule-a-call.contact-ue-form .el-input-group__append, .schedule-a-call.contact-ue-form .el-input-group__prepend {
-    width: 70px;
-    background-color: #e0e0e0;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    display: flex;
-    align-items: center;
-    border-radius: 22px 0 0 22px;
-    border: 0;
-}
-.el-input-group__append, .el-input-group__prepend {
-    /* background-color: #f5f7fa; */
-    color: #909399;
-    vertical-align: middle;
-    /* display: table-cell; */
-    /* position: relative; */
-    /* border: 1px solid #dcdfe6; */
-    /* border-radius: 4px; */
-    padding: 0 20px;
-    /* width: 1px; */
-    white-space: nowrap;
-}
-.schedule-a-call.contact-ue-form input#phone-number {
-    padding-left: 77px;
-}
-.el-input-group__append .el-button, .el-input-group__append .el-select, .el-input-group__prepend .el-button, .el-input-group__prepend .el-select {
-    display: inline-block;
-    margin: -10px -20px;
-}
-.el-select { 
-    position: relative;
-}
-.schedule-a-call.contact-ue-form .el-input--suffix .el-input__inner {
-    padding-right: 20px!important;
-}
-.el-input-group__append button.el-button, .el-input-group__append div.el-select .el-input__inner, .el-input-group__append div.el-select:hover .el-input__inner, .el-input-group__prepend button.el-button, .el-input-group__prepend div.el-select .el-input__inner, .el-input-group__prepend div.el-select:hover .el-input__inner {
-    border-color: transparent;
-    background-color: transparent;
-    color: inherit;
-    border-top: 0;
-    border-bottom: 0;
-}
-.el-select:hover .el-input__inner {
-    border-color: #c0c4cc;
-    cursor: pointer;
-}
-.el-input__suffix {
-    position: absolute;
-    height: 100%;
-    right: 5px;
-    top: 0;
-    text-align: center;
-    color: #c0c4cc;
-    transition: all .3s;
-    pointer-events: none;
-}
-
-
-
-
-
-.schedule-a-call.contact-ue-form .submitButton {
+  }
+  .schedule-a-call.contact-ue-form .submitButton {
     border-radius: 2px;
     background-color: #2ce2a2;
     color: #fff;
@@ -318,29 +93,29 @@ h3.title-md {
     text-align: center;
     height: unset;
     padding: 12px 0;
-}
-.schedule-a-call .submitButton {
+  }
+  .schedule-a-call .submitButton {
     height: 40px;
     font-size: 18px;
     margin-top: 20px;
     width: 100%;
-}
-.el-button {
-    display: inline-block; 
-    white-space: nowrap; 
+  }
+  .el-button {
+    display: inline-block;
+    white-space: nowrap;
     background: #fff;
-    border: 1px solid #dcdfe6; 
+    border: 1px solid #dcdfe6;
     box-sizing: border-box;
     outline: 0;
     margin: 0;
-    transition: .1s;  
-}
-.el-button--primary {
+    transition: 0.1s;
+  }
+  .el-button--primary {
     color: #fff;
     background-color: #29e19e;
     border-color: #29e19e;
-}
-.el-dialog__wrapper {
+  }
+  .el-dialog__wrapper {
     position: fixed;
     top: 0;
     right: 0;
@@ -348,8 +123,8 @@ h3.title-md {
     left: 0;
     overflow: auto;
     margin: 0;
-}
-.el-dialog {
+  }
+  .el-dialog {
     position: relative;
     margin: 0 auto 50px;
     background: #fff;
@@ -357,19 +132,19 @@ h3.title-md {
     box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
     box-sizing: border-box;
     width: 50%;
-}
- .el-dialog {
+  }
+  .el-dialog {
     border-radius: 12px;
-}
-.el-dialog__header {
+  }
+  .el-dialog__header {
     padding: 20px 20px 10px;
-}
-.el-dialog__title {
+  }
+  .el-dialog__title {
     line-height: 24px;
     font-size: 18px;
     color: #303133;
-}
-.el-dialog__headerbtn {
+  }
+  .el-dialog__headerbtn {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -379,9 +154,176 @@ h3.title-md {
     outline: 0;
     cursor: pointer;
     font-size: 16px;
-}
-.el-dialog__headerbtn .el-dialog__close {
+  }
+  .el-dialog__headerbtn .el-dialog__close {
     color: #909399;
+  }
+  
+  /* Input */
+  .common_input {
+    border-radius: 2px;
+    background-color: #f2f4f8;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 24px;
+    border-color: #f7f7f7 !important;
+    margin-bottom: 15px;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    outline: 0;
+    padding: 25px 15px;
+    transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 3px;
+    width: 100%;
+  }
+  .number_input {
+    width: 85%;
+  }
+  ::placeholder {
+    opacity: 0.5;
+  }
+  
+  .dropdown {
+    width: 100%;
+    border-radius: 2px;
+    background-color: #f2f4f8;
+  }
+  .number_dropdown {
+    width: 15%;
+    height: 52px;
+  }
+  
+  .dropdown-header {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dropdown-body {
+    padding: 5px 0;
+    display: none;
+    margin-top: 20px;
+    background: #f5f7fa;
+    border: 1px solid #e4e7ed;
+    position: relative;
+    z-index: 100;
+  }
+  
+  .dropdown-body.open {
+    display: block;
+  }
+  
+  .dropdown-item {
+    padding: 10px;
+  }
+  
+  .dropdown-item:hover {
+    cursor: pointer;
+  }
+  
+  .dropdown-item-dot {
+    opacity: 0;
+    color: #91a5be;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .dropdown-item-dot.selected {
+    opacity: 1;
+  }
+  
+  .icon {
+    font-size: 13px;
+    color: #91a5be;
+    transform: rotate(0deg);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .icon.open {
+    transform: rotate(-180deg);
+  }
+
+
+/* recruiter-banner-section responsiveness with media query
+------------------------------------------------------------ */
+/* recruiter-banner-section for tablet device */
+@media only screen and (min-width:601px) and (max-width:991px) {
+    .recruiter-banner {
+        padding: 150px 0 80px;
+    }
+    .recruiter-banner-details h3.title-md {
+        font-size: 55px !important;
+        line-height: 58px;
+        width: auto;
+    }
+    .recruiter-banner-details p[data-v-1cf69c32] {
+        font-size: 13px;
+        line-height: 21px;
+    }
+    .recruiter-banner-details p {
+        width: auto;
+        height: auto;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .recruiter-banner-img {
+        width: auto;
+        border-radius: 15px;
+        padding-top: 10px;
+    }
+    .schedule-a-call.contact-ue-form p.schedule-title {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .schedule-a-call.contact-ue-form p.schedule-text {
+        font-size: 16px;
+    }
+    
+}
+
+/* recruiter-banner-section for tablet device */
+@media only screen and (max-width:600px) {
+    .recruiter-banner {
+        padding: 120px 0 80px;
+    }
+    .schedule-a-call.contact-ue-form p.schedule-title {
+        font-size: 23px!important;
+    }
+    .schedule-a-call.contact-ue-form p.schedule-text {
+        font-size: 16px!important;
+        line-height: 22px!important;
+        margin-bottom: 25px!important;
+    }
+    .recruiter-banner-details h3.title-md {
+        font-size: 23px !important;
+        line-height: 24px !important;
+        text-align: center;
+    }
+    .recruiter-banner-details p {
+        font-size: 13px;
+        line-height: 21px;
+        text-align: center;
+    }
+     
+    .recruiter-banner-img {
+        width: auto;
+        border-radius: 15px;
+        padding-top: 10px;
+    }
+    .schedule-a-call.contact-ue-form p.schedule-title {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .schedule-a-call.contact-ue-form p.schedule-text {
+        font-size: 16px;
+    }
+    
 }
 
 
