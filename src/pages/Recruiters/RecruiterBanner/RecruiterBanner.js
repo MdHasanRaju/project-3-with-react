@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./RecruiterBanner.css";
-import banner from '../../../assets/images/recruiter-banner.e64debe.png';
+import banner from "../../../assets/images/recruiter-banner.e64debe.png";
 
 const data = [
   { id: 0, label: "HR" },
@@ -19,28 +19,27 @@ const numberData = [
 ];
 
 const RecruiterBanner = () => {
+  // for designation dropdown
+  const [isOpen, setOpen] = useState(false);
+  const [items, setItem] = useState(data);
+  const [selectedItem, setSelectedItem] = useState(null);
 
-   // for designation dropdown
-   const [isOpen, setOpen] = useState(false);
-   const [items, setItem] = useState(data);
-   const [selectedItem, setSelectedItem] = useState(null);
- 
-   const toggleDropdown = () => setOpen(!isOpen);
- 
-   const handleItemClick = (id) => {
-     selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
-   };
- 
-   // for number dropdown
-   const [isNumOpen, setNumOpen] = useState(false);
-   const [numItems, setNumItem] = useState(numberData);
-   const [selectedNumItem, setSelectedNumItem] = useState(null);
- 
-   const toggleNumDropdown = () => setNumOpen(!isNumOpen);
- 
-   const handleNumItemClick = (id) => {
-     selectedNumItem == id ? selectedNumItem(null) : setSelectedNumItem(id);
-   };
+  const toggleDropdown = () => setOpen(!isOpen);
+
+  const handleItemClick = (id) => {
+    selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
+  };
+
+  // for number dropdown
+  const [isNumOpen, setNumOpen] = useState(false);
+  const [numItems, setNumItem] = useState(numberData);
+  const [selectedNumItem, setSelectedNumItem] = useState(null);
+
+  const toggleNumDropdown = () => setNumOpen(!isNumOpen);
+
+  const handleNumItemClick = (id) => {
+    selectedNumItem == id ? selectedNumItem(null) : setSelectedNumItem(id);
+  };
 
   return (
     <section className="recruiter-section">
@@ -57,7 +56,7 @@ const RecruiterBanner = () => {
                     without consultants, and with 100% data privacy!
                   </p>{" "}
                   <div className="recruiter-banner-img">
-                  <img src={banner} alt="" />
+                    <img src={banner} alt="" />
                   </div>
                 </div>
               </div>
@@ -169,7 +168,7 @@ const RecruiterBanner = () => {
                               style={{
                                 fontSize: "17px",
                                 fontWeight: "bold",
-                                opacity: "0.7",
+                                opacity: "0.6",
                               }}
                             >
                               {selectedItem
@@ -203,7 +202,12 @@ const RecruiterBanner = () => {
                           ))}
                         </div>
                       </div>
-                      <label
+                      <label class="check-container">
+                      I would like to receive updates via whatsapp.
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                      {/* <label
                         className="el-checkbox schedule-checkbox is-checked"
                         style={{ color: "rgb(120, 120, 122)" }}
                       >
@@ -220,7 +224,7 @@ const RecruiterBanner = () => {
                           {" "}
                           I would like to receive updates via whatsapp.{" "}
                         </span>
-                      </label>{" "}
+                      </label>{" "} */}
                       <button
                         type="button"
                         className="el-button submitButton el-button--primary"

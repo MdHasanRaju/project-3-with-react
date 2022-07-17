@@ -17,14 +17,15 @@ h3.title-md {
   color: #121127;
 }
 .recruiter-banner-details p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 32px;
   font-weight: 400;
   color: grey;
 }
 .recruiter-banner-img {
   text-align: center;
-  padding-top: 45px;
+  width: 432px;
+  padding-top: 20px;
 }
 .Schedule-call {
   background: #fff;
@@ -42,7 +43,7 @@ h3.title-md {
 .schedule-a-call.contact-ue-form p.schedule-title {
   color: #333;
   font-family: Helvetica;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   font-style: normal;
   letter-spacing: normal;
@@ -187,7 +188,6 @@ h3.title-md {
 ::placeholder {
   opacity: 0.5;
 }
-
 .dropdown {
   width: 100%;
   border-radius: 2px;
@@ -200,12 +200,10 @@ h3.title-md {
 .number-div i {
   color: #0000009e;
 }
-
 .number_dropdown {
   width: 15%;
   height: 52px;
 }
-
 .dropdown-header {
   padding: 15px;
   cursor: pointer;
@@ -223,39 +221,104 @@ h3.title-md {
   position: relative;
   z-index: 100;
 }
-
 .dropdown-body.open {
   display: block;
 }
-
 .dropdown-item {
   padding: 10px;
 }
-
 .dropdown-item:hover {
   cursor: pointer;
 }
-
 .dropdown-item-dot {
   opacity: 0;
   color: #91a5be;
   transition: all 0.2s ease-in-out;
 }
-
 .dropdown-item-dot.selected {
   opacity: 1;
 }
-
+/* .selected{
+  color: green;
+} */
 .icon {
   font-size: 13px;
   color: #91a5be;
   transform: rotate(0deg);
   transition: all 0.2s ease-in-out;
 }
-
 .icon.open {
   transform: rotate(-180deg);
 }
+/* The container */
+.check-container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 16px;
+  width: 15px;
+  border-radius:2px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.check-container:hover input ~ .checkmark {
+  background-color: #eee;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-container input:checked ~ .checkmark {
+  background-color: #29e19e;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.check-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-container .checkmark:after {
+  left: 4px;
+  top: 2px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 
 /* recruiter-banner-section responsiveness with media query
 ------------------------------------------------------------ */
@@ -276,7 +339,8 @@ h3.title-md {
   .recruiter-banner-details p {
     width: auto;
     height: auto;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    margin-bottom: 12px;
     font-size: 16px;
   }
   .dropdown-header {
@@ -300,6 +364,20 @@ h3.title-md {
   }
   .schedule-a-call.contact-ue-form p.schedule-text {
     font-size: 16px;
+  }
+  .check-container {
+    padding-left: 20px;
+    font-size: 13.5px;
+  }
+  .checkmark { 
+    top: 4px; 
+    height: 13px;
+    width: 14px;
+  }
+  .check-container .checkmark:after { 
+    top: 0px;
+    width: 6px;
+    height: 9px;
   }
 }
 
@@ -345,9 +423,9 @@ h3.title-md {
   .dropdown-header {
     padding: 15px 7px;
   }
-  .dropdown-item { 
+  .dropdown-item {
     font-size: 14px;
-}
+  }
   .dropdown-header span,
   .dropdown-header i {
     font-size: 14px !important;
@@ -355,5 +433,8 @@ h3.title-md {
   .number_dropdown {
     background: #bbb;
     width: 20%;
+  }
+  .check-container {
+    font-size: 14px;
   }
 }
