@@ -84,7 +84,7 @@ const RecruiterBanner = () => {
                       <div className="input-container d-flex">
                         <div className="dropdown number_dropdown">
                           <div
-                            className="dropdown-header"
+                            className="dropdown-header number-div"
                             onClick={toggleNumDropdown}
                           >
                             <span
