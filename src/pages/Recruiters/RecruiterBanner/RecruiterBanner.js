@@ -1,5 +1,6 @@
 import React from "react";
 import "./RecruiterBanner.css";
+import banner from '../../../assets/images/recruiter-banner.e64debe.png';
 
 const RecruiterBanner = () => {
   return (
