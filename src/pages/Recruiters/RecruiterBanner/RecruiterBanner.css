@@ -338,8 +338,7 @@ h3.title-md {
   }
   .recruiter-banner-details p {
     width: auto;
-    height: auto;
-    /* margin-bottom: 20px; */
+    height: auto; 
     margin-bottom: 12px;
     font-size: 16px;
   }
@@ -350,7 +349,7 @@ h3.title-md {
     padding: 25px 7px;
   }
   .number_dropdown {
-    background: #bbb;
+    background: #bbbbbb6d;
     width: 20%;
   }
   .recruiter-banner-img {
@@ -431,7 +430,7 @@ h3.title-md {
     font-size: 14px !important;
   }
   .number_dropdown {
-    background: #bbb;
+    background: #bbbbbb6b;
     width: 20%;
   }
   .check-container {
