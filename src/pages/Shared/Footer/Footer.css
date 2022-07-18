@@ -348,9 +348,13 @@
       line-height: 21px;
       margin: 0 0 16px;
     }
+    .change-flage .dropdown { 
+      align-items: center;
+      justify-content: center;
+  }
     .change-flage {
-      text-align: center;
       margin-top: 10px;
+      text-align: center;
     }
     .change-flage a {
       padding-top: 13px;
