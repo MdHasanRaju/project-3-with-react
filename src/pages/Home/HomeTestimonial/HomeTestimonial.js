@@ -5,14 +5,53 @@ import younus from "../../../assets/images/younus.b7f5600.png";
 import akshay from "../../../assets/images/akshay-chavan.d2caaae.png";
 import ved from "../../../assets/images/ved-anand.18f252d.png";
 import rhea from "../../../assets/images/rhea-nair.9e446ff.png";
-import pravin from "../../../assets/images/pravin.7c49e32.png";
+import pravin from "../../../assets/images/pravin.7c49e32.png"; 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 const HomeTestimonial = () => {
+  var settings = {
+    dots: true,
+    infinite: false,
+    arrows: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite:  true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <section className="client-testimonial">
       <div className="container testimonial-carousel">
         <h3>Satisfied Clientele</h3>
-        <div className="row responsive ">
+        <div className="row ">
+        <Slider {...settings}>
           <div className="col-lg-12">
             <div
               tabIndex="-1"
@@ -229,6 +268,7 @@ const HomeTestimonial = () => {
               </div>
             </div>
           </div>
+          </Slider>
         </div>
       </div>
     </section>

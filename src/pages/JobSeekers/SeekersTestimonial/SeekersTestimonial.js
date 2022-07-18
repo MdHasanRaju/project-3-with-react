@@ -5,6 +5,8 @@ import pratyush from "../../../assets/images/pratyush.ebff6dd.png";
 import rudra from "../../../assets/images/rudra.5da3717.png";
 import ayush from "../../../assets/images/ayush.4f54877.png";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const SeekersTestimonial = () => {
   var settings = {

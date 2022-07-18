@@ -12,7 +12,7 @@
   line-height: normal;
   text-align: left;
   margin-bottom: 40px;
-  margin-left: -10px;
+  margin-left: -2px;
 }
 .testimonial-carousel { 
   padding-bottom: 18px;
@@ -114,13 +114,13 @@
   .client-testimonial h3 {
     font-size: 36px;
     margin-bottom: 30px;
-    margin-left: 0 !important;
+    margin-left: 10px !important;
   }
   .testimonial-carousel {
     padding-bottom: 18px;
   }
   .client-testimonial .slick-slide {
-    width: 372px !important;
+    width: 360px !important;
   }
   .testimonial-card {
     margin: 0 10px;
@@ -170,14 +170,11 @@
   .slick-slide {
     outline: none;
     width: 369px;
-  }
-  
+  } 
   .testimonial-card {
     width: 100% !important;
-  }
-  .testimonial-card {
-    margin-left: 22px !important;
-    height: auto;
+    margin-left: 10px !important; 
+    height: 440px;
     padding: 30px 20px;
   }
   .testimonial-card-user {
@@ -238,12 +235,10 @@
     width: 369px;
   }
   
-  .testimonial-card {
-    width: 95% !important;
-  }
-  .testimonial-card {
-    margin-left: 22px !important;
-    height: auto;
+  .testimonial-card { 
+    margin-left: 12px !important;
+    width: 95% !important; 
+    height: 440px;
     padding: 30px 20px;
   }
   .testimonial-card-user {
@@ -278,10 +273,11 @@
     font-size: 14px;
     text-align: center;
     line-height: 20px;
-  }
-
+  } 
   .slick-dots {
     bottom: -40px;
   }
 }
+
+
 /*------home-testimonial-section for mobile device end-----*/

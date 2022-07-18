@@ -98,6 +98,7 @@
     text-align: right;
   }
   .change-flage .dropdown {
+    background-color: transparent;
     display: inline-flex;
     align-items: center;
     justify-content: flex-end;
