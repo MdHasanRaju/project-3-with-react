@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import logo from "../../../assets/icons/hirect-logo.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -37,54 +37,81 @@ const Navbar = () => {
                 >
                   Home
                 </a> */}
-                <Link
+                <NavLink
                   to="/"
-                  className="nav-link menu-link-exact-active menu-link-active"
+                  className={({ isActive }) =>
+                    isActive ? "navlink-active" : "navlink-inactive"
+                  }
                 >
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
                 {/* <a href="/aboutus" className="nav-link" >
                   About us
-                </a> */}
-                <Link className="nav-link" to="/aboutus">
+                </a> */} 
+                <NavLink
+                  to="aboutus"
+                  className={({ isActive }) =>
+                    isActive ? "navlink-active" : "navlink-inactive"
+                  }
+                >
                   About us
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
                 {/* <a href="/features-in" className="nav-link" >
                   {" "}
                   Features
-                </a> */}
-                <Link className="nav-link" to="/features-in">
-                  Job Features
-                </Link>
+                </a> */} 
+                <NavLink
+                  to="features-in"
+                  className={({ isActive }) =>
+                    isActive ? "navlink-active" : "navlink-inactive"
+                  }
+                >
+                  Features
+                </NavLink>
               </li>
               <li className="nav-item">
                 {/* <a href="/connect" className="nav-link" >
                   Recruiters
-                </a> */}
-                <Link className="nav-link" to="/connect">
-                  Job Recruiters
-                </Link>
+                </a> */} 
+                <NavLink
+                  to="connect"
+                  className={({ isActive }) =>
+                    isActive ? "navlink-active" : "navlink-inactive"
+                  }
+                >
+                  Recruiters
+                </NavLink>
               </li>
               <li className="nav-item">
                 {/* <a href="/job-seeker" className="nav-link" >
                   Job Seekers
-                </a> */}
-                <Link className="nav-link" to="/job-seeker">
+                </a> */} 
+                <NavLink
+                  to="job-seeker"
+                  className={({ isActive }) =>
+                    isActive ? "navlink-active" : "navlink-inactive"
+                  }
+                >
                   Job Seekers
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
                 {/* <a href="https://www.hirect.in/blog/" className="nav-link">
                   {" "}
                   Blog
-                </a> */}
-                <Link className="nav-link" to="/https://www.hirect.in/blog/">
+                </a> */} 
+                <NavLink
+                  to="/blog"
+                  className={({ isActive }) =>
+                    isActive ? "navlink-active" : "navlink-inactive"
+                  }
+                >
                   Blog
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
                 <button
