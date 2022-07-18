@@ -348,8 +348,7 @@ h3.title-md {
   .common_input {
     padding: 25px 7px;
   }
-  .number_dropdown {
-    background: #bbbbbb6d;
+  .number_dropdown { 
     width: 20%;
   }
   .recruiter-banner-img {
@@ -429,8 +428,7 @@ h3.title-md {
   .dropdown-header i {
     font-size: 14px !important;
   }
-  .number_dropdown {
-    background: #bbbbbb6b;
+  .number_dropdown { 
     width: 20%;
   }
   .check-container {
