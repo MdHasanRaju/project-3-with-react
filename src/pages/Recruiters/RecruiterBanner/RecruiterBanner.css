@@ -307,7 +307,7 @@ h3.title-md {
 }
 
 /* Style the checkmark/indicator */
-.check-container .checkmark:after {
+/* .check-container .checkmark:after {
   left: 4px;
   top: 2px;
   width: 6px;
@@ -316,6 +316,16 @@ h3.title-md {
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} */
+
+.check-container .checkmark:after {
+  left: 5px;
+  top: 3px;
+  width: 4.3px;
+  height: 8px;
+  border: 3px solid #fff;
+  border-width: 0px 1.5px 1.5px 0px;
   transform: rotate(45deg);
 }
 

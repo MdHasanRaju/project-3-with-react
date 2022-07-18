@@ -22,23 +22,35 @@ const RecruiterBanner = () => {
   // for designation dropdown
   const [isOpen, setOpen] = useState(false);
   const [items, setItem] = useState(data);
-  const [selectedItem, setSelectedItem] = useState(null);
-
+  const [selectedItem, setSelectedItem] = useState(null); 
   const toggleDropdown = () => setOpen(!isOpen);
 
   const handleItemClick = (id) => {
-    selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
+    // selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
+    setOpen(!isOpen);
+    if (selectedItem == id) {
+      setSelectedItem(null);
+    } else {
+      setSelectedItem(id);
+    }
+    setOpen(!isOpen);
   };
 
   // for number dropdown
   const [isNumOpen, setNumOpen] = useState(false);
   const [numItems, setNumItem] = useState(numberData);
-  const [selectedNumItem, setSelectedNumItem] = useState(null);
-
+  const [selectedNumItem, setSelectedNumItem] = useState(null); 
   const toggleNumDropdown = () => setNumOpen(!isNumOpen);
 
   const handleNumItemClick = (id) => {
-    selectedNumItem == id ? selectedNumItem(null) : setSelectedNumItem(id);
+    // selectedNumItem == id ? selectedNumItem(null) : setSelectedNumItem(id);
+    setNumOpen(!isNumOpen);
+    if (selectedNumItem == id) {
+      selectedNumItem(null);
+    } else {
+      setSelectedNumItem(id);
+    }
+    setNumOpen(!isNumOpen);
   };
 
   return (
@@ -81,6 +93,7 @@ const RecruiterBanner = () => {
                         />
                       </div>{" "}
                       <div className="input-container d-flex">
+                        {/* number_dropdown */}
                         <div className="dropdown number_dropdown">
                           <div
                             className="dropdown-header number-div"
@@ -203,7 +216,7 @@ const RecruiterBanner = () => {
                         </div>
                       </div>
                       <label class="check-container">
-                      I would like to receive updates via whatsapp.
+                        I would like to receive updates via whatsapp.
                         <input type="checkbox" />
                         <span class="checkmark"></span>
                       </label>

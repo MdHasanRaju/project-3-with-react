@@ -5,9 +5,7 @@ import JobSeekers from "./pages/JobSeekers/JobSeekers/JobSeekers";
 import Navbar from "./pages/Shared/Navbar/Navbar";
 import AboutUs from "./pages/AboutUs/AboutUs/AboutUs";
 import Features from "./pages/Features/Features/Features";
-import Recruiters from "./pages/Recruiters/Recruiters/Recruiters";
-// import "~slick-carousel/slick/slick.css"; 
-// import "~slick-carousel/slick/slick-theme.css";
+import Recruiters from "./pages/Recruiters/Recruiters/Recruiters"; 
 
 function App() {
   return (
