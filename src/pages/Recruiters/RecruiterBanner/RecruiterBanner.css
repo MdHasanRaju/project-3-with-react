@@ -238,9 +238,7 @@ h3.title-md {
 .dropdown-item-dot.selected {
   opacity: 1;
 }
-.select-class{
-  color: green;
-}
+ 
 .icon {
   font-size: 13px;
   color: #91a5be;

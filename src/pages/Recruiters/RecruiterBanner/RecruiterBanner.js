@@ -18,24 +18,7 @@ const numberData = [
   { id: 3, label: "+44" },
 ];
 
-const RecruiterBanner = () => {
-  // for designation dropdown
-  const [isOpen, setOpen] = useState(false);
-  const [items, setItem] = useState(data);
-  const [selectedItem, setSelectedItem] = useState(null); 
-  const toggleDropdown = () => setOpen(!isOpen);
-
-  const handleItemClick = (id) => {
-    // selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
-    setOpen(!isOpen);
-    if (selectedItem == id) {
-      setSelectedItem(null);
-    } else {
-      setSelectedItem(id);
-    }
-    setOpen(!isOpen);
-  };
-
+const RecruiterBanner = () => { 
   // for number dropdown
   const [isNumOpen, setNumOpen] = useState(false);
   const [numItems, setNumItem] = useState(numberData);
@@ -52,6 +35,18 @@ const RecruiterBanner = () => {
     }
     setNumOpen(!isNumOpen);
   };
+
+
+  // for designations dropdown
+  const [isOpen, setOpen] = useState(false);
+  const [items, setItem] = useState(data);
+  const [selectedItem, setSelectedItem] = useState(null); 
+  const toggleDropdown = () => setOpen(!isOpen);
+
+  const handleItemClick = (id) => {
+    selectedItem == id ? setSelectedItem(selectedItem) : setSelectedItem(id);
+    setOpen(!isOpen);
+  }; 
 
   return (
     <section className="recruiter-section">
@@ -184,10 +179,16 @@ const RecruiterBanner = () => {
                                 opacity: "0.6",
                               }}
                             >
-                              {selectedItem
+                              {/* {selectedItem
                                 ? items.find((item) => item.id == selectedItem)
                                     .label
-                                : "Designation"}
+                                : "Designation"} */}
+
+                                {selectedItem
+                                && items.find(
+                                    (item) => item.id == selectedItem
+                                  ).label}
+                                  {!selectedItem && "Designation"}
                             </span>
                             <i
                               className={`fa fa-chevron-down icon ${
@@ -211,6 +212,7 @@ const RecruiterBanner = () => {
                                 •{" "}
                               </span>
                               {item.label}
+                               
                             </div>
                           ))}
                         </div>
