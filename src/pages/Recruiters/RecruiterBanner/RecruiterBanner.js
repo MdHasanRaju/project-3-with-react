@@ -32,8 +32,7 @@ const RecruiterBanner = () => {
       selectedNumItem(null);
     } else {
       setSelectedNumItem(id);
-    }
-    setNumOpen(!isNumOpen);
+    } 
   };
 
 
