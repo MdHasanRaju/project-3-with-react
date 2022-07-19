@@ -179,16 +179,10 @@ const RecruiterBanner = () => {
                                 opacity: "0.6",
                               }}
                             >
-                              {/* {selectedItem
+                              {selectedItem
                                 ? items.find((item) => item.id == selectedItem)
                                     .label
-                                : "Designation"} */}
-
-                                {selectedItem
-                                && items.find(
-                                    (item) => item.id == selectedItem
-                                  ).label}
-                                  {!selectedItem && "Designation"}
+                                : "Designation"} 
                             </span>
                             <i
                               className={`fa fa-chevron-down icon ${
