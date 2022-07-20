@@ -51,7 +51,7 @@ const SeekersTestimonial = () => {
           Job Seekers Love Hirect, <br />
           Here’s Why?
         </h3>
-        <div className="row ">
+        <div className="row">
           <Slider {...settings}>
             <div className="col-lg-12 col-md-12 seeker-column">
               <div

@@ -127,8 +127,7 @@
     line-height: 24px;
     margin: 0;
     padding-left: 12px;
-  }
-  
+  }  
   .change-flage .dropdown-content {
     display: none;
     position: absolute;
@@ -136,6 +135,7 @@
     top: -38px;
     right: -10px;
   }
+
   .change-flage .dropdown-content a {
     padding: 6px 10px;
     min-width: 155px;
@@ -155,6 +155,8 @@
     padding-left: 8px;
     line-height: normal;
   }
+
+  
   
   .el-dialog__wrapper.schedule-dialog {
     display: flex;
