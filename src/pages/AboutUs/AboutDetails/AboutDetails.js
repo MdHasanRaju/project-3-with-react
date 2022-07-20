@@ -71,7 +71,7 @@ const AboutDetails = () => {
                 </h3>{" "}
                 <p>
                   Job seekers
-                  <span className="text-black">apply to jobs online</span> expecting
+                  <span className="text-black"> apply to jobs online</span> expecting
                   a more seamless process. However, since the traditional hiring
                   process has not evolved, as per the dynamics of the Indian
                   startup ecosystem, it has not been able to connect the
