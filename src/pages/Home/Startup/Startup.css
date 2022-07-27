@@ -5,7 +5,8 @@
   padding-bottom: 80px;
 }
 .startups-logo {
-  background-color: rgba(109, 141, 173, 0.1);
+  /* background-color: rgba(109, 141, 173, 0.1); */
+  background-color: #181A1B !important;
   padding-top: 30px;
 }
 h3.title-sm {
@@ -13,7 +14,8 @@ h3.title-sm {
   margin-bottom: 40px;
   font-weight: 700;
   text-align: center;
-  color: #0e101a;
+  /* color: #0e101a; */
+  color: #fff;
   line-height: normal;
 }
 .startups-logo-list {

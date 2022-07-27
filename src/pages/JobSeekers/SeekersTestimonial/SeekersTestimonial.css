@@ -3,10 +3,12 @@
 .seeker-testimonial {
   padding: 60px 0 80px;
   background: #f9fbff;
+  background-color: #181A1B;
 }
 .seeker-testimonial h3 {
   font-size: 40px;
   color: #0e101a; 
+  color: #fff; 
   font-weight: 700;
   line-height: normal;
   text-align: left; 
@@ -35,6 +37,7 @@
   max-width: 100%;
 }
 .seeker-testimonial .testimonial-card1 h4 {
+  color: #fff;
   color: #000;
   font-size: 24px;
   font-weight: 700;

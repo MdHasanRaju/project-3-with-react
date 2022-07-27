@@ -3,11 +3,12 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 30px;
-    background-color: #333;
+    /* background-color: #333; */
+    background-color: #000;
   }
   
   .footer-logo img {
-    width: 172px;
+    width: 100px;
   }
   
   .footer-logo p,
@@ -235,6 +236,9 @@
       padding-top: 50px;
       padding-bottom: 25px;
     }
+    .footer-logo img {
+      width: 80px ;
+  }
     .footer-logo p {
       font-size: 14px;
       margin-top: 17px;
@@ -293,6 +297,9 @@
     .footer-logo {
       text-align: center;
     }
+    .footer-logo img {
+      width: 90px;
+  }
     .footer-logo p {
       font-size: 15px;
       line-height: 23px;

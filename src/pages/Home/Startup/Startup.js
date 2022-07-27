@@ -20,7 +20,7 @@ const Startup = () => {
             <div className="row">
               <div className="col-md-12">
                 <h3 className="title-sm">
-                  More than 150K+ startups trust Hirect for their recruitment
+                  More than 150K+ working companies trust for their recruitment
                   needs.
                 </h3>
                 <div className="jobs-list">

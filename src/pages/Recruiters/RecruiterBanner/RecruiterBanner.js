@@ -57,7 +57,7 @@ const RecruiterBanner = () => {
                 <div className="recruiter-banner-details">
                   <h3 className="title-md">Want to Hire Instantly?</h3>{" "}
                   <p>
-                    Hirect enables Founders/CXOs/Hiring Managers/Business Owners
+                    It enables Founders/CXOs/Hiring Managers/Business Owners
                     to chat directly with relevant, AI-filtered candidates,
                     without consultants, and with 100% data privacy!
                   </p>{" "}

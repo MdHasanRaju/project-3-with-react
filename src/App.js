@@ -6,6 +6,7 @@ import Navbar from "./pages/Shared/Navbar/Navbar";
 import AboutUs from "./pages/AboutUs/AboutUs/AboutUs";
 import Features from "./pages/Features/Features/Features";
 import Recruiters from "./pages/Recruiters/Recruiters/Recruiters"; 
+import Login from "./pages/Login/Login";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/features-in" element={<Features />} />
         <Route path="/connect" element={<Recruiters />} />
         <Route path="/job-seeker" element={<JobSeekers />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </div>
   );

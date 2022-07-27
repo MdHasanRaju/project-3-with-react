@@ -1,21 +1,24 @@
 /* scan-app-section
 ----------------------- */
 .scan-app {
-    background-color: #f2fcfa;
+    /* background-color: hsl(168, 63%, 97%); */
+    background-color: #181A1B;
     padding: 50px 0 0;
   }
   .scan-app .row {
     align-items: center;
   }
   .acan-code h2 {
-    color: #0e101a;
+    /* color: #0e101a; */
+    color: #fff;
     font-size: 32px;
     font-weight: 700;
     line-height: normal;
     margin-bottom: 30px;
   }
   .acan-code p {
-    color: #0e101a;
+    /* color: #0e101a; */
+    color: #fff;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;

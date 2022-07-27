@@ -3,6 +3,7 @@
  
 .direct-banner {
     padding: 198px 0 80px;
+    background-color: #181A1B;
   }
   .direct-banner .row {
     align-items: flex-end;
@@ -13,7 +14,8 @@
     font-size: 32px;
   } */
   .direct-banner h1 {
-    color: #0e101a;
+    /* color: #0e101a; */
+    color: #fff;
     font-size: 36px;
     font-weight: 700;
     font-style: normal;
@@ -41,7 +43,8 @@
     justify-content: space-between;
   }
   .direct-text h2 {
-    color: #0e101a;
+    /* color: #0e101a; */
+    color: #fff;
     font-size: 36px;
     font-weight: 700;
     font-style: normal;

@@ -18,7 +18,8 @@
 h3.title-md {
     font-size: 32px;
     margin-bottom: 30px;
-    color: #121127;
+    /* color: #121127; */
+    color: #fff;
 }
  
 .recruiter-startup-section .startups-logo {

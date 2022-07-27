@@ -41,10 +41,10 @@ const HireChat = () => {
               </div>
               <div className="col-md-5">
                 <div className="hire-now">
-                  <h2>Hire Direct with <br />Hirect</h2>
+                  <h2>Hire Direct <br /></h2>
                   <p>
                     AI Algorithm: The app connects 150K+ verified Startups with
-                    3M+ verified and relevant Jobseekers!
+                    3M+ verified and relevant Job seekers!
                   </p>
                   <a href="/connect" className="btn default-btn button-sm"
                     >Instant Hiring</a

@@ -2,11 +2,13 @@
 --------------------- */
 .client-testimonial {
   padding: 40px 0 70px;
-  background: #f1f4f7;
+  /* background: #f1f4f7; */
+  background: #181A1B;
 }
 
 .client-testimonial h3 {
-  color: #0e101a;
+  /* color: #0e101a; */
+  color: #fff;
   font-size: 40px;
   font-weight: 700;
   line-height: normal;
@@ -45,20 +47,43 @@
   height: 8px;
   border: 1px solid #000;
   padding: 0;
-  border-radius: 50%;
+  border-radius: 50%; 
 }
-.slick-dots li button:before {
+/* .slick-dots li button:before {
   width: 8px;
   height: 8px;
   font-size: 8px;
-  line-height: 10px;
-  opacity: 0;
+  line-height: 10px; 
+} */
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: #2ce2a2 !important;
 }
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .75 !important;
+  color: white !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
 .testimonial-card {
   padding: 25px;
   height: 450px ;
   margin-right: 40px;
   border-radius: 10px;
+  border: 1px solid #2ce2a2;
   background-color: #fff;
   width: 95% !important;
 }

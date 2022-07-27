@@ -45,7 +45,7 @@ const FeaturesAll = () => {
                   Quick Response
                 </h3>{" "}
                 <p>
-                  Hirect enables recruiters and candidates to connect directly -
+                  It enables recruiters and candidates to connect directly -
                   no emails and no waiting. As soon as a user (be it the hiring
                   manager or a job seeker) sends a message, they can see if it
                   was read by the other side and can receive a response
@@ -65,7 +65,7 @@ const FeaturesAll = () => {
                 </h3>{" "}
                 <div className="feature-left-content">
                   <p>
-                    Hirect's Intelligent AI-powered algorithm matches the job
+                    The App's Intelligent AI-powered algorithm matches the job
                     profiles with the right candidates. When a job is posted,
                     the hiring manager/CEO/Founders of Startups and SMEs will
                     receive a list of only relevant candidates. This eliminates
@@ -100,7 +100,7 @@ const FeaturesAll = () => {
                   Interviews
                 </h3>{" "}
                 <p>
-                  Hirect integrates voice and video calling into the app itself.
+                  It integrates voice and video calling into the app itself.
                   There is no need to switch platforms. Furthermore, this
                   ensures the security of the users, thus allowing 100%
                   integrity and data privacy during the hiring process.
@@ -120,7 +120,7 @@ const FeaturesAll = () => {
                 <p>
                   If the AI algorithm finds a matching candidate for a job
                   posted by a hiring manager/CEO/ Founder of a Startup or SME,
-                  Hirect instantly notifies them. By doing so, Hirect ensures
+                  The App instantly notifies them. By doing so, It ensures
                   that the startups do not miss out on any opportunities to grow
                   their employees.
                 </p>

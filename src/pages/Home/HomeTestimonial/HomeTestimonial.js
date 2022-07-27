@@ -79,9 +79,9 @@ const HomeTestimonial = () => {
                     </div>
                   </div>{" "}
                   <p>
-                    Recently we came across Hirect, the best job app to use.
-                    User-friendly and free of cost. Job seekers found on Hirect
-                    are very professional. I recommend this app because Hirect
+                    Recently we came across, the best job app to use.
+                    User-friendly and free of cost. Job seekers found on it
+                    are very professional. I recommend this app because it
                     takes only the valid and correct information from the
                     employers and then approves. The app has a great pool of
                     candidates. I Highly recommend this application.
@@ -114,7 +114,7 @@ const HomeTestimonial = () => {
                     </div>
                   </div>{" "}
                   <p>
-                    Hirect App is very convenient and easy-going. We were able
+                    The App is very convenient and easy-going. We were able
                     to set up the profile easily with the guide. The
                     registration process was quick. Thanks to this job
                     application, we were able to get candidates with a click,
@@ -152,10 +152,10 @@ const HomeTestimonial = () => {
                     </div>
                   </div>{" "}
                   <p>
-                    Hirect App is very user-friendly. I managed to set up my
+                    The App is very user-friendly. I managed to set up my
                     profile within a few minutes and see the candidates that
                     matched my job requirement instantly. I would highly
-                    recommend all recruiters to the user the Hirect App!
+                    recommend all recruiters to the user the App!
                   </p>
                 </div>
               </div>
@@ -188,7 +188,7 @@ const HomeTestimonial = () => {
                     </div>
                   </div>{" "}
                   <p>
-                    Hirect is the best job app to use as it enables direct chat
+                    It is the best job app to use as it enables direct chat
                     between recruiters and job seekers. Those seeking work or
                     even those looking to hire should check out this app. It's a
                     free application.
@@ -220,13 +220,13 @@ const HomeTestimonial = () => {
                     </div>
                   </div>{" "}
                   <p>
-                    Hirect India - Startup Jobs &amp; Hiring App is very user
+                    The App India - Startup Jobs &amp; Hiring App is very user
                     friendly. It is very easy to use. I set up my profile within
                     a few minutes and instantly saw candidates that matched my
                     job requirement. This application has a great pool of
                     candidates, and I was able to hire 2 candidates for my
                     company. I would highly recommend all recruiters to use the
-                    Hirect App.
+                    App.
                   </p>
                 </div>
               </div>
@@ -255,13 +255,13 @@ const HomeTestimonial = () => {
                     </div>
                   </div>{" "}
                   <p>
-                    Hirect app is a platform where the recruiter can hire the
+                    The app is a platform where the recruiter can hire the
                     candidate and jobseeker can get the job. Direct connectivity
                     between recruiter and jobseeker is possible with no
                     consultancy involved. All the recruiters are verified with
                     proper documents, and job seekers' profiles are verified.
                     The app enables direct chat between the recruiter and
-                    jobseeker. I recommend the Hirect app to everyone looking to
+                    jobseeker. I recommend the app to everyone looking to
                     hire or even for jobs.
                   </p>
                 </div>

@@ -2,6 +2,7 @@
 ----------------------------- */
 .recruiter-banner {
   padding: 180px 0 80px;
+  background-color: #181A1B;
 }
 .row {
   flex-direction: row;
@@ -20,7 +21,8 @@ h3.title-md {
   font-size: 18px;
   line-height: 32px;
   font-weight: 400;
-  color: grey;
+  /* color: grey; */
+  color: #e0d6d6;
 }
 .recruiter-banner-img {
   text-align: center;

@@ -2,6 +2,7 @@
 ------------------------------*/
 section.job-seeker {
   padding-bottom: 50px;
+  background-color: #181A1B;
 }
 section.job-seeker {
   padding-top: 118px;
@@ -24,7 +25,8 @@ h2.title-big {
   font-size: 40px;
   font-weight: 700;
   line-height: normal;
-  color: #0e101a;
+  /* color: #0e101a; */
+  color: #fff;
 }
 .job-seeker-banner-old .jobseeker-banner-img {
   max-width: 100%;
@@ -115,6 +117,7 @@ h3.title-md {
   font-weight: 700;
   line-height: normal;
   color: #121127;
+  color: #fff;
 }
 .button-sm {
   width: 174px;
@@ -176,6 +179,7 @@ h3.title-md {
   }
   h3.title-md {
     font-size: 23px !important;
+    color: #fff; 
     color: #121127; 
   }
   .building-profile-content button.btn {
@@ -211,6 +215,7 @@ h3.title-md.mb-65 {
 h3.title-md {
   font-size: 32px;
   color: #121127; 
+  color: #fff; 
 }
 
 /*  profile-building-section responsiveness with media query
@@ -285,7 +290,8 @@ h3.title-md {
   font-size: 32px; 
 }
 h3.title-md {
-  color: #121127;
+  /* color: #121127; */
+  color: #fff;
 }
 .connect-instantly-img,
 .verified-recruiters-img {

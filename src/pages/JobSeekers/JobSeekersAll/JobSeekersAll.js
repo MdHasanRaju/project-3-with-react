@@ -60,7 +60,7 @@ const JobSeekersAll = () => {
             <div className="col-md-6">
               <div className="connect-instantly-content">
                 <h3 className="title-md mb-65">
-                  Connect Instantly with Startup Founders and Get Hired.
+                  Connect Instantly with Working Companies Founders and Get Hired.
                 </h3>{" "}
                 <button type="button" className="btn default-btn button-sm">
                   Direct Chat
@@ -76,7 +76,7 @@ const JobSeekersAll = () => {
             <div className="col-md-6">
               <div className="verified-recruiters-content">
                 <h3 className="title-md mb-65">
-                  100% Verified Recruiters and 150K+ Startups trust Hirect.
+                  100% Verified Recruiters and 150K+ Working Companies trust.
                 </h3>{" "}
                 <button type="button" className="btn default-btn button-sm">
                   Get Started

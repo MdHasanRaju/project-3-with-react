@@ -3,6 +3,7 @@
 /* feature-list & one-1 */
 section.feature-section {
   padding: 188px 0 70px;
+  background-color: #181A1B;
 }
 .feature-list {
   padding-bottom: 15px;
@@ -22,7 +23,8 @@ section.feature-section {
 h3.title-md {
   font-size: 32px;
   margin-bottom: 30px;
-  color: #121127;
+  /* color: #121127; */
+  color: #fff;
 }
 .feature-content-img {
   text-align: center;
@@ -34,7 +36,7 @@ h3.title-md {
 }
 .feature-content p {
   margin-bottom: 15px;
-  color: grey;
+  color: rgba(233, 228, 228, 0.986);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;

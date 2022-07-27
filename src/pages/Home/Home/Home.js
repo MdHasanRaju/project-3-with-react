@@ -1,4 +1,6 @@
 import React from 'react'; 
+import DemoLogin from '../../Login/DemoLogin';
+import Login from '../../Login/Login';
 import Footer from '../../Shared/Footer/Footer';
 import ScanApp from '../../Shared/ScanApp/ScanApp';
 import Banner from '../Banner/Banner';
@@ -11,6 +13,8 @@ const Home = () => {
     return (
         <div>
             <Banner/>
+            {/* <Login/> */}
+            {/* <DemoLogin/> */}
             <HireChat/>
             <JobAvailable/>
             <Startup/>

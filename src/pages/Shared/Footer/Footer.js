@@ -4,6 +4,8 @@ import footerLogo from "../../../assets/icons/hirect-logo-footer.6af077d.png";
 import whatsappIcon from "../../../assets/icons/whatsapp-icon.05176f1.svg";
 import indiaFlag from "../../../assets/icons/country-flag.745924a.svg";
 import americaFlag from "../../../assets/icons/america-flag.png";
+import spider from "../../../assets/images/spider-removebg-preview3.png";
+import spiderLogo2 from "../../../assets/images/spider-removebg-preview.png";
 
 const Footer = () => {
     
@@ -15,7 +17,7 @@ const Footer = () => {
             <div className="footer-box">
               <div className="footer-logo">
                 <a href="/homepage" className="">
-                  <img src={footerLogo} alt="" />
+                  <img src={spiderLogo2} alt="" />
                 </a>
                 <p>
                   Hire Instantly for Your Startup. <br />
@@ -74,7 +76,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-md-4">
                 <div className="footer-link">
-                  <h4>Hirect</h4>
+                  <h4>App</h4>
                   <ul>
                     <li>
                       <a

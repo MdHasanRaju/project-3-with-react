@@ -1,7 +1,11 @@
 import React from "react";
 import "./Navbar.css";
-import logo from "../../../assets/icons/hirect-logo.png";
+import logo from "../../../assets/images/spider-green-removebg-preview.png";
+import spiderLogo from "../../../assets/images/spider-removebg-preview3.png";
+import spiderLogo2 from "../../../assets/images/spider-removebg-preview.png";
+import spiderLogo3 from "../../../assets/images/spider-purple-removebg-preview.png";
 import { Link, NavLink } from "react-router-dom";
+import Login from "../../Login/Login";
 
 const Navbar = () => {
   return (
@@ -13,9 +17,9 @@ const Navbar = () => {
             aria-current="page"
             className="navbar-brand menu-link-exact-active menu-link-active"
           >
-            <img src={logo} alt="" />
+            <img width="100px" height="80px" src={spiderLogo2} alt="" />
           </a>
-          <button
+          {/* <button
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarScroll"
@@ -25,7 +29,16 @@ const Navbar = () => {
             className="navbar-toggler"
           >
             <span className="navbar-toggler-icon"></span>
-          </button>
+          </button> */}
+          <button class="navbar-toggler ml-auto custom-toggler" 
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
           <div id="navbarScroll" className="collapse navbar-collapse">
             <ul className="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll nav-dropdown-link">
               <li className="nav-item">
@@ -46,10 +59,7 @@ const Navbar = () => {
                   Home
                 </NavLink>
               </li>
-              <li className="nav-item">
-                {/* <a href="/aboutus" className="nav-link" >
-                  About us
-                </a> */} 
+              {/* <li className="nav-item">
                 <NavLink
                   to="aboutus"
                   className={({ isActive }) =>
@@ -58,12 +68,8 @@ const Navbar = () => {
                 >
                   About us
                 </NavLink>
-              </li>
-              <li className="nav-item">
-                {/* <a href="/features-in" className="nav-link" >
-                  {" "}
-                  Features
-                </a> */} 
+              </li> */}
+              <li className="nav-item"> 
                 <NavLink
                   to="features-in"
                   className={({ isActive }) =>
@@ -73,10 +79,7 @@ const Navbar = () => {
                   Features
                 </NavLink>
               </li>
-              <li className="nav-item">
-                {/* <a href="/connect" className="nav-link" >
-                  Recruiters
-                </a> */} 
+              <li className="nav-item"> 
                 <NavLink
                   to="connect"
                   className={({ isActive }) =>
@@ -86,10 +89,7 @@ const Navbar = () => {
                   Recruiters
                 </NavLink>
               </li>
-              <li className="nav-item">
-                {/* <a href="/job-seeker" className="nav-link" >
-                  Job Seekers
-                </a> */} 
+              <li className="nav-item"> 
                 <NavLink
                   to="job-seeker"
                   className={({ isActive }) =>
@@ -99,27 +99,15 @@ const Navbar = () => {
                   Job Seekers
                 </NavLink>
               </li>
+
               <li className="nav-item">
-                {/* <a href="https://www.hirect.in/blog/" className="nav-link">
-                  {" "}
-                  Blog
-                </a> */} 
-                <NavLink
-                  to="/blog"
-                  className={({ isActive }) =>
-                    isActive ? "navlink-active" : "navlink-inactive"
-                  }
-                >
-                  Blog
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <button
+              <button
                   type="button"
+                  data-bs-toggle="modal" data-bs-target="#login-modal"
                   className="btn default-btn button-sm download-btn"
                 >
-                  Download App
-                </button>
+                  Login
+                </button> 
               </li>
               <li className="nav-item">
                 <button
@@ -151,6 +139,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      <Login></Login>
     </>
   );
 };

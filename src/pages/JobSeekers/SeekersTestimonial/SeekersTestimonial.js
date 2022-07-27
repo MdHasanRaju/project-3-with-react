@@ -48,7 +48,7 @@ const SeekersTestimonial = () => {
     <section className="seeker-testimonial ">
       <div className="container testimonial-carousel">
         <h3>
-          Job Seekers Love Hirect, <br />
+          Job Seekers Love the App, <br />
           Here’s Why?
         </h3>
         <div className="row">
@@ -72,7 +72,7 @@ const SeekersTestimonial = () => {
                     </div>{" "}
                     <h4>Palak Sharma</h4>{" "}
                     <p>
-                      There are many job opportunities available on Hirect. I
+                      There are many job opportunities available on it. I
                       was surfing through this app and found that it is helpful
                       for freshers, especially those searching for jobs.
                     </p>
@@ -100,7 +100,7 @@ const SeekersTestimonial = () => {
                     <h4>Pratyush R.</h4>{" "}
                     <p>
                       Now, it takes just a fraction of a second to find a
-                      respectful and relevant job. Thanks to the Hirect App,
+                      respectful and relevant job. Thanks to the App,
                       things are much more convenient and simplified for
                       millions of job seekers. I always recommend this App to my
                       friends because I believe it's better than other job
@@ -130,7 +130,7 @@ const SeekersTestimonial = () => {
                     <h4>Rudraksh Parihar</h4>{" "}
                     <p>
                       Are you looking for a job? Or are you looking to hire a
-                      team? Hirect makes it easier for you. You can directly
+                      team? It makes it easier for you. You can directly
                       chat with recruiters or with job seekers. How wonderful is
                       that, isn't it? All the recruiters are verified, and it is
                       free. Hire or get hired within a week. It is available on
@@ -159,7 +159,7 @@ const SeekersTestimonial = () => {
                     </div>{" "}
                     <h4>Ayush Parmar</h4>{" "}
                     <p>
-                      Hirect is an excellent app for searching for jobs, and I
+                      It is an excellent app for searching for jobs, and I
                       also love the options provided on the platform for the
                       Jobs. There are many opportunities available for Technical
                       Jobs. My favorite aspect of this website is that there are
@@ -189,7 +189,7 @@ const SeekersTestimonial = () => {
                     </div>{" "}
                     <h4>Palak Sharma</h4>{" "}
                     <p>
-                      There are many job opportunities available on Hirect. I
+                      There are many job opportunities available on it. I
                       was surfing through this app and found that it is helpful
                       for freshers, especially those searching for jobs.
                     </p>
@@ -217,7 +217,7 @@ const SeekersTestimonial = () => {
                     <h4>Pratyush R.</h4>{" "}
                     <p>
                       Now, it takes just a fraction of a second to find a
-                      respectful and relevant job. Thanks to the Hirect App,
+                      respectful and relevant job. Thanks to the App,
                       things are much more convenient and simplified for
                       millions of job seekers. I always recommend this App to my
                       friends because I believe it's better than other job

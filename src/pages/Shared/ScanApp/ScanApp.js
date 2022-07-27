@@ -14,10 +14,10 @@ const ScanApp = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="acan-code">
-                  <h2>Scan &amp; Download Hirect App!</h2>
+                  <h2>Scan &amp; Download the App!</h2>
                   <p>
                     Open the camera on your phone and scan the QR code<br />below
-                    to download Hirect App.
+                    to download the App.
                   </p>
                   <ul className="app-scan-button">
                     <li>

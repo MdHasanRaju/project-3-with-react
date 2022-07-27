@@ -9,7 +9,7 @@ const Banner = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1>Direct Hiring App for Startup <br />Ecosystem</h1>
+              <h1>Direct Hiring App</h1>
             </div>
             <div className="col-md-6">
               <div className="direct-Candidates first">
@@ -27,7 +27,7 @@ const Banner = () => {
             <div className="col-md-6">
               <div className="direct-Candidates two">
                 <div className="direct-text">
-                  <h2>Startups</h2>
+                  <h2>Working Companies</h2>
                   <a href="/connect" className="btn default-btn startup-btn">
                     Looking for Candidates
                   </a>
