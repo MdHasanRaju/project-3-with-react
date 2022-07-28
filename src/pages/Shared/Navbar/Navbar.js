@@ -99,6 +99,16 @@ const Navbar = () => {
                   Job Seekers
                 </NavLink>
               </li>
+              {/* <li className="nav-item"> 
+                <NavLink
+                  to="recruiter-dashboard"
+                  className={({ isActive }) =>
+                    isActive ? "navlink-active" : "navlink-inactive"
+                  }
+                >
+                  Recruiter Dashboard
+                </NavLink>
+              </li> */}
 
               <li className="nav-item">
               <button

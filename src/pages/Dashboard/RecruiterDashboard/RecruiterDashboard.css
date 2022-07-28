@@ -1,0 +1,98 @@
+.recruiter-section{
+    margin-top: 110px;
+}
+.dashboard-title-box h5{
+    margin-bottom: 0;
+}
+
+.user-icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    margin-top: 15px;
+    margin-left: 20px;
+    border: 1px solid #2ce2a2;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+.user-icon > i {
+    color: #2ce2a2; 
+    margin-top: 0;
+    font-size: 12px;
+    display: block; 
+}
+
+.question-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    margin-top: 28px;
+    position: relative;
+    right: 4px;
+    top: 5px; 
+    background: #94d6ec;
+    border-radius: 50%;
+}
+.question-icon i {
+    font-size: 12px;
+}
+
+.dashboard-catalog-title div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    top: 28px;
+    background: #94d6ec;
+    border-radius: 50%;
+    left: -12px;
+}
+
+.dashboard-catalog-title i {
+    top: 30px;
+    left: -6px;
+    font-size: 12px;
+}
+.browse-project-btn {
+    color: #2ce2a2;
+    border-radius: 16px;
+    background: black;
+    padding: 4px 16px;
+    border: 1px solid #2ce2a2;
+}
+
+.post-job-btn{
+    color: white;
+    border-radius: 16px;
+    background: #2ce2a2;
+    padding: 4px 16px;
+    border: 1px solid #2ce2a2;
+}
+
+.ellipsis-icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex; 
+    border: 1px solid #2ce2a2;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.span-new {
+    color: lightskyblue;
+}
+
+.span-number {
+    color: #2ce2a2;
+}
+
+.ellipsis-icon i{
+    color: lightgray;
+}

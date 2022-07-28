@@ -7,6 +7,7 @@ import AboutUs from "./pages/AboutUs/AboutUs/AboutUs";
 import Features from "./pages/Features/Features/Features";
 import Recruiters from "./pages/Recruiters/Recruiters/Recruiters"; 
 import Login from "./pages/Login/Login";
+import RecruiterDashboard from "./pages/Dashboard/RecruiterDashboard/RecruiterDashboard";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/connect" element={<Recruiters />} />
         <Route path="/job-seeker" element={<JobSeekers />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/recruiter-dashboard" element={<RecruiterDashboard />} />
       </Routes>
     </div>
   );
