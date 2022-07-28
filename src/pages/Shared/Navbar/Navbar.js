@@ -119,7 +119,7 @@ const Navbar = () => {
                   Login
                 </button> 
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <button
                   type="button"
                   className="btn bordered-btn button-sm watch-demobtn"
@@ -144,7 +144,7 @@ const Navbar = () => {
                     </svg>
                   </span>
                 </button>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
