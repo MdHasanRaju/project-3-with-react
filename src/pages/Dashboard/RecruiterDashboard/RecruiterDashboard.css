@@ -1,10 +1,13 @@
 .recruiter-section{
     margin-top: 110px;
+    background-color: #181A1B;
+}
+.div-bg{
+    background-color: black;
 }
 .dashboard-title-box h5{
     margin-bottom: 0;
 }
-
 .user-icon {
     height: 30px;
     width: 30px;
@@ -22,8 +25,7 @@
     margin-top: 0;
     font-size: 12px;
     display: block; 
-}
-
+} 
 .question-icon {
     display: flex;
     justify-content: center;
@@ -39,8 +41,7 @@
 }
 .question-icon i {
     font-size: 12px;
-}
-
+} 
 .dashboard-catalog-title div {
     display: flex;
     justify-content: center;
@@ -89,10 +90,52 @@
     color: lightskyblue;
 }
 
-.span-number {
+.green-text {
     color: #2ce2a2;
 }
 
 .ellipsis-icon i{
     color: lightgray;
+}
+
+/* .slick-prev{
+    left: 18px;
+}
+.slick-next {
+    right: 18px;
+} */
+.slick-prev {
+    left: -5px;
+}
+.slick-next {
+    right: -5px;
+}
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-slide img {
+    display: block;
+    margin: auto; 
 }
