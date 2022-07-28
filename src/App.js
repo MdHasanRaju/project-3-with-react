@@ -17,8 +17,7 @@ function App() {
       {/* <Navbar /> */} 
       {location.pathname === '/recruiter-dashboard' ? null : <Navbar />}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/" element={<Home />} /> 
         <Route path="/features-in" element={<Features />} />
         <Route path="/connect" element={<Recruiters />} />
         <Route path="/job-seeker" element={<JobSeekers />} />

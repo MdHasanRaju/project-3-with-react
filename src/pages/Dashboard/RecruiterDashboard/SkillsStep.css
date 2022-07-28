@@ -1,0 +1,61 @@
+.has-search .form-control {
+    padding-left: 2.375rem;
+  }
+  
+  .has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+  }
+  
+  .skill-text i{
+      color: #000;
+      background-color: #88b535;
+      font-size: 14px;
+      border-radius: 40px;
+      padding: 3px;
+      margin-right: 7px;
+  }
+  
+  .btn-remove-style {
+      background-color: #1F3643;
+      padding: 4px 7px;
+      color: #fff;
+      font-size: 12px;
+  }
+  
+  .btn-remove-style:hover {
+      color: #fff;
+  }
+  
+  .popular-skill-title{
+      display: flex;
+  }
+  
+  .btn-add{
+    background-color: #242426;
+    color: antiquewhite;
+      padding: 4px 7px;
+      font-size: 12px;
+  }
+  .btn-add:hover {
+    background-color: #28282c;
+    color: rgba(250, 235, 215, 0.884);
+      padding: 4px 7px;
+      font-size: 12px;
+  }
+  
+  .btn-add i{
+      color: antiquewhite;
+          font-size: 13px;
+  }
+
+  .btn-text:hover{
+    color: #88b535;
+  }

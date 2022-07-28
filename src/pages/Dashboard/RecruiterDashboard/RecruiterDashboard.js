@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import slide1 from "../../../assets/images/instant-chat-ceo1.e16699e.png";
 import slide2 from "../../../assets/images/recruiter-banner.e64debe.jpg";
+import JobCategoryStep from "./JobCategoryStep";
+import SkillsStep from "./SkillsStep";
 
 const RecruiterDashboard = () => {
   var settings = {
@@ -41,6 +43,7 @@ const RecruiterDashboard = () => {
   };
 
   return (
+    <>
     <section className="recruiter-section py-5 ">
       <div className="container">
         <div className="row mb-4">
@@ -245,6 +248,10 @@ const RecruiterDashboard = () => {
         </div>
       </div>
     </section>
+    
+    <JobCategoryStep />
+      <SkillsStep />
+    </>
   );
 };
 
