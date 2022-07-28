@@ -5,14 +5,17 @@ import JobSeekers from "./pages/JobSeekers/JobSeekers/JobSeekers";
 import Navbar from "./pages/Shared/Navbar/Navbar";
 import AboutUs from "./pages/AboutUs/AboutUs/AboutUs";
 import Features from "./pages/Features/Features/Features";
-import Recruiters from "./pages/Recruiters/Recruiters/Recruiters"; 
+import Recruiters from "./pages/Recruiters/Recruiters/Recruiters";
 import Login from "./pages/Login/Login";
 import RecruiterDashboard from "./pages/Dashboard/RecruiterDashboard/RecruiterDashboard";
+import { useLocation } from "react-router-dom";
 
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
-      <Navbar/>
+      {/* <Navbar /> */} 
+      {location.pathname === '/recruiter-dashboard' ? null : <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
