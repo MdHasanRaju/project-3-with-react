@@ -3,7 +3,7 @@ import "./JobCategoryStep.css";
 
 const JobCategoryStep = () => {
   return (
-    <section className="container mt-5 p-3">
+    <section className="container p-3">
       <div className="row">
         <div className="col-md-6 p-5 step-left">
           <div className="progress-bar rounded-pill">
@@ -16,7 +16,7 @@ const JobCategoryStep = () => {
             <span className="text-green">Title</span>
             <span>Skills</span>
             <span>Scope</span>
-            <span>Budget</span>
+            <span>Salary</span>
           </div>
           <div className="step1-title">
             <h2 className=" text-white mt-5 fs-1 w-90">

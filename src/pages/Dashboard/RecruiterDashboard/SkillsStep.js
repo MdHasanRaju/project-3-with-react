@@ -13,13 +13,13 @@ const SkillsStep = () => {
             />
           </div>
           <div className="progress-bar-content d-flex justify-content-between mt-2">
-            <span>Title</span>
+            <span className="text-green">Title</span>
             <span className="text-green">Skills</span>
             <span>Scope</span>
-            <span>Budget</span>
+            <span>Salary</span>
           </div>
           <div className="step1-title">
-            <h2 className=" text-white mt-5 fs-1 w-90">
+            <h2 className=" text-white mt-5 fs-2 w-90">
               What are the main skill required for your work?
             </h2>
           </div>

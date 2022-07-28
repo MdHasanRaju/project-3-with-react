@@ -2,6 +2,9 @@
     margin-top: 110px;
     background-color: #0a1014;
 }
+.recruiter-bg{
+    background-color: #0a1014;
+}
 .div-bg{
     background-color: black;
 }
@@ -15,13 +18,13 @@
     display: flex;
     margin-top: 15px;
     margin-left: 20px;
-    border: 1px solid #2ce2a2;
+    border: 1px solid #88b535;
     background-color: black;
     align-items: center;
     justify-content: center;
 }
 .user-icon > i {
-    color: #2ce2a2; 
+    color: #88b535; 
     margin-top: 0;
     font-size: 12px;
     display: block; 
@@ -60,19 +63,19 @@
     font-size: 12px;
 }
 .browse-project-btn {
-    color: #2ce2a2;
+    color: #88b535;
     border-radius: 16px;
     background: black;
     padding: 4px 16px;
-    border: 1px solid #2ce2a2;
+    border: 1px solid #88b535;
 }
 
 .post-job-btn{
     color: white;
     border-radius: 18px;
-    background: #2ce2a2;
+    background: #88b535;
     padding: 4px 16px;
-    border: 1px solid #2ce2a2;
+    border: 1px solid #88b535;
 }
 
 .ellipsis-icon{
@@ -80,7 +83,7 @@
     width: 30px;
     border-radius: 50%;
     display: flex; 
-    border: 1px solid #2ce2a2;
+    border: 1px solid #88b535;
     background-color: black;
     align-items: center;
     justify-content: center;
@@ -91,7 +94,7 @@
 }
 
 .green-text {
-    color: #2ce2a2;
+    color: #88b535;
 }
 
 .ellipsis-icon i{
@@ -142,14 +145,16 @@
     top: -2px;
     left: -1px;
     position: relative;
-    background-color: #2ce2a2;
+    background-color: #88b535;
     content: '';
     display: inline-block;
     visibility: visible;
     border: 2px solid black;
-    outline: 2px solid #2ce2a2;
+    outline: 2px solid #88b535;
 }
  
+/* 88b535 */
+/* 2ce2a2 */
 
 option { 
     background-color: #0a1014; 

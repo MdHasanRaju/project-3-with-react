@@ -7,6 +7,8 @@ import slide1 from "../../../assets/images/instant-chat-ceo1.e16699e.png";
 import slide2 from "../../../assets/images/recruiter-banner.e64debe.jpg";
 import JobCategoryStep from "./JobCategoryStep";
 import SkillsStep from "./SkillsStep";
+import ScopeStep from "./ScopeStep";
+import SalaryStep from "./SalaryStep";
 
 const RecruiterDashboard = () => {
   var settings = {
@@ -247,10 +249,13 @@ const RecruiterDashboard = () => {
           </div>
         </div>
       </div>
-    </section>
-    
+    </section> 
+    <div className="recruiter-bg">
     <JobCategoryStep />
       <SkillsStep />
+      <ScopeStep/>
+      <SalaryStep/>
+    </div>
     </>
   );
 };
