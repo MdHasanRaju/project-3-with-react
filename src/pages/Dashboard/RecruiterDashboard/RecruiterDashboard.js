@@ -228,7 +228,7 @@ const RecruiterDashboard = () => {
                 <br />
               </div>
               <div className="mt-4 px-3 py-2"  >
-              <select class="custom-select div-bg border border-secondary rounded text-light px-2 py-1" style={{ width: "450px" }}>
+              <select class="custom-select div-bg border border-secondary rounded text-light px-2 py-1" show-tick style={{ width: "450px" }}>
                 <option>Create an Al engine for ATS</option>
                 <option>Burger</option>
                 <option>Ice Cream</option>
@@ -237,7 +237,7 @@ const RecruiterDashboard = () => {
               </div>
               <hr className="bg-secondary" />
               <div className="d-flex justify-content-end px-3 py-2">
-                <button className="btn btn-text text-light">Cancel</button>
+                <button className="btn btn-text text-light me-2">Cancel</button>
                 <button className="post-job-btn">Continue</button>
               </div>
             </div>
