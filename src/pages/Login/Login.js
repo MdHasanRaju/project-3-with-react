@@ -46,9 +46,8 @@ const Login = () => {
                 name="fav_language"
                 value="candidate"
               />
-              <label for="candidate" className="ms-2">
-                {" "}
-                Candidate{" "}
+              <label for="candidate" className="ms-2"> 
+                Candidate 
               </label>
               <br />
               <input
@@ -58,9 +57,8 @@ const Login = () => {
                 name="fav_language"
                 value="Recruiter"
               />
-              <label for="Recruiter" className="ms-2">
-                {" "}
-                Recruiter{" "}
+              <label for="Recruiter" className="ms-2"> 
+                Recruiter 
               </label>
             </div>
             {/* <h5 id="#myModalLabel">Login to Your Account</h5> */}

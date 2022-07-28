@@ -140,6 +140,7 @@ const RecruiterDashboard = () => {
                 </p>
                 <p>We think you might like help with</p>
               </div>
+              {/* slider */}
               <div>
                 <div className="row px-4">
                   <Slider {...settings}>
@@ -193,6 +194,51 @@ const RecruiterDashboard = () => {
                     </div>
                   </Slider>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="row mt-4 getting-started">
+          <div className="col-lg-12 ">
+            <div className="text-light border border-secondary rounded">
+              <h5 className="px-3 pt-3 pb-0">Getting started</h5>
+              <hr className="bg-secondary" />
+              <div className="px-3 py-2">
+                <h6>What would you like to do?</h6>
+                <input
+                  type="radio"
+                  id="create"
+                  name="fav_language"
+                  value="HTML"
+                />
+                <label for="create" className="ms-2">
+                  Create a new job post
+                </label>
+                <br />
+                <input
+                  type="radio"
+                  id="Reuse"
+                  name="fav_language"
+                  value="CSS"
+                />
+                <label for="Reuse" className="ms-2">
+                  Reuse a preview job post{" "}
+                </label>
+                <br />
+              </div>
+              <div className="mt-4 px-3 py-2"  >
+              <select class="custom-select div-bg border border-secondary rounded text-light px-2 py-1" style={{ width: "450px" }}>
+                <option>Create an Al engine for ATS</option>
+                <option>Burger</option>
+                <option>Ice Cream</option>
+                <option>Fried Potatoes</option>
+              </select>
+              </div>
+              <hr className="bg-secondary" />
+              <div className="d-flex justify-content-end px-3 py-2">
+                <button className="btn btn-text text-light">Cancel</button>
+                <button className="post-job-btn">Continue</button>
               </div>
             </div>
           </div>
