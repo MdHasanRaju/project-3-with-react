@@ -255,7 +255,7 @@ const RecruiterDashboard = () => {
     <JobCategoryStep />
       <SkillsStep />
       <ScopeStep/>
-      <SalaryStep/>
+      {/* <SalaryStep/> */}
     </div>
     </>
   );
