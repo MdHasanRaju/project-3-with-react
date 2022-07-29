@@ -17,15 +17,7 @@ const Login = () => {
   return (
     <div className="login container">
       {/* <button type="button" data-bs-toggle="modal" data-bs-target="#login-modal">Login</button> */}
-      <button
-        type="button"
-        class="btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#staticBackdrop"
-      >
-        Launch static backdrop modal
-      </button>
-
+       
       <div
         class="modal fade"
         id="login-modal"
@@ -37,6 +29,7 @@ const Login = () => {
       >
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
+            <div className="modal-body">
             <div className="">
               <h5 id="#myModalLabel">Login As:</h5>
               <input
@@ -46,8 +39,8 @@ const Login = () => {
                 name="fav_language"
                 value="candidate"
               />
-              <label for="candidate" className="ms-2"> 
-                Candidate 
+              <label for="candidate" className="ms-2">
+                Candidate
               </label>
               <br />
               <input
@@ -57,21 +50,20 @@ const Login = () => {
                 name="fav_language"
                 value="Recruiter"
               />
-              <label for="Recruiter" className="ms-2"> 
-                Recruiter 
+              <label for="Recruiter" className="ms-2">
+                Recruiter
               </label>
             </div>
             {/* <h5 id="#myModalLabel">Login to Your Account</h5> */}
-            <br /> 
-            {recruiter ? (
-              <CandidateLogin/>
-            ) : (
-              <RecruiterLogin/>
-            )}
+            <br />
+            {recruiter ? <CandidateLogin /> : <RecruiterLogin />}
 
             {/* <div class="login-help">
               <a href="#">Join</a> - <a href="#">Forgot Password</a>
             </div> */}
+            
+            </div>
+           
           </div>
         </div>
       </div>

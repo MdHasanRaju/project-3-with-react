@@ -11,6 +11,7 @@ import ScopeStep from "./ScopeStep";
 import SalaryStep from "./SalaryStep";
 
 const RecruiterDashboard = () => {
+
   var settings = {
     dots: false,
     infinite: false,
@@ -46,7 +47,7 @@ const RecruiterDashboard = () => {
 
   return (
     <>
-    <section className="recruiter-section py-5 ">
+    <section className="recruiter-dashboard py-5 ">
       <div className="container">
         <div className="row mb-4">
           <div className="col-lg-7 d-flex">

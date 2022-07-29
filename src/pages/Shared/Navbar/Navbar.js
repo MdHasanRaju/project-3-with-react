@@ -5,7 +5,7 @@ import spiderLogo from "../../../assets/images/spider-removebg-preview3.png";
 import spiderLogo2 from "../../../assets/images/spider-removebg-preview.png";
 import spiderLogo3 from "../../../assets/images/spider-purple-removebg-preview.png";
 import { Link, NavLink } from "react-router-dom";
-import Login from "../../Login/Login";
+import Login from "../../Login/Login"; 
 
 const Navbar = () => {
   return (
@@ -58,17 +58,7 @@ const Navbar = () => {
                 >
                   Home
                 </NavLink>
-              </li>
-              {/* <li className="nav-item">
-                <NavLink
-                  to="aboutus"
-                  className={({ isActive }) =>
-                    isActive ? "navlink-active" : "navlink-inactive"
-                  }
-                >
-                  About us
-                </NavLink>
-              </li> */}
+              </li> 
               <li className="nav-item"> 
                 <NavLink
                   to="features-in"
@@ -123,7 +113,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <Login></Login>
+      <Login></Login> 
     </>
   );
 };
