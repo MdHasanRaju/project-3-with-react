@@ -33,7 +33,7 @@ const JobCategoryStep = () => {
           <h5 className="text-white m-top">Write a title for your job post</h5>
           <input
             type="text"
-            value="Create an AI engines for ATS"
+            defaultValue="Create an AI engines for ATS"
             className="w-100 text-small input rounded mt-2 mb-4"
           />
           <p className="text-green">
