@@ -54,6 +54,7 @@ const SalaryStep = () => {
                 value="0 to 15 LPA"
                 id="zeroToFifteen"
                 className="category"
+                defaultChecked
               />
               <label for="zeroToFifteen" className="">
                 {" "}

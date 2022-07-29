@@ -29,9 +29,9 @@ const RecruiterDashboard = () => {
     setTitleStep(true)
   }
 
-  const skillsStepBtn = () => {
-    setSkillsStep(true)
-  }
+  // const skillsStepBtn = () => {
+  //   setSkillsStep(true)
+  // }
  
 
   var settings = {

@@ -1,10 +1,11 @@
 import React from 'react';
 import "./ScopeStep.css";
+import SalaryStep from './SalaryStep';
 
 const ScopeStep = ({setSalaryStep}) => {
 
   const handleSalaryBtn = () => {
-    setSalaryStep(false);
+    setSalaryStep(true); 
   }
     return (
         <section className="container p-3">
@@ -42,6 +43,7 @@ const ScopeStep = ({setSalaryStep}) => {
                 value="1 to 3 months"
                 id="oneToThree"
                 className="category"
+                defaultChecked
               />
               <label for="oneToThree" className="">
                 {" "}
@@ -84,6 +86,7 @@ const ScopeStep = ({setSalaryStep}) => {
                 value="Beginner"
                 id="Beginner"
                 className="category"
+                defaultChecked
               />
               <label for="Beginner" className="">
                 {" "}
