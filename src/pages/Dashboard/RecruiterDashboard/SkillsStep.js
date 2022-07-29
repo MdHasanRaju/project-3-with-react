@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SkillsStep.css";
 
-const SkillsStep = () => {
+const SkillsStep = ({setScopeStep}) => { 
+
+  const handleScopeBtn = () => {
+    setScopeStep(true)
+  }
   return (
     <section className="container mt-5 p-3">
       <div className="row">
@@ -128,7 +132,7 @@ const SkillsStep = () => {
             <button className="btn outlined-button rounded-pill me-4">
               Back
             </button>
-            <button className="btn btn-green rounded-pill">Next: Scope</button>
+            <button onClick={handleScopeBtn} className="btn btn-green rounded-pill">Next: Scope</button>
           </div>
         </div>
       </div>

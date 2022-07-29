@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./JobCategoryStep.css";
 
-const JobCategoryStep = () => {
+const JobCategoryStep = ({setSkillsStep}) => {
+  // const [jobStep, setJobStep] = useState(false)
+   
+  const jobCategoryBtn = () => {
+    // setJobStep(true);
+    setSkillsStep(true);
+  }
+
   return (
     <section className="container p-3">
       <div className="row">
@@ -41,15 +48,18 @@ const JobCategoryStep = () => {
           </p>
           <h6 className="text-white mb-3">Job Category</h6>
           <div className="job-category d-flex flex-column text-white">
+          
+          
             <div className="mb-3">
               <input
                 type="radio"
                 name="category"
-                value="Machine Learning"
-                id="MacineLearning"
+                value="MachineLearning"
+                id="MachineLearning"
                 className="category"
+                defaultChecked
               />
-              <label for="MacineLearning" className="">
+              <label for="MachineLearning" className="">
                 {" "}
                 Machine Learning
               </label>
@@ -59,8 +69,8 @@ const JobCategoryStep = () => {
                 type="radio"
                 name="category"
                 id="GraphicDesign"
-                value="Graphic Design"
-                className="category"
+                value="GraphicDesign"
+                className="category" 
               />
               <label for="GraphicDesign" className="">
                 {" "}
@@ -71,7 +81,7 @@ const JobCategoryStep = () => {
               <input
                 type="radio"
                 name="category"
-                value="Full Stack Development"
+                value="FullStackDevelopment"
                 id="FullStackDevelopment"
                 className="category"
               />
@@ -88,7 +98,7 @@ const JobCategoryStep = () => {
             <button className="btn outlined-button rounded-pill me-4">
               Back
             </button>
-            <button className="btn btn-green rounded-pill">Next: Skills</button>
+            <button onClick={jobCategoryBtn} className="btn btn-green rounded-pill">Next: Skills</button>
           </div>
         </div>
       </div>

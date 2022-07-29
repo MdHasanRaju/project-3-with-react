@@ -1,7 +1,11 @@
 import React from 'react';
 import "./ScopeStep.css";
 
-const ScopeStep = () => {
+const ScopeStep = ({setSalaryStep}) => {
+
+  const handleSalaryBtn = () => {
+    setSalaryStep(false);
+  }
     return (
         <section className="container p-3">
       <div className="row">
@@ -120,7 +124,7 @@ const ScopeStep = () => {
             <button className="btn outlined-button rounded-pill me-4">
               Back
             </button>
-            <button className="btn btn-green rounded-pill">Next: Salary</button>
+            <button onClick={handleSalaryBtn} className="btn btn-green rounded-pill">Next: Salary</button>
           </div>
         </div>
       </div>

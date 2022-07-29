@@ -9,20 +9,30 @@ import JobCategoryStep from "./JobCategoryStep";
 import SkillsStep from "./SkillsStep";
 import ScopeStep from "./ScopeStep";
 import SalaryStep from "./SalaryStep";
+import {  useNavigate } from 'react-router-dom';
 
 const RecruiterDashboard = () => {
   const [greetingDiv, setGreetingDiv] = useState(false);
-  const [TitleDiv, setTitleDiv] = useState(false);
+  const [titleStep, setTitleStep] = useState(false);
+  const [skillsStep, setSkillsStep] = useState(false);
+  const [scopeStep, setScopeStep] = useState(false);
+  const [salaryScope, setSalaryStep] = useState(false);
+  const navigate = useNavigate();
 
   const handlePostAJob = () => {
     setGreetingDiv(true)
+    navigate("/recruiter-dashboard#greeting")
+
   }
   
   const getStartedContinueBtn = () => {
-    setTitleDiv(true)
+    setTitleStep(true)
   }
 
-
+  const skillsStepBtn = () => {
+    setSkillsStep(true)
+  }
+ 
 
   var settings = {
     dots: false,
@@ -221,7 +231,7 @@ const RecruiterDashboard = () => {
 
         {/* greeting-div */}
         {
-          greetingDiv && <div className="row mt-4 getting-started">
+          greetingDiv && <div id="greeting" className="row mt-4 getting-started">
           <div className="col-lg-12 ">
             <div className="text-light border border-secondary rounded">
               <h5 className="px-3 pt-3 pb-0">Getting started</h5>
@@ -233,7 +243,7 @@ const RecruiterDashboard = () => {
                   id="create"
                   name="fav_language"
                   value="HTML"
-                  checked
+                  defaultChecked
                 />
                 <label for="create" className="ms-2">
                   Create a new job post
@@ -279,10 +289,10 @@ const RecruiterDashboard = () => {
         </div>
       </section>
       <div className="recruiter-bg">
-        <JobCategoryStep />
-        <SkillsStep />
-        <ScopeStep />
-        <SalaryStep/>
+        {titleStep && <JobCategoryStep setSkillsStep={setSkillsStep} />} 
+        {skillsStep && <SkillsStep setScopeStep={setScopeStep}/>}
+        {scopeStep && <ScopeStep setSalaryStep={setSalaryStep}/>}
+        {salaryScope && <SalaryStep/>}
       </div>
     </>
   );
