@@ -1,5 +1,10 @@
 .recruiter-dashboard {
   background-color: #0a1014;
+  /* height: 100%; */
+  /* height: 100vh; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 }
 .recruiter-bg {
   background-color: #0a1014;

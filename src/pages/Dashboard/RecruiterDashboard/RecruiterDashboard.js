@@ -10,20 +10,22 @@ import SkillsStep from "./SkillsStep";
 import ScopeStep from "./ScopeStep";
 import SalaryStep from "./SalaryStep";
 import {  useNavigate } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
-import { Redirect } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link'; 
 
 
 const RecruiterDashboard = () => {
+  const [dashboardBanner, setDashboardBanner] = useState(true);
   const [getStartedDiv, setGetStartedDiv] = useState(false);
   const [titleStep, setTitleStep] = useState(false);
   const [skillsStep, setSkillsStep] = useState(false);
   const [scopeStep, setScopeStep] = useState(false);
   const [salaryScope, setSalaryStep] = useState(false);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const handlePostAJob = () => {
+    setDashboardBanner(false)
     setGetStartedDiv(true)   
+    console.log("before Click",dashboardBanner); 
   }
   
   const getStartedContinueBtn = () => {
@@ -76,7 +78,8 @@ const RecruiterDashboard = () => {
   return (
     <>
       <section className="recruiter-dashboard py-5 ">
-        <div className="container">
+        <div className="container"> 
+        {dashboardBanner &&
           <div className="row mb-4">
             <div className="col-lg-7 d-flex">
               <div className="dashboard-title-box">
@@ -100,11 +103,12 @@ const RecruiterDashboard = () => {
                   </div>
                   Browse project catalog
                 </button>
-                <HashLink to="/recruiter-dashboard#getting-started"><button onClick={handlePostAJob} className="post-job-btn">Post a job</button></HashLink>
+                <button onClick={handlePostAJob} className="post-job-btn">Post a job</button> 
                 
               </div>
             </div>
-          </div>
+          </div>}
+          {dashboardBanner &&
           <div className="row">
             <div className="col-lg-8">
               <div className="border border-secondary div-bg rounded">
@@ -232,11 +236,11 @@ const RecruiterDashboard = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div>}
 
-        {/* greeting-div-part */}
+        {/* getting-started-div-part */}
         {
-          getStartedDiv && <div id="getting-started" className="row mt-4 getting-started">
+          getStartedDiv && <div style={{height:"100vh"}} className="row py-5 getting-started">
           <div className="col-lg-12 ">
             <div className="text-light border border-secondary rounded">
               <h5 className="px-3 pt-3 pb-0">Getting started</h5>
