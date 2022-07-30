@@ -5,7 +5,7 @@ const SalaryStep = ({setSalaryStep}) => {
     setSalaryStep(false)
   }
   return (
-    <section className="container p-3">
+    <section className="container mt-5 p-3">
       <div className="row">
         <div className="col-md-6 p-5 step-left">
           <div className="progress-bar rounded-pill">

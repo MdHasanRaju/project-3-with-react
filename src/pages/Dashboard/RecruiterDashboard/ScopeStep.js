@@ -11,7 +11,7 @@ const ScopeStep = ({setSalaryStep,setScopeStep}) => {
   }
   
     return (
-        <section className="container p-3">
+        <section className="container mt-5 p-3">
       <div className="row">
         <div className="col-md-6 p-5 step-left">
           <div className="progress-bar rounded-pill">
@@ -85,7 +85,7 @@ const ScopeStep = ({setSalaryStep,setScopeStep}) => {
             <div className="mb-3">
               <input
                 type="radio"
-                name="category"
+                name="experience"
                 value="Beginner"
                 id="Beginner"
                 className="category"
@@ -98,7 +98,7 @@ const ScopeStep = ({setSalaryStep,setScopeStep}) => {
             <div className="mb-3">
               <input
                 type="radio"
-                name="category"
+                name="experience"
                 id="Intermediate"
                 value="Intermediate"
                 className="category"
@@ -111,7 +111,7 @@ const ScopeStep = ({setSalaryStep,setScopeStep}) => {
             <div className="mb-3">
               <input
                 type="radio"
-                name="category"
+                name="experience"
                 value="Experts"
                 id="Experts"
                 className="category"

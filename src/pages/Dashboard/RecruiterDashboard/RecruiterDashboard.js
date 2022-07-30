@@ -15,7 +15,7 @@ import { Redirect } from "react-router-dom";
 
 
 const RecruiterDashboard = () => {
-  const [greetingDiv, setGreetingDiv] = useState(false);
+  const [getStartedDiv, setGetStartedDiv] = useState(false);
   const [titleStep, setTitleStep] = useState(false);
   const [skillsStep, setSkillsStep] = useState(false);
   const [scopeStep, setScopeStep] = useState(false);
@@ -23,7 +23,7 @@ const RecruiterDashboard = () => {
   const navigate = useNavigate();
 
   const handlePostAJob = () => {
-    setGreetingDiv(true)   
+    setGetStartedDiv(true)   
   }
   
   const getStartedContinueBtn = () => {
@@ -31,7 +31,7 @@ const RecruiterDashboard = () => {
   }
 
   const getStartedCancelBtn = () => {
-    setGreetingDiv(false);
+    setGetStartedDiv(false);
   }
 
   // const jobCateStepBackBtn = () => {
@@ -71,8 +71,7 @@ const RecruiterDashboard = () => {
       },
     ],
   };
-
-  
+ 
 
   return (
     <>
@@ -237,7 +236,7 @@ const RecruiterDashboard = () => {
 
         {/* greeting-div-part */}
         {
-          greetingDiv && <div id="getting-started" className="row mt-4 getting-started">
+          getStartedDiv && <div id="getting-started" className="row mt-4 getting-started">
           <div className="col-lg-12 ">
             <div className="text-light border border-secondary rounded">
               <h5 className="px-3 pt-3 pb-0">Getting started</h5>
@@ -290,8 +289,7 @@ const RecruiterDashboard = () => {
             </div>
           </div>
         </div>
-        }
-          
+        } 
         </div>
       </section>
       <div className="recruiter-bg">
