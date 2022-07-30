@@ -10,6 +10,9 @@ import SkillsStep from "./SkillsStep";
 import ScopeStep from "./ScopeStep";
 import SalaryStep from "./SalaryStep";
 import {  useNavigate } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+import { Redirect } from "react-router-dom";
+
 
 const RecruiterDashboard = () => {
   const [greetingDiv, setGreetingDiv] = useState(false);
@@ -20,9 +23,7 @@ const RecruiterDashboard = () => {
   const navigate = useNavigate();
 
   const handlePostAJob = () => {
-    setGreetingDiv(true)
-    navigate("/recruiter-dashboard#greeting")
-
+    setGreetingDiv(true)   
   }
   
   const getStartedContinueBtn = () => {
@@ -100,7 +101,8 @@ const RecruiterDashboard = () => {
                   </div>
                   Browse project catalog
                 </button>
-                <button onClick={handlePostAJob} className="post-job-btn">Post a job</button>
+                <HashLink to="/recruiter-dashboard#getting-started"><button onClick={handlePostAJob} className="post-job-btn">Post a job</button></HashLink>
+                
               </div>
             </div>
           </div>
@@ -235,7 +237,7 @@ const RecruiterDashboard = () => {
 
         {/* greeting-div-part */}
         {
-          greetingDiv && <div id="greeting" className="row mt-4 getting-started">
+          greetingDiv && <div id="getting-started" className="row mt-4 getting-started">
           <div className="col-lg-12 ">
             <div className="text-light border border-secondary rounded">
               <h5 className="px-3 pt-3 pb-0">Getting started</h5>
