@@ -29,8 +29,12 @@ const RecruiterDashboard = () => {
     setTitleStep(true)
   }
 
-  // const skillsStepBtn = () => {
-  //   setSkillsStep(true)
+  const getStartedCancelBtn = () => {
+    setGreetingDiv(false);
+  }
+
+  // const jobCateStepBackBtn = () => {
+  //   setTitleStep(false)
   // }
  
 
@@ -229,7 +233,7 @@ const RecruiterDashboard = () => {
             </div>
           </div>
 
-        {/* greeting-div */}
+        {/* greeting-div-part */}
         {
           greetingDiv && <div id="greeting" className="row mt-4 getting-started">
           <div className="col-lg-12 ">
@@ -276,7 +280,7 @@ const RecruiterDashboard = () => {
               </div>
               <hr className="bg-secondary" />
               <div className="d-flex justify-content-end px-3 py-2">
-                <button className="btn btn-text text-light me-2">
+                <button onClick={getStartedCancelBtn} className="btn btn-text text-light me-2">
                   Cancel
                 </button>
                 <button onClick={getStartedContinueBtn} className="post-job-btn">Continue</button>
@@ -289,10 +293,10 @@ const RecruiterDashboard = () => {
         </div>
       </section>
       <div className="recruiter-bg">
-        {titleStep && <JobCategoryStep setSkillsStep={setSkillsStep} />} 
-        {skillsStep && <SkillsStep setScopeStep={setScopeStep}/>}
-        {scopeStep && <ScopeStep setSalaryStep={setSalaryStep}/>}
-        {salaryScope && <SalaryStep/>}
+        {titleStep && <JobCategoryStep setTitleStep={setTitleStep} setSkillsStep={setSkillsStep} />} 
+        {skillsStep && <SkillsStep setSkillsStep={setSkillsStep} setScopeStep={setScopeStep}/>}
+        {scopeStep && <ScopeStep setScopeStep={setScopeStep} setSalaryStep={setSalaryStep}/>}
+        {salaryScope && <SalaryStep setSalaryStep={setSalaryStep}/>}
       </div>
     </>
   );

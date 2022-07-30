@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import "./SkillsStep.css";
 
-const SkillsStep = ({setScopeStep}) => { 
+const SkillsStep = ({setScopeStep,setSkillsStep}) => { 
 
-  const handleScopeBtn = () => {
+  const ScopeStepNextBtn = () => {
     setScopeStep(true)
+  }
+  
+  const scopeStepBackBtn = () => {
+    setSkillsStep(false)
+
   }
   return (
     <section className="container mt-5 p-3">
@@ -129,10 +134,10 @@ const SkillsStep = ({setScopeStep}) => {
             </div>
           </div>
           <div className="action d-flex justify-content-end align-items-end">
-            <button className="btn outlined-button rounded-pill me-4">
+            <button onClick={scopeStepBackBtn} className="btn outlined-button rounded-pill me-4">
               Back
             </button>
-            <button onClick={handleScopeBtn} className="btn btn-green rounded-pill">Next: Scope</button>
+            <button onClick={ScopeStepNextBtn} className="btn btn-green rounded-pill">Next: Scope</button>
           </div>
         </div>
       </div>

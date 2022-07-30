@@ -1,12 +1,15 @@
 import React from 'react';
-import "./ScopeStep.css";
-import SalaryStep from './SalaryStep';
+import "./ScopeStep.css"; 
 
-const ScopeStep = ({setSalaryStep}) => {
+const ScopeStep = ({setSalaryStep,setScopeStep}) => {
 
-  const handleSalaryBtn = () => {
+  const scopeStepNextBtn = () => {
     setSalaryStep(true); 
   }
+  const scopeStepBackBtn = () => {
+    setScopeStep(false); 
+  }
+  
     return (
         <section className="container p-3">
       <div className="row">
@@ -86,7 +89,6 @@ const ScopeStep = ({setSalaryStep}) => {
                 value="Beginner"
                 id="Beginner"
                 className="category"
-                defaultChecked
               />
               <label for="Beginner" className="">
                 {" "}
@@ -124,10 +126,10 @@ const ScopeStep = ({setSalaryStep}) => {
             </a> */}
           </div>
           <div className="action d-flex justify-content-end align-items-end">
-            <button className="btn outlined-button rounded-pill me-4">
+            <button onClick={scopeStepBackBtn} className="btn outlined-button rounded-pill me-4">
               Back
             </button>
-            <button onClick={handleSalaryBtn} className="btn btn-green rounded-pill">Next: Salary</button>
+            <button onClick={scopeStepNextBtn} className="btn btn-green rounded-pill">Next: Salary</button>
           </div>
         </div>
       </div>

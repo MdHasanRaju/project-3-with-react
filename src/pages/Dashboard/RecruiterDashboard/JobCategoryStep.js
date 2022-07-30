@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import "./JobCategoryStep.css";
 
-const JobCategoryStep = ({setSkillsStep}) => {
+const JobCategoryStep = ({setSkillsStep,setTitleStep}) => {
   // const [jobStep, setJobStep] = useState(false)
    
-  const jobCategoryBtn = () => {
-    // setJobStep(true);
+  const jobCateContinueBtn = () => { 
     setSkillsStep(true);
   }
+
+  const jobCateStepBackBtn = () => {
+    setTitleStep(false);
+  }
+ 
 
   return (
     <section className="container p-3">
@@ -95,10 +99,10 @@ const JobCategoryStep = ({setSkillsStep}) => {
             </a>
           </div>
           <div className="action d-flex justify-content-end align-items-end">
-            <button className="btn outlined-button rounded-pill me-4">
+            <button onClick={jobCateStepBackBtn} className="btn outlined-button rounded-pill me-4">
               Back
             </button>
-            <button onClick={jobCategoryBtn} className="btn btn-green rounded-pill">Next: Skills</button>
+            <button onClick={jobCateContinueBtn} className="btn btn-green rounded-pill">Next: Skills</button>
           </div>
         </div>
       </div>

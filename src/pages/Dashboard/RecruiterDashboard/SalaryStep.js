@@ -1,6 +1,9 @@
 import React from "react";
 
-const SalaryStep = () => {
+const SalaryStep = ({setSalaryStep}) => {
+  const salaryScopeBackBtn = () => {
+    setSalaryStep(false)
+  }
   return (
     <section className="container p-3">
       <div className="row">
@@ -91,7 +94,7 @@ const SalaryStep = () => {
           </div>
 
           <div className="action d-flex justify-content-end align-items-end">
-            <button className="btn outlined-button rounded-pill me-4">
+            <button onClick={salaryScopeBackBtn} className="btn outlined-button rounded-pill me-4">
               Back
             </button>
             <button className="btn btn-green rounded-pill">Next: Salary</button>
