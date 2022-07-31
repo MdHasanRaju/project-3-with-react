@@ -279,7 +279,7 @@ const RecruiterDashboard = () => {
                 <select
                   class="custom-select div-bg border border-secondary rounded text-light px-2 py-1"
                   show-tick
-                  style={{ width: "400px" }}
+                  style={{ minWidth: "300px", maxWidth:"40%" }}
                 >
                   <option className="special">
                     Create an Al engine for ATS

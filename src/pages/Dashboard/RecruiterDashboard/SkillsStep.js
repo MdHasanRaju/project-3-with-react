@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 import "./SkillsStep.css";
 
-const SkillsStep = ({setTitleStep,setSkillsStep,setScopeStep}) => { 
-
+const SkillsStep = ({ setTitleStep, setSkillsStep, setScopeStep }) => {
   const ScopeStepNextBtn = () => {
     setScopeStep(true);
     setSkillsStep(false);
-  }
-  
+  };
+
   const scopeStepBackBtn = () => {
     setSkillsStep(false);
     setTitleStep(true);
-
-  }
+  };
   return (
     <section className="container p-3">
       <div className="row">
@@ -96,8 +94,20 @@ const SkillsStep = ({setTitleStep,setSkillsStep,setScopeStep}) => {
           </div>
           <div className="popular-skill mt-4">
             <div className="popular-skill-title d-flex justify-content-between align-items-center mb-4">
-              <h5 className="text-white">Popular skills</h5>
-              <i class="fa-solid fa-angle-up text-white"></i>
+              {/* <h5 className="text-white">Popular skills</h5>
+              <i class="fa-solid fa-angle-up text-white"></i> */}
+               <select
+                  class="bg-transparent border-0 text-light px-2 py-1"
+                  show-tick
+                  style={{ width:"100%" }}
+                >
+                  <option className="special">
+                  Popular skills
+                  </option>
+                  <option className="special">Python</option>
+                  <option className="special">Aws</option>
+                  <option className="special">Fried Potatoes</option>
+                </select>
             </div>
             <div className="d-flex flex-wrap">
               <button type="button" class="btn btn-add rounded-pill me-3 mt-2">
@@ -136,10 +146,18 @@ const SkillsStep = ({setTitleStep,setSkillsStep,setScopeStep}) => {
             </div>
           </div>
           <div className="action d-flex justify-content-end align-items-end">
-            <button onClick={scopeStepBackBtn} className="btn outlined-button rounded-pill me-4">
+            <button
+              onClick={scopeStepBackBtn}
+              className="btn outlined-button rounded-pill me-4"
+            >
               Back
             </button>
-            <button onClick={ScopeStepNextBtn} className="btn btn-green rounded-pill">Next: Scope</button>
+            <button
+              onClick={ScopeStepNextBtn}
+              className="btn btn-green rounded-pill"
+            >
+              Next: Scope
+            </button>
           </div>
         </div>
       </div>
