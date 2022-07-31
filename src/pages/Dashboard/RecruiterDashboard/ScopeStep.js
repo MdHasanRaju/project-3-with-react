@@ -87,10 +87,11 @@ const ScopeStep = ({setSkillsStep,setScopeStep,setSalaryStep}) => {
             <div className="mb-3">
               <input
                 type="radio"
-                name="experience"
+                name="role"
                 value="Beginner"
                 id="Beginner"
                 className="category"
+                defaultChecked
               />
               <label for="Beginner" className="">
                 {" "}
@@ -100,7 +101,7 @@ const ScopeStep = ({setSkillsStep,setScopeStep,setSalaryStep}) => {
             <div className="mb-3">
               <input
                 type="radio"
-                name="experience"
+                name="role"
                 id="Intermediate"
                 value="Intermediate"
                 className="category"
@@ -113,7 +114,7 @@ const ScopeStep = ({setSkillsStep,setScopeStep,setSalaryStep}) => {
             <div className="mb-3">
               <input
                 type="radio"
-                name="experience"
+                name="role"
                 value="Experts"
                 id="Experts"
                 className="category"
