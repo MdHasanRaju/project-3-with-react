@@ -24,16 +24,22 @@ const RecruiterDashboard = () => {
 
   const handlePostAJob = () => {
     setDashboardBanner(false)
-    setGetStartedDiv(true)   
-    console.log("before Click",dashboardBanner); 
+    setGetStartedDiv(true)
+    
   }
   
   const getStartedContinueBtn = () => {
-    setTitleStep(true)
+    setTitleStep(true);
+    setGetStartedDiv(false);
   }
 
   const getStartedCancelBtn = () => {
+    setDashboardBanner(true)
     setGetStartedDiv(false);
+    setTitleStep(false);
+    setSkillsStep(false);
+    setScopeStep(false);
+    setSalaryStep(false);
   }
 
   // const jobCateStepBackBtn = () => {
@@ -240,7 +246,7 @@ const RecruiterDashboard = () => {
 
         {/* getting-started-div-part */}
         {
-          getStartedDiv && <div style={{height:"100vh"}} className="row py-5 getting-started">
+          getStartedDiv && <div style={{height:"100vh"}} className="row getting-started">
           <div className="col-lg-12 ">
             <div className="text-light border border-secondary rounded">
               <h5 className="px-3 pt-3 pb-0">Getting started</h5>
@@ -295,13 +301,14 @@ const RecruiterDashboard = () => {
         </div>
         } 
         </div>
-      </section>
-      <div className="recruiter-bg">
-        {titleStep && <JobCategoryStep setTitleStep={setTitleStep} setSkillsStep={setSkillsStep} />} 
-        {skillsStep && <SkillsStep setSkillsStep={setSkillsStep} setScopeStep={setScopeStep}/>}
-        {scopeStep && <ScopeStep setScopeStep={setScopeStep} setSalaryStep={setSalaryStep}/>}
-        {salaryScope && <SalaryStep setSalaryStep={setSalaryStep}/>}
+        <div className="recruiter-bg">
+        {titleStep && <JobCategoryStep setGetStartedDiv={setGetStartedDiv} setTitleStep={setTitleStep} setSkillsStep={setSkillsStep} />} 
+        {skillsStep && <SkillsStep setTitleStep={setTitleStep} setSkillsStep={setSkillsStep} setScopeStep={setScopeStep}/>}
+        {scopeStep && <ScopeStep setSkillsStep={setSkillsStep} setScopeStep={setScopeStep} setSalaryStep={setSalaryStep}/>}
+        {salaryScope && <SalaryStep setScopeStep={setScopeStep} setSalaryStep={setSalaryStep}/>}
       </div>
+      </section>
+      
     </>
   );
 };

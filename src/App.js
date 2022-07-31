@@ -24,6 +24,7 @@ function App() {
         <Route path="/connect" element={<Recruiters />} />
         <Route path="/job-seeker" element={<JobSeekers />} />
         <Route path="/recruiter-dashboard" element={<RecruiterDashboard />} />
+        <Route path="/recruiter-dashboard/job-post" element={<RecruiterDashboard />} />
       </Routes>
     </div>
   );

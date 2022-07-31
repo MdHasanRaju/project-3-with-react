@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import "./JobCategoryStep.css";
 
-const JobCategoryStep = ({setSkillsStep,setTitleStep}) => {
-  // const [jobStep, setJobStep] = useState(false)
-   
-  const jobCateContinueBtn = () => { 
+const JobCategoryStep = ({ setGetStartedDiv, setSkillsStep, setTitleStep }) => {
+  const jobCateContinueBtn = () => {
+    setGetStartedDiv(false);
     setSkillsStep(true);
-  }
+    setTitleStep(false);
+  };
 
   const jobCateStepBackBtn = () => {
+    setGetStartedDiv(true);
     setTitleStep(false);
-  }
- 
+  };
 
   return (
     <section className="container p-3">
@@ -52,8 +52,6 @@ const JobCategoryStep = ({setSkillsStep,setTitleStep}) => {
           </p>
           <h6 className="text-white mb-3">Job Category</h6>
           <div className="job-category d-flex flex-column text-white">
-          
-          
             <div className="mb-3">
               <input
                 type="radio"
@@ -74,7 +72,7 @@ const JobCategoryStep = ({setSkillsStep,setTitleStep}) => {
                 name="category"
                 id="GraphicDesign"
                 value="GraphicDesign"
-                className="category" 
+                className="category"
               />
               <label for="GraphicDesign" className="">
                 {" "}
@@ -99,10 +97,18 @@ const JobCategoryStep = ({setSkillsStep,setTitleStep}) => {
             </a>
           </div>
           <div className="action d-flex justify-content-end align-items-end">
-            <button onClick={jobCateStepBackBtn} className="btn outlined-button rounded-pill me-4">
+            <button
+              onClick={jobCateStepBackBtn}
+              className="btn outlined-button rounded-pill me-4"
+            >
               Back
             </button>
-            <button onClick={jobCateContinueBtn} className="btn btn-green rounded-pill">Next: Skills</button>
+            <button
+              onClick={jobCateContinueBtn}
+              className="btn btn-green rounded-pill"
+            >
+              Next: Skills
+            </button>
           </div>
         </div>
       </div>

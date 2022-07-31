@@ -1,17 +1,19 @@
 import React from 'react';
 import "./ScopeStep.css"; 
 
-const ScopeStep = ({setSalaryStep,setScopeStep}) => {
+const ScopeStep = ({setSkillsStep,setScopeStep,setSalaryStep}) => {
 
   const scopeStepNextBtn = () => {
     setSalaryStep(true); 
+    setScopeStep(false); 
   }
   const scopeStepBackBtn = () => {
     setScopeStep(false); 
+    setSkillsStep(true); 
   }
   
     return (
-        <section className="container mt-5 p-3">
+        <section className="container p-3">
       <div className="row">
         <div className="col-md-6 p-5 step-left">
           <div className="progress-bar rounded-pill">
