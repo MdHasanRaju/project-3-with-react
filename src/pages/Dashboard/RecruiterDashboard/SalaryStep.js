@@ -33,19 +33,19 @@ const SalaryStep = ({setScopeStep,setSalaryStep}) => {
 
         <div className="col-md-6 p-5 step-right d-flex flex-column"> 
           <div className="job-category d-flex flex-column text-white">
-            <div class="form-group has-search mt-2 mb-4">
-              <span class="fa fa-search form-control-feedback"></span>
+            <div className="form-group has-search mt-2 mb-4">
+              <span className="fa fa-search form-control-feedback"></span>
               <input
                 type="text"
-                class="form-control input"
+                className="form-control input"
                 placeholder="Search"
               />
             </div> 
-            <div class="form-group has-search mt-2 mb-4">
-              <span class="fa fa-search form-control-feedback "></span>
+            <div className="form-group has-search mt-2 mb-4">
+              <span className="fa fa-search form-control-feedback "></span>
               <input
                 type="text"
-                class="form-control input"
+                className="form-control input"
                 placeholder="Search"
               />
             </div>

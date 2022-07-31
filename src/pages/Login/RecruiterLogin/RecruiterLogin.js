@@ -18,7 +18,7 @@ const RecruiterLogin = () => {
         data-bs-dismiss="modal"
         type="submit"
         name="login"
-        class="login loginmodal-submit"
+        className="login loginmodal-submit"
         value="Login"
       />
     </form>

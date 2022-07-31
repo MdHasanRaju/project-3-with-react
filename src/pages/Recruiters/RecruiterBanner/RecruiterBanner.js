@@ -82,7 +82,7 @@ const RecruiterBanner = () => {
                           autocomplete="off"
                           id="user-name"
                           placeholder="Name"
-                          class="common_input"
+                          className="common_input"
                           style={{ borderColor: "rgb(220, 223, 230)" }}
                         />
                       </div>{" "}
@@ -141,7 +141,7 @@ const RecruiterBanner = () => {
                           autocomplete="off"
                           id="user-name"
                           placeholder="Enter 10 digit mobile number"
-                          class="common_input number_input"
+                          className="common_input number_input"
                           style={{ borderColor: "rgb(220, 223, 230)" }}
                         />
                       </div>{" "}
@@ -151,7 +151,7 @@ const RecruiterBanner = () => {
                           autocomplete="off"
                           id="user-name"
                           placeholder="Official Email"
-                          class="common_input"
+                          className="common_input"
                           style={{ borderColor: "rgb(220, 223, 230)" }}
                         />
                       </div>{" "}
@@ -161,7 +161,7 @@ const RecruiterBanner = () => {
                           autocomplete="off"
                           id="user-name"
                           placeholder="Company Name"
-                          class="common_input"
+                          className="common_input"
                           style={{ borderColor: "rgb(220, 223, 230)" }}
                         />
 
@@ -210,10 +210,10 @@ const RecruiterBanner = () => {
                           ))}
                         </div>
                       </div>
-                      <label class="check-container">
+                      <label className="check-container">
                         I would like to receive updates via whatsapp.
                         <input type="checkbox" />
-                        <span class="checkmark"></span>
+                        <span className="checkmark"></span>
                       </label>
                       {/* <label
                         className="el-checkbox schedule-checkbox is-checked"

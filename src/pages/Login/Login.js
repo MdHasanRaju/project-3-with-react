@@ -19,7 +19,7 @@ const Login = () => {
       {/* <button type="button" data-bs-toggle="modal" data-bs-target="#login-modal">Login</button> */}
        
       <div
-        class="modal fade"
+        className="modal fade"
         id="login-modal"
         tabindex="-1"
         aria-hidden="true"
@@ -27,8 +27,8 @@ const Login = () => {
         aria-labelledby="myModalLabel"
         style={{ display: "none" }}
       >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
             <div className="modal-body">
             <div className="">
               <h5 id="#myModalLabel">Login As:</h5>
@@ -58,7 +58,7 @@ const Login = () => {
             <br />
             {recruiter ? <CandidateLogin /> : <RecruiterLogin />}
 
-            {/* <div class="login-help">
+            {/* <div className="login-help">
               <a href="#">Join</a> - <a href="#">Forgot Password</a>
             </div> */}
             

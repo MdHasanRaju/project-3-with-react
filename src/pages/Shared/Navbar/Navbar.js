@@ -30,14 +30,14 @@ const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button> */}
-          <button class="navbar-toggler ml-auto custom-toggler" 
+          <button className="navbar-toggler ml-auto custom-toggler" 
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll"
                 aria-expanded="false"
                 aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
         </button>
           <div id="navbarScroll" className="collapse navbar-collapse">
             <ul className="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll nav-dropdown-link">
