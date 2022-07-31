@@ -199,7 +199,7 @@
   .testimonial-card {
     width: 100% !important;
     margin-left: 10px !important; 
-    height: 440px;
+    height: auto;
     padding: 30px 20px;
   }
   .testimonial-card-user {
