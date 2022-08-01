@@ -6,7 +6,7 @@ const CandidateLogin = () => {
 
   const handleCandidateLogin = (e) => {
     e.preventDefault();
-    // navigate('/candidate-dashboard')
+    navigate('/job-seeker-profile')
   };
 
   return (

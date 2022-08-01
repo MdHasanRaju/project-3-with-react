@@ -13,8 +13,15 @@ import { useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const RecruiterDashboard = () => {
-  const [dashboardBanner, setDashboardBanner] = useState(true);
-  const [getStartedDiv, setGetStartedDiv] = useState(false);
+  // const [dashboardBanner, setDashboardBanner] = useState(true);
+  const [dashboardBanner, setDashboardBanner] = useState(
+    JSON.parse(localStorage.getItem('dashboardBanner')) || true
+  );
+  
+  // const [getStartedDiv, setGetStartedDiv] = useState(false);
+  const [getStartedDiv, setGetStartedDiv] =useState(
+    JSON.parse(localStorage.getItem('getStartedDiv')) || false
+  );
   const [titleStep, setTitleStep] = useState(false);
   const [skillsStep, setSkillsStep] = useState(false);
   const [scopeStep, setScopeStep] = useState(false);
@@ -22,9 +29,16 @@ const RecruiterDashboard = () => {
   // const navigate = useNavigate();
   
   const handlePostAJob = () => {
-    setDashboardBanner(false);
+    // localStorage.setItem('getStartedDiv', JSON.stringify(getStartedDiv));
     setGetStartedDiv(true); 
-  };
+    setDashboardBanner(false); 
+  }; 
+  
+
+  // useEffect(() => {
+  //   localStorage.setItem('getStartedDiv', JSON.stringify(getStartedDiv));
+  //   localStorage.setItem('dashboardBanner', JSON.stringify(dashboardBanner));
+  // }, [dashboardBanner,getStartedDiv]);
 
   const getStartedContinueBtn = () => {
     setTitleStep(true);
@@ -38,6 +52,7 @@ const RecruiterDashboard = () => {
     setSkillsStep(false);
     setScopeStep(false);
     setSalaryStep(false);
+    localStorage.setItem('dashboardBanner', JSON.stringify(dashboardBanner));
   };
 
   // const jobCateStepBackBtn = () => {

@@ -7,6 +7,8 @@ import Features from "./pages/Features/Features/Features";
 import Recruiters from "./pages/Recruiters/Recruiters/Recruiters"; 
 import RecruiterDashboard from "./pages/Dashboard/RecruiterDashboard/RecruiterDashboard";
 import { useLocation } from "react-router-dom"; 
+import JobSeekerDashboard from "./pages/Dashboard/JobSeekerDashboard/JobSeekerDashboard"; 
+import JobSeekerEducation from "./pages/Dashboard/JobSeekerDashboard/JobSeekerEducation";
 
 function App() {
   const location = useLocation();
@@ -14,7 +16,8 @@ function App() {
   return (
     <div className="App">
       {location.pathname === "/recruiter-dashboard" ||
-      location.pathname === "/candidate-dashboard" ? null : (
+      location.pathname === "/job-seeker-profile" |
+      location.pathname === "/job-seeker-education" ? null : (
         <Navbar />
       )}
 
@@ -23,8 +26,9 @@ function App() {
         <Route path="/features-in" element={<Features />} />
         <Route path="/connect" element={<Recruiters />} />
         <Route path="/job-seeker" element={<JobSeekers />} />
-        <Route path="/recruiter-dashboard" element={<RecruiterDashboard />} />
-        <Route path="/recruiter-dashboard/job-post" element={<RecruiterDashboard />} />
+        <Route path="/recruiter-dashboard" element={<RecruiterDashboard />} />  
+        <Route path="/job-seeker-profile" element={<JobSeekerDashboard />} /> 
+        <Route path="/job-seeker-education" element={<JobSeekerEducation />} /> 
       </Routes>
     </div>
   );
