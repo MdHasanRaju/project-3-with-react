@@ -106,10 +106,10 @@ const JobSeekerDashboard = () => {
             <div className="col-lg-8">
               {/* left-column-1st-div */}
               <div className="border border-secondary rounded py-4 px-3">
-                <div className="d-flex flex-wrap justify-content-between">
-                  <div className="d-flex justify-content-between align-items-center px-3">
+                <div className="d-flex flex-wrap justify-content-lg-between align-items-lg-center justify-content-md-between align-items-md-center">
+                  <div className="d-flex justify-content-between align-items-lg-center align-items-md-center flex-column flex-lg-row flex-md-row px-3">
                     <img src={palakSharm} alt="" />
-                    <div className="ps-0 ps-lg-2 ps-md-2">
+                    <div className="ps-0 ps-lg-2 ps-md-2 pt-lg-0 pt-md-0 pt-3">
                       <h5 className="text-success fw-bolder mb-0">
                         Diana Rose <span>...</span>
                       </h5>
@@ -144,7 +144,7 @@ const JobSeekerDashboard = () => {
                   reprehenderit iure. Temporibus, atque iusto? Dicta corrupti
                   unde at molestiae exercitationem odit expedita?
                 </p>
-                <div className="d-flex pt-3">
+                <div className="d-flex flex-wrap justify-content-sm-start px-lg-0 px-3 pt-3">
                   <div className="text-center">
                     <h6 className="fw-bolder">6Y 8M</h6>
                     <p className="text-secondary">Total Experience</p>
@@ -153,7 +153,7 @@ const JobSeekerDashboard = () => {
                     <h6 className="fw-bolder">10.3 LPA</h6>
                     <p className="text-secondary">Current CTC</p>
                   </div>
-                  <div className="text-center ps-4">
+                  <div className="text-center ps-lg-4 ps-sm-0">
                     <h6 className="fw-bolder">Intermediate joiner</h6>
                     <p className="text-secondary">Search Level</p>
                   </div>
@@ -169,10 +169,10 @@ const JobSeekerDashboard = () => {
                 <div className="d-flex justify-content-between align-items-center  px-4">
                   <h6 className="fw-bolder">Work history</h6>
                   <select
-                    className="custom-select div-bg border border-secondary rounded text-light px-2 py-1"
+                    className="custom-select div-bg bg-secondary border border-secondary rounded text-light px-2 py-1"
                     show-tick
                     placeholder="Short by:Latest"
-                    style={{ minWidth: "220px", maxWidth: "40%" }}
+                    style={{ minWidth: "150px", width: "35%" }}
                   >
                     <option className="special">Short by:Latest</option>
                     <option className="special">Burger</option>
@@ -220,7 +220,7 @@ const JobSeekerDashboard = () => {
                   <select
                     className="custom-select div-bg bg-secondary border border-secondary rounded text-light px-2 py-1"
                     show-tick="true"
-                    style={{ minWidth: "220px", maxWidth: "40%" }}
+                    style={{ minWidth: "150px", width: "35%", fontSize:"14px" }}
                   >
                     <option className="special">Short by:Latest</option>
                     <option className="special">Burger</option>
@@ -289,10 +289,12 @@ const JobSeekerDashboard = () => {
                   />
                   <br />
                   <div class="d-flex align-items-center mt-2 ps-md-0">
-                    <button class="btn btn-text text-secondary px-0 py-0 ">
+                    <button onClick={(e) =>
+                        copyToClipBoard("https://color-design.com")
+                      } class="btn btn-text text-secondary px-0 py-0 ">
                       Copy the link
                     </button>
-                    <span class="ms-2 text-success d-inline-block"></span>
+                    <span class="ms-2 text-success d-inline-block">{copySuccess && copySuccess}</span>
                   </div>
                 </div>
               </div>
@@ -339,7 +341,7 @@ const JobSeekerDashboard = () => {
                 </div>
               </div> */}
 
-              <div className="bg-info pb-5 pt-1 rounded mt-4">
+              <div className="bg-light pb-5 pt-1 rounded mt-4">
                 <div>
                   <img src={pencilMan} alt="" />
                 </div>

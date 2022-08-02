@@ -13,6 +13,10 @@
     z-index: 99;
   }
   
+  .navbar-brand {
+    margin-right: 0;
+  }
+
   .navbar-light .navbar-brand img {
     max-width: 172px;
   }
@@ -130,7 +134,8 @@
   
     .navbar-light .navbar-brand img { 
       height: 60px;
-    }
+      max-width: 80px;
+    } 
     .navbar-collapse {
       position: absolute;
       top: 89px;
@@ -193,8 +198,9 @@
     }
     .navbar-light .navbar-brand img { 
       height: 50px;
+      max-width: 80px;
     } 
-  
+ 
     .navbar-collapse {
       position: absolute;
       top: 81px;
@@ -226,7 +232,11 @@
   
     .navlink-active {
       border-bottom: 3.4px solid #2ce2a2;
+      padding: 12px 8px;
     }
+    .navlink-inactive {
+      padding: 12px 7px; 
+  }
   
     .default-btn {
       font-size: 15px;
@@ -262,6 +272,13 @@
     color: white;
     border-radius: 3px;
     padding: 5px 0;
+  }
+
+  select {
+    font-size: 14px;
+  }
+  option{
+    font-size: 14px;
   }
 
   @media only screen and (min-width:600px) and (max-width:991px) {
