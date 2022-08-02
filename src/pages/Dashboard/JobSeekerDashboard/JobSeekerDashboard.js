@@ -79,10 +79,10 @@ const JobSeekerDashboard = () => {
                 </div>
               </li>
               <li className="nav-item">
-                <i class="fa-solid fa-bell text-light ms-3"></i>
+                <i className="fa-solid fa-bell text-light ms-3"></i>
               </li>
               <li className="nav-item">
-                <i class="fa-solid fa-cart-shopping text-light ms-3"></i>
+                <i className="fa-solid fa-cart-shopping text-light ms-3"></i>
               </li>
 
               <li className="nav-item">
@@ -106,26 +106,26 @@ const JobSeekerDashboard = () => {
             <div className="col-lg-8">
               {/* left-column-1st-div */}
               <div className="border border-secondary rounded py-4 px-3">
-                <div className="d-flex justify-content-between">
+                <div className="d-flex flex-wrap justify-content-between">
                   <div className="d-flex justify-content-between align-items-center px-3">
                     <img src={palakSharm} alt="" />
-                    <div className="ps-2">
-                      <h6 className="text-success">
+                    <div className="ps-0 ps-lg-2 ps-md-2">
+                      <h5 className="text-success fw-bolder mb-0">
                         Diana Rose <span>...</span>
-                      </h6>
+                      </h5>
                       <p className="mb-0">Professional title</p>
                       <p>
                         <span>
-                          <i class="fa-solid fa-location-dot pe-2"></i>
+                          <i className="fa-solid fa-location-dot pe-2"></i>
                         </span>
                         New York-09.30 AM
                       </p>
                     </div>
                   </div>
                   <div className="px-3">
-                    <h6>
+                    <h6 className="fw-bolder">
                       <span className="text-success">
-                        <i class="fa-solid fa-award"></i> Top Rated
+                        <i className="fa-solid fa-award"></i> Top Rated
                       </span>
                     </h6>
                     <h6>
@@ -137,7 +137,7 @@ const JobSeekerDashboard = () => {
                   </div>
                 </div>
 
-                <h6 className="px-3 pt-3">Overview</h6>
+                <h6 className="px-3 pt-3 fw-bolder">Overview</h6>
                 <p className="px-3">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
                   rerum animi quam ipsa similique consequatur nemo dolorem
@@ -146,19 +146,19 @@ const JobSeekerDashboard = () => {
                 </p>
                 <div className="d-flex pt-3">
                   <div className="text-center">
-                    <h6>6Y 8M</h6>
+                    <h6 className="fw-bolder">6Y 8M</h6>
                     <p className="text-secondary">Total Experience</p>
                   </div>
                   <div className="text-center ps-4">
-                    <h6>10.3 LPA</h6>
+                    <h6 className="fw-bolder">10.3 LPA</h6>
                     <p className="text-secondary">Current CTC</p>
                   </div>
                   <div className="text-center ps-4">
-                    <h6>Intermediate joiner</h6>
+                    <h6 className="fw-bolder">Intermediate joiner</h6>
                     <p className="text-secondary">Search Level</p>
                   </div>
                   <div className="text-center ps-4">
-                    <h6>...</h6>
+                    <h6 className="fw-bolder">...</h6>
                     <p className="text-secondary">Current CTC</p>
                   </div>
                 </div>
@@ -167,7 +167,7 @@ const JobSeekerDashboard = () => {
               {/* left-column-2nd-div */}
               <div className="py-4 my-4 border border-secondary rounded">
                 <div className="d-flex justify-content-between align-items-center  px-4">
-                  <h6>Work history</h6>
+                  <h6 className="fw-bolder">Work history</h6>
                   <select
                     className="custom-select div-bg border border-secondary rounded text-light px-2 py-1"
                     show-tick
@@ -184,7 +184,8 @@ const JobSeekerDashboard = () => {
                   <p>
                     Job name1{" "}
                     <span className="text-secondary ps-2">
-                      <i class="fa-solid fa-calendar"></i> Mar 2021 - present
+                      <i className="fa-solid fa-calendar"></i> Mar 2021 -
+                      present
                     </span>
                   </p>
                   <p>
@@ -200,7 +201,7 @@ const JobSeekerDashboard = () => {
                   <p>
                     Job name2{" "}
                     <span className="text-secondary ps-2">
-                      <i class="fa-solid fa-calendar"></i> Mar 2021
+                      <i className="fa-solid fa-calendar"></i> Mar 2021
                     </span>
                   </p>
                   <p>
@@ -215,10 +216,10 @@ const JobSeekerDashboard = () => {
               {/* left-column-3rd-div */}
               <div className="py-4 my-4 border border-secondary rounded">
                 <div className="d-flex justify-content-between align-items-center  px-4">
-                  <h6>Education</h6>
+                  <h6 className="fw-bolder">Education</h6>
                   <select
-                    className="custom-select div-bg border border-secondary rounded text-light px-2 py-1"
-                    show-tick
+                    className="custom-select div-bg bg-secondary border border-secondary rounded text-light px-2 py-1"
+                    show-tick="true"
                     style={{ minWidth: "220px", maxWidth: "40%" }}
                   >
                     <option className="special">Short by:Latest</option>
@@ -228,10 +229,11 @@ const JobSeekerDashboard = () => {
                   </select>
                 </div>
                 <div className="px-4 py-3 ">
-                  <p>Course</p>
+                  <h6 className="fw-bolder">Course</h6>
                   <p>
                     <span className="text-secondary">
-                      <i class="fa-solid fa-calendar"></i> Mar 2021 - present
+                      <i className="fa-solid fa-calendar"></i> Mar 2021 -
+                      present
                     </span>
                   </p>
                   <p>
@@ -247,7 +249,7 @@ const JobSeekerDashboard = () => {
                   <p>
                     Job name2{" "}
                     <span className="text-secondary ps-2">
-                      <i class="fa-solid fa-calendar"></i> Mar 2021
+                      <i className="fa-solid fa-calendar"></i> Mar 2021
                     </span>
                   </p>
                   <p>
@@ -260,8 +262,42 @@ const JobSeekerDashboard = () => {
               </div>
             </div>
             <div className="col-lg-4">
-              <div className="border border-secondary rounded py-4">
-                <div className="seeker-profile-left px-3">
+              <div class="seeker-profile-left border border-secondary rounded py-4">
+                <div class="px-lg-3">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="fw-bolder">Profile Activity</h6>
+                    <p>High</p>
+                  </div>
+                  <button class="seeker-btn mb-3">Message</button>
+                  <p class="text-end mb-0">4</p>
+                  <p class="text-end">5</p>
+                  <button class="seeker-btn">Recent visitors</button>
+                </div>
+                <h6 class="pt-4 pe-2 ps-md-0 px-lg-2 fw-bolder">
+                  Total Views in Last 30 Days
+                </h6>
+                <div class="py-4 px-0 ps-md-0 px-lg-3">
+                  <h6 class="fw-bolder">Certificates</h6>
+                  <p>Lorem ipsum dolor sit amet listi piki nonte.</p>
+                </div>
+                <div class="px-0 linked-in-box ps-md-0 px-lg-3">
+                  <h6 class="fw-bolder">Linked In</h6>
+                  <input
+                    class="w-100 border border-secondary rounded ps-2 py-1"
+                    placeholder="https://color-design.com"
+                    type="text"
+                  />
+                  <br />
+                  <div class="d-flex align-items-center mt-2 ps-md-0">
+                    <button class="btn btn-text text-secondary px-0 py-0 ">
+                      Copy the link
+                    </button>
+                    <span class="ms-2 text-success d-inline-block"></span>
+                  </div>
+                </div>
+              </div>
+              {/* <div className="seeker-profile-left border border-secondary rounded py-4">
+                <div className="px-lg-3">
                   <div className="d-flex justify-content-between">
                     <h6 className="fw-bolder">Profile Activity</h6>
                     <p>High</p>
@@ -271,15 +307,15 @@ const JobSeekerDashboard = () => {
                   <p className="text-end">5</p>
                   <button className="seeker-btn">Recent visitors</button>
                 </div>
-                <h6 className="pt-4 px-2 fw-bolder">
+                <h6 className="pt-4 px-2 ps-md-0 fw-bolder">
                   Total Views in Last 30 Days
                 </h6>
-                <div className="py-4 px-3">
+                <div className="py-4 px-3 ps-md-0">
                   <h6 className="fw-bolder">Certificates</h6>
                   <p>Lorem ipsum dolor sit amet listi piki nonte.</p>
                 </div>
 
-                <div className="px-3 linked-in-box">
+                <div className="px-3 linked-in-box ps-md-0">
                   <h6 className="fw-bolder">Linked In</h6>
                   <input
                     className="w-100 border border-secondary rounded ps-2 py-1"
@@ -287,7 +323,7 @@ const JobSeekerDashboard = () => {
                     type="text"
                   />
                   <br />
-                  <div className="d-flex align-items-center mt-2">
+                  <div className="d-flex align-items-center mt-2 ps-md-0">
                     <button
                       className="btn btn-text text-secondary px-0 py-0 "
                       onClick={(e) =>
@@ -301,7 +337,7 @@ const JobSeekerDashboard = () => {
                     </span>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="bg-info pb-5 pt-1 rounded mt-4">
                 <div>
