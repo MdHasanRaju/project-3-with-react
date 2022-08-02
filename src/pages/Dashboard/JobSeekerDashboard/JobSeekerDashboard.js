@@ -7,17 +7,15 @@ import palakSharm from "../../../assets/images/palak-sharma.2ab3146.png";
 import pencilMan from "../../../assets/images/pencil-man-removebg-preview.png";
 
 const JobSeekerDashboard = () => {
-
   const [copySuccess, setCopySuccess] = useState(null);
-    const copyToClipBoard = async copyMe => {
-       try {
-           await navigator.clipboard.writeText(copyMe);
-           setCopySuccess('Copied!');
-       } 
-       catch (err) {
-           setCopySuccess('Failed to copy!');
-       }
-    };
+  const copyToClipBoard = async (copyMe) => {
+    try {
+      await navigator.clipboard.writeText(copyMe);
+      setCopySuccess("Copied!");
+    } catch (err) {
+      setCopySuccess("Failed to copy!");
+    }
+  };
 
   return (
     <div>
@@ -273,7 +271,9 @@ const JobSeekerDashboard = () => {
                   <p className="text-end">5</p>
                   <button className="seeker-btn">Recent visitors</button>
                 </div>
-                <h6 className="pt-4 px-2 fw-bolder">Total Views in Last 30 Days</h6>
+                <h6 className="pt-4 px-2 fw-bolder">
+                  Total Views in Last 30 Days
+                </h6>
                 <div className="py-4 px-3">
                   <h6 className="fw-bolder">Certificates</h6>
                   <p>Lorem ipsum dolor sit amet listi piki nonte.</p>
@@ -282,13 +282,24 @@ const JobSeekerDashboard = () => {
                 <div className="px-3 linked-in-box">
                   <h6 className="fw-bolder">Linked In</h6>
                   <input
-                  
                     className="w-100 border border-secondary rounded ps-2 py-1"
                     placeholder="https://color-design.com"
                     type="text"
                   />
                   <br />
-                  <button className="btn btn-text text-secondary px-0" onClick={(e) => copyToClipBoard('https://color-design.com')}>copy the link</button>
+                  <div className="d-flex align-items-center mt-2">
+                    <button
+                      className="btn btn-text text-secondary px-0 py-0 "
+                      onClick={(e) =>
+                        copyToClipBoard("https://color-design.com")
+                      }
+                    >
+                      Copy the link
+                    </button>
+                    <span className="ms-2 text-success d-inline-block">
+                      {copySuccess && copySuccess}
+                    </span>
+                  </div>
                 </div>
               </div>
 
@@ -298,8 +309,13 @@ const JobSeekerDashboard = () => {
                 </div>
                 <div className="px-3 text-center">
                   <h6 className="fw-bolder">incuininnta ea magna.</h6>
-                  <p className="text-secondary">Lorem ipsum dolor, sit amet consectetur  elit. Lorem ipsum dolor sit. </p>
-                  <button className="btn btn-success d-inline-block text-light">Get Started</button>
+                  <p className="text-secondary">
+                    Lorem ipsum dolor, sit amet consectetur elit. Lorem ipsum
+                    dolor sit.{" "}
+                  </p>
+                  <button className="w-50 btn btn-success d-inline-block text-light">
+                    Get Started
+                  </button>
                 </div>
               </div>
             </div>
