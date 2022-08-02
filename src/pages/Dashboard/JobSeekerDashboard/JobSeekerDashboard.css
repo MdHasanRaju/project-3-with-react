@@ -255,3 +255,11 @@
     margin: 115px 0 0;
   }
   
+  .seeker-profile-left .seeker-btn{
+    width: 100%;
+    border: 1px solid green;
+    background-color: green;
+    color: white;
+    border-radius: 3px;
+    padding: 5px 0;
+  }
