@@ -87,8 +87,7 @@ const JobCategoryStep = ({ setGetStartedDiv, setSkillsStep, setTitleStep }) => {
                 id="FullStackDevelopment"
                 className="category"
               />
-              <label for="FullStackDevelopment" className="">
-                {" "}
+              <label for="FullStackDevelopment" className=""> 
                 Full Stack Development
               </label>
             </div>
