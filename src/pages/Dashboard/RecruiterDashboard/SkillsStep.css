@@ -40,11 +40,11 @@
 
 .popular-icon-up{
   transform: rotate(0deg);
-  transition: .5s;
+  transition: .3s;
 } 
 .popular-icon-down{
   transform: rotate(180deg);
-  transition: .5s;
+  transition: .3s;
 } 
 
 /* 

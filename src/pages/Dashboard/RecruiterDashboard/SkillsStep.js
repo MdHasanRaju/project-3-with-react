@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "./SkillsStep.css";
 
 const SkillsStep = ({ setTitleStep, setSkillsStep, setScopeStep }) => {
-  const [popularIcon, setPopularIcon] = useState(false)
+  const [popularIcon, setPopularIcon] = useState(false);
 
   const popularIconToggle = () => {
-    setPopularIcon(!popularIcon); 
+    setPopularIcon(!popularIcon);
   };
 
   const ScopeStepNextBtn = () => {
@@ -57,7 +57,8 @@ const SkillsStep = ({ setTitleStep, setSkillsStep, setScopeStep }) => {
           </div>
 
           <p className="text-green skill-text">
-            <i className="fa-solid fa-star"></i>For the best results add 3-5 skills
+            <i className="fa-solid fa-star"></i>For the best results add 3-5
+            skills
           </p>
           <h6 className="text-white mb-3">Selected Skill</h6>
           <div className="d-flex flex-wrap">
@@ -99,10 +100,10 @@ const SkillsStep = ({ setTitleStep, setSkillsStep, setScopeStep }) => {
             </button>
           </div>
           <div className="popular-skill mt-4">
-            <div onClick={popularIconToggle} className="popular-skill-title d-flex justify-content-between align-items-center">
+            <div className="popular-skill-title d-flex justify-content-between align-items-center">
               {/* <h5 className="text-white">Popular skills</h5>
               <i className="fa-solid fa-angle-up text-white"></i> */}
-               {/* <select
+              {/* <select
                   className="bg-transparent border-0 text-light px-2 py-1"
                   show-tick
                   style={{ width:"100%" }}
@@ -115,47 +116,81 @@ const SkillsStep = ({ setTitleStep, setSkillsStep, setScopeStep }) => {
                   <option className="special">Fried Potatoes</option>
                 </select> */}
 
-                  <h6 className="text-light">Popular Skills</h6>
-                  <p className="text-light mb-0"><i className={`fa-solid fa-angle-down ${!popularIcon ? "popular-icon-up" : "popular-icon-down"}`}></i></p> 
+              <h6
+                onClick={popularIconToggle}
+                style={{ cursor: "pointer" }}
+                className="text-light"
+              >
+                Popular Skills
+              </h6>
+              <p
+                onClick={popularIconToggle}
+                style={{ cursor: "pointer" }}
+                className="text-light mb-0"
+              >
+                <i
+                  className={`fa-solid fa-angle-down ${
+                    !popularIcon ? "popular-icon-up" : "popular-icon-down"
+                  }`}
+                ></i>
+              </p>
             </div>
 
-            { !popularIcon &&
-            <div className="d-flex flex-wrap mt-4">
-              <button type="button" className="btn btn-add rounded-pill me-3 mt-2">
-                Python{" "}
-                <span className="badge text-bg-secondary">
-                  <i className="fa-solid fa-plus"></i>
-                </span>
-              </button>
-              <button type="button" className="btn btn-add rounded-pill me-3 mt-2">
-                DeepLearning{" "}
-                <span className="badge text-bg-secondary">
-                  <i className="fa-solid fa-plus"></i>
-                </span>
-              </button>
-              <button type="button" className="btn btn-add rounded-pill me-3 mt-2">
-                TensorFlow{" "}
-                <span className="badge text-bg-secondary">
-                  <i className="fa-solid fa-plus"></i>
-                </span>
-              </button>
-              <button type="button" className="btn btn-add rounded-pill me-3 mt-2">
-                AI{" "}
-                <span className="badge text-bg-secondary">
-                  <i className="fa-solid fa-plus"></i>
-                </span>
-              </button>
-              <button type="button" className="btn btn-add rounded-pill me-3 mt-2">
-                Neural Network{" "}
-                <span className="badge text-bg-secondary">
-                  <i className="fa-solid fa-plus"></i>
-                </span>
-              </button>
-              <button type="button" className="btn text-green btn-text me-3 mt-2">
-                See more
-              </button>
-            </div>
-            }
+            {!popularIcon && (
+              <div className="d-flex flex-wrap mt-4">
+                <button
+                  type="button"
+                  className="btn btn-add rounded-pill me-3 mt-2"
+                >
+                  Python{" "}
+                  <span className="badge text-bg-secondary">
+                    <i className="fa-solid fa-plus"></i>
+                  </span>
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-add rounded-pill me-3 mt-2"
+                >
+                  DeepLearning{" "}
+                  <span className="badge text-bg-secondary">
+                    <i className="fa-solid fa-plus"></i>
+                  </span>
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-add rounded-pill me-3 mt-2"
+                >
+                  TensorFlow{" "}
+                  <span className="badge text-bg-secondary">
+                    <i className="fa-solid fa-plus"></i>
+                  </span>
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-add rounded-pill me-3 mt-2"
+                >
+                  AI{" "}
+                  <span className="badge text-bg-secondary">
+                    <i className="fa-solid fa-plus"></i>
+                  </span>
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-add rounded-pill me-3 mt-2"
+                >
+                  Neural Network{" "}
+                  <span className="badge text-bg-secondary">
+                    <i className="fa-solid fa-plus"></i>
+                  </span>
+                </button>
+                <button
+                  type="button"
+                  className="btn text-green btn-text me-3 mt-2"
+                >
+                  See more
+                </button>
+              </div>
+            )}
           </div>
           <div className="action d-flex justify-content-end align-items-end">
             <button

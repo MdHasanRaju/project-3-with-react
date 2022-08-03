@@ -4,7 +4,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import slide1 from "../../../assets/images/instant-chat-ceo1.e16699e.png";
-import slide2 from "../../../assets/images/recruiter-banner.e64debe.jpg";
+import slide2 from "../../../assets/images/chat-directly-new.558e07e.png";
+import slide3 from "../../../assets/images/pencil-man-removebg-preview.png";
 import JobCategoryStep from "./JobCategoryStep";
 import SkillsStep from "./SkillsStep";
 import ScopeStep from "./ScopeStep";
@@ -71,7 +72,7 @@ const RecruiterDashboard = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -89,16 +90,23 @@ const RecruiterDashboard = () => {
           slidesToScroll: 1,
         },
       },
+      {
+        breakpoint: 375,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
     ],
   };
 
   return (
     <>
-      <section className="recruiter-dashboard py-5 ">
+      <section className="recruiter-dashboard py-5 min-vh-100">
         <div className="container">
           {dashboardBanner && (
             <div className="row mb-4">
-              <div className="col-lg-7 d-flex">
+              <div className="col-lg-7 col-md-5 d-flex justify-content-lg-start justify-content-md-start justify-content-between">
                 <div className="dashboard-title-box">
                   <h5 className="text-light">Your Dashboard</h5>
                   <p className="text-light">Aloke p</p>
@@ -112,15 +120,15 @@ const RecruiterDashboard = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-5">
-                <div className="dashboard-catalog-title">
-                  <button className="browse-project-btn me-5 position-relative ">
+              <div className="col-lg-5 col-md-7">
+                <div className="dashboard-catalog-title d-flex justify-content-md-end justify-content-lg-end justify-content-between">
+                  <button className="browse-project-btn me-lg-5 me-md-2 ms-sm-0 ms-md-0 ms-lg-0 ms-2  position-relative ">
                     <div className="position-absolute">
                       <i className="fa-solid fa-question text-dark"></i>
                     </div>
                     Browse project catalog
                   </button>
-                  <button onClick={handlePostAJob} className="post-job-btn">
+                  <button onClick={handlePostAJob} className="post-job-btn ms-md-3">
                     Post a job
                   </button>
                 </div>
@@ -218,7 +226,7 @@ const RecruiterDashboard = () => {
                             <div>
                               <div
                                 tabIndex="-1"
-                                className="testimonial-card1"
+                                className="testimonial-card1 dashboard-carousel-card"
                                 style={{
                                   width: "100%",
                                   display: "inline-block",
@@ -245,7 +253,34 @@ const RecruiterDashboard = () => {
                             <div>
                               <div
                                 tabIndex="-1"
-                                className="testimonial-card1"
+                                className="testimonial-card1 dashboard-carousel-card"
+                                style={{
+                                  width: "100%",
+                                  display: "inline-block",
+                                }}
+                              >
+                                <div className="seeker-img">
+                                  <img width="95%" src={slide3} alt="" />
+                                </div>{" "}
+                                <p className="text-light text-center">
+                                  Android application development
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-lg-12 col-md-12 seeker-column">
+                          <div
+                            tabIndex="-1"
+                            data-index="-3"
+                            aria-hidden="true"
+                            className="slick-slide slick-cloned"
+                            style={{ width: "auto" }}
+                          >
+                            <div>
+                              <div
+                                tabIndex="-1"
+                                className="testimonial-card1 dashboard-carousel-card"
                                 style={{
                                   width: "100%",
                                   display: "inline-block",
@@ -255,7 +290,7 @@ const RecruiterDashboard = () => {
                                   <img width="95%" src={slide2} alt="" />
                                 </div>{" "}
                                 <p className="text-light text-center">
-                                  Web application development
+                                  IOS application development
                                 </p>
                               </div>
                             </div>
@@ -334,7 +369,7 @@ const RecruiterDashboard = () => {
             </div>
           )}
         </div>
-        <div className="recruiter-bg">
+        <div className="recruiter-bg h-100">
           {titleStep && (
             <JobCategoryStep
               setGetStartedDiv={setGetStartedDiv}

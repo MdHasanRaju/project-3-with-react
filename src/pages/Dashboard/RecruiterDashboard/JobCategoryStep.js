@@ -30,7 +30,7 @@ const JobCategoryStep = ({ setGetStartedDiv, setSkillsStep, setTitleStep }) => {
             <span>Salary</span>
           </div>
           <div className="step1-title">
-            <h2 className=" text-white mt-5 fs-1 w-90">
+            <h2 className=" text-white mt-5 fs-2 w-90">
               Let's start with a strong title.
             </h2>
             <p className="text-white">
