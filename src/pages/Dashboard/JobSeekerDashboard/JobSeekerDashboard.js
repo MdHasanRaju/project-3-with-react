@@ -268,10 +268,10 @@ const JobSeekerDashboard = () => {
                     <h6 class="fw-bolder text-success">Profile Activity</h6>
                     <p className="text-secondary">High</p>
                   </div>
-                  <button class="seeker-btn mb-3 text-light">Message</button>
+                  <button class="btn btn-success w-100 mb-3 text-light">Message</button>
                   <p class="text-end mb-0 text-secondary">4</p>
                   <p class="text-end text-secondary">5</p>
-                  <button class="seeker-btn">Recent visitors</button>
+                  <button class="btn btn-success w-100">Recent visitors</button>
                 </div>
                 <h6 class="pt-4 pe-2 ps-md-0 px-lg-2 fw-bolder text-light">
                   Total Views in Last 30 Days
