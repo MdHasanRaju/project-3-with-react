@@ -12,13 +12,12 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div className="container">
-          <a
-            href="/"
-            aria-current="page"
+          <NavLink
+            to="/"
             className="navbar-brand menu-link-exact-active menu-link-active"
           >
             <img width="60px" height="60px" src={logo} alt="" />
-          </a>
+          </NavLink>
           {/* <button
             type="button"
             data-bs-toggle="collapse"

@@ -6,6 +6,7 @@ import indiaFlag from "../../../assets/icons/country-flag.745924a.svg";
 import americaFlag from "../../../assets/icons/america-flag.png";
 import spider from "../../../assets/images/spider-sharp-crop-removebg-preview.png";
 import spiderLogo2 from "../../../assets/images/spider-removebg-preview.png";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
     
@@ -16,9 +17,9 @@ const Footer = () => {
           <div className="col-md-5">
             <div className="footer-box">
               <div className="footer-logo">
-                <a href="/homepage" className="">
+                <NavLink to="/homepage" className="">
                   <img height="60px" width="60px" src={spider} alt="" />
-                </a>
+                </NavLink>
                 <p>
                   Hire Instantly for Your Startup. <br />
                   Trusted by 3M+ verified Jobseekers &amp; <br />

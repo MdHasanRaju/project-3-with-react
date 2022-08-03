@@ -22,13 +22,13 @@ const JobSeekerDashboard = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div className="container-fluid">
           <div className="d-flex align-items-center">
-            <a
-              href="/"
-              aria-current="page"
+            <NavLink
+              to="/"
+              // aria-current="page"
               className="navbar-brand menu-link-exact-active menu-link-active"
             >
               <img width="60px" height="60px" src={spider} alt="" />
-            </a>
+            </NavLink>
             <li className="nav-item">
               <NavLink
                 to="/job-seeker-profile"
@@ -113,8 +113,8 @@ const JobSeekerDashboard = () => {
                       <h5 className="text-success fw-bolder mb-0">
                         Diana Rose <span>...</span>
                       </h5>
-                      <p className="mb-0">Professional title</p>
-                      <p>
+                      <p className="mb-0 text-secondary">Professional title</p>
+                      <p className="text-secondary">
                         <span>
                           <i className="fa-solid fa-location-dot pe-2"></i>
                         </span>
@@ -123,22 +123,22 @@ const JobSeekerDashboard = () => {
                     </div>
                   </div>
                   <div className="px-3">
-                    <h6 className="fw-bolder">
+                    <h6 className="fw-bolder text-secondary">
                       <span className="text-success">
                         <i className="fa-solid fa-award"></i> Top Rated
                       </span>
                     </h6>
-                    <h6>
+                    <h6 className="text-secondary">
                       <span>Top 5% in Android Dev</span>
                     </h6>
-                    <h6>
+                    <h6 className="text-secondary">
                       <span>Top 20% in People Mgmt</span>
                     </h6>
                   </div>
                 </div>
 
-                <h6 className="px-3 pt-3 fw-bolder">Overview</h6>
-                <p className="px-3">
+                <h6 className="px-3 pt-3 fw-bolder text-light">Overview</h6>
+                <p className="px-3 text-secondary">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
                   rerum animi quam ipsa similique consequatur nemo dolorem
                   reprehenderit iure. Temporibus, atque iusto? Dicta corrupti
@@ -146,19 +146,19 @@ const JobSeekerDashboard = () => {
                 </p>
                 <div className="d-flex flex-wrap justify-content-sm-start px-lg-0 px-3 pt-3">
                   <div className="text-center">
-                    <h6 className="fw-bolder">6Y 8M</h6>
+                    <h6 className="fw-bolder text-light">6Y 8M</h6>
                     <p className="text-secondary">Total Experience</p>
                   </div>
                   <div className="text-center ps-4">
-                    <h6 className="fw-bolder">10.3 LPA</h6>
+                    <h6 className="fw-bolder text-light">10.3 LPA</h6>
                     <p className="text-secondary">Current CTC</p>
                   </div>
                   <div className="text-center ps-lg-4 ps-sm-0">
-                    <h6 className="fw-bolder">Intermediate joiner</h6>
+                    <h6 className="fw-bolder text-light">Intermediate joiner</h6>
                     <p className="text-secondary">Search Level</p>
                   </div>
                   <div className="text-center ps-4">
-                    <h6 className="fw-bolder">...</h6>
+                    <h6 className="fw-bolder text-light">...</h6>
                     <p className="text-secondary">Current CTC</p>
                   </div>
                 </div>
@@ -167,9 +167,9 @@ const JobSeekerDashboard = () => {
               {/* left-column-2nd-div */}
               <div className="py-4 my-4 border border-secondary rounded">
                 <div className="d-flex justify-content-between align-items-center  px-4">
-                  <h6 className="fw-bolder">Work history</h6>
+                  <h6 className="fw-bolder text-light">Work history</h6>
                   <select
-                    className="custom-select div-bg bg-secondary border border-secondary rounded text-light px-2 py-1"
+                    className="custom-select div-bg border border-secondary rounded text-light px-2 py-1"
                     show-tick
                     placeholder="Short by:Latest"
                     style={{ minWidth: "150px", width: "35%" }}
@@ -181,14 +181,14 @@ const JobSeekerDashboard = () => {
                   </select>
                 </div>
                 <div className="px-4 py-3 ">
-                  <p>
+                  <p className="text-light">
                     Job name1{" "}
                     <span className="text-secondary ps-2">
                       <i className="fa-solid fa-calendar"></i> Mar 2021 -
                       present
                     </span>
                   </p>
-                  <p>
+                  <p className="text-secondary">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Natus quo repellat doloribus consequatur perferendis
                     aliquid, dolore reiciendis aspernatur, iure tenetur dolorum
@@ -198,13 +198,13 @@ const JobSeekerDashboard = () => {
                 </div>
                 <hr className="mx-3 " />
                 <div className="px-4 py-3 ">
-                  <p>
+                  <p className="text-light">
                     Job name2{" "}
                     <span className="text-secondary ps-2">
                       <i className="fa-solid fa-calendar"></i> Mar 2021
                     </span>
                   </p>
-                  <p>
+                  <p className="text-secondary">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Quas qui sapiente rem repellendus animi vel commodi iste
                     quasi cupiditate iusto, reprehenderit fugiat! Perferendis
@@ -216,9 +216,9 @@ const JobSeekerDashboard = () => {
               {/* left-column-3rd-div */}
               <div className="py-4 my-4 border border-secondary rounded">
                 <div className="d-flex justify-content-between align-items-center  px-4">
-                  <h6 className="fw-bolder">Education</h6>
+                  <h6 className="fw-bolder text-light">Education</h6>
                   <select
-                    className="custom-select div-bg bg-secondary border border-secondary rounded text-light px-2 py-1"
+                    className="custom-select div-bg border border-secondary rounded text-light px-2 py-1"
                     show-tick="true"
                     style={{ minWidth: "150px", width: "35%", fontSize:"14px" }}
                   >
@@ -229,14 +229,14 @@ const JobSeekerDashboard = () => {
                   </select>
                 </div>
                 <div className="px-4 py-3 ">
-                  <h6 className="fw-bolder">Course</h6>
+                  <h6 className="fw-bolder text-light">Course</h6>
                   <p>
                     <span className="text-secondary">
                       <i className="fa-solid fa-calendar"></i> Mar 2021 -
                       present
                     </span>
                   </p>
-                  <p>
+                  <p className="text-secondary">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Natus quo repellat doloribus consequatur perferendis
                     aliquid, dolore reiciendis aspernatur, iure tenetur dolorum
@@ -246,13 +246,13 @@ const JobSeekerDashboard = () => {
                 </div>
                 <hr className="mx-3 " />
                 <div className="px-4 py-3 ">
-                  <p>
+                  <p className="text-light">
                     Job name2{" "}
                     <span className="text-secondary ps-2">
                       <i className="fa-solid fa-calendar"></i> Mar 2021
                     </span>
                   </p>
-                  <p>
+                  <p className="text-secondary">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Quas qui sapiente rem repellendus animi vel commodi iste
                     quasi cupiditate iusto, reprehenderit fugiat! Perferendis
@@ -265,25 +265,25 @@ const JobSeekerDashboard = () => {
               <div class="seeker-profile-left border border-secondary rounded py-4">
                 <div class="px-lg-3">
                   <div class="d-flex justify-content-between">
-                    <h6 class="fw-bolder">Profile Activity</h6>
-                    <p>High</p>
+                    <h6 class="fw-bolder text-success">Profile Activity</h6>
+                    <p className="text-secondary">High</p>
                   </div>
-                  <button class="seeker-btn mb-3">Message</button>
-                  <p class="text-end mb-0">4</p>
-                  <p class="text-end">5</p>
+                  <button class="seeker-btn mb-3 text-light">Message</button>
+                  <p class="text-end mb-0 text-secondary">4</p>
+                  <p class="text-end text-secondary">5</p>
                   <button class="seeker-btn">Recent visitors</button>
                 </div>
-                <h6 class="pt-4 pe-2 ps-md-0 px-lg-2 fw-bolder">
+                <h6 class="pt-4 pe-2 ps-md-0 px-lg-2 fw-bolder text-light">
                   Total Views in Last 30 Days
                 </h6>
                 <div class="py-4 px-0 ps-md-0 px-lg-3">
-                  <h6 class="fw-bolder">Certificates</h6>
-                  <p>Lorem ipsum dolor sit amet listi piki nonte.</p>
+                  <h6 class="fw-bolder text-light">Certificates</h6>
+                  <p className="text-secondary">Lorem ipsum dolor sit amet listi piki nonte.</p>
                 </div>
                 <div class="px-0 linked-in-box ps-md-0 px-lg-3">
-                  <h6 class="fw-bolder">Linked In</h6>
+                  <h6 class="fw-bolder text-light">Linked In</h6>
                   <input
-                    class="w-100 border border-secondary rounded ps-2 py-1"
+                    class="w-100 border border-secondary rounded ps-2 py-1 text-dark"
                     placeholder="https://color-design.com"
                     type="text"
                   />
@@ -291,7 +291,7 @@ const JobSeekerDashboard = () => {
                   <div class="d-flex align-items-center mt-2 ps-md-0">
                     <button onClick={(e) =>
                         copyToClipBoard("https://color-design.com")
-                      } class="btn btn-text text-secondary px-0 py-0 ">
+                      } class="btn btn-text text-secondary px-0 py-0 text-secondary">
                       Copy the link
                     </button>
                     <span class="ms-2 text-success d-inline-block">{copySuccess && copySuccess}</span>

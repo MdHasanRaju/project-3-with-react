@@ -10,13 +10,12 @@ const JobSeekerEducation = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div className="container-fluid">
           <div className="d-flex align-items-center">
-            <a
-              href="/"
-              aria-current="page"
+            <NavLink
+              to="/" 
               className="navbar-brand menu-link-exact-active menu-link-active"
             >
               <img width="60px" height="60px" src={spider} alt="" />
-            </a>
+            </NavLink>
             <li className="nav-item">
               <NavLink
                 to="/job-seeker-profile"
