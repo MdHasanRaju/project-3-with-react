@@ -196,10 +196,10 @@
     .navbar.bg-light {
       padding: 10px 0;
     }
-    .navbar-light .navbar-brand img { 
+    .navbar-light .navbar-brand img {
       height: 50px;
-      max-width: 80px;
-    } 
+      width: 50px;
+  }
  
     .navbar-collapse {
       position: absolute;

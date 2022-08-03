@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import logo from "../../../assets/images/spider-green-removebg-preview.png";
+import logo from "../../../assets/images/spider-sharp-crop-removebg-preview.png";
 import spiderLogo from "../../../assets/images/spider-removebg-preview3.png";
 import spiderLogo2 from "../../../assets/images/spider-removebg-preview.png";
 import spiderLogo3 from "../../../assets/images/spider-purple-removebg-preview.png";
@@ -17,7 +17,7 @@ const Navbar = () => {
             aria-current="page"
             className="navbar-brand menu-link-exact-active menu-link-active"
           >
-            <img width="100px" height="80px" src={spiderLogo2} alt="" />
+            <img width="60px" height="60px" src={logo} alt="" />
           </a>
           {/* <button
             type="button"

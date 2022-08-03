@@ -4,7 +4,7 @@ import footerLogo from "../../../assets/icons/hirect-logo-footer.6af077d.png";
 import whatsappIcon from "../../../assets/icons/whatsapp-icon.05176f1.svg";
 import indiaFlag from "../../../assets/icons/country-flag.745924a.svg";
 import americaFlag from "../../../assets/icons/america-flag.png";
-import spider from "../../../assets/images/spider-removebg-preview3.png";
+import spider from "../../../assets/images/spider-sharp-crop-removebg-preview.png";
 import spiderLogo2 from "../../../assets/images/spider-removebg-preview.png";
 
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
             <div className="footer-box">
               <div className="footer-logo">
                 <a href="/homepage" className="">
-                  <img src={spiderLogo2} alt="" />
+                  <img height="60px" width="60px" src={spider} alt="" />
                 </a>
                 <p>
                   Hire Instantly for Your Startup. <br />

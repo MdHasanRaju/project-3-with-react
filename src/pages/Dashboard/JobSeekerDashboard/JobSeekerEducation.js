@@ -1,7 +1,7 @@
 import React from "react";
 import "./JobSeekerEducation.css";
 import { NavLink } from "react-router-dom";
-import spider from "../../../assets/images/spider-removebg-preview3.png";
+import spider from "../../../assets/images/spider-sharp-crop-removebg-preview.png";
 import userIcon from "../../../assets/images/user.png";
 
 const JobSeekerEducation = () => {
@@ -15,7 +15,7 @@ const JobSeekerEducation = () => {
               aria-current="page"
               className="navbar-brand menu-link-exact-active menu-link-active"
             >
-              <img width="100px" height="80px" src={spider} alt="" />
+              <img width="60px" height="60px" src={spider} alt="" />
             </a>
             <li className="nav-item">
               <NavLink

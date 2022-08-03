@@ -169,8 +169,8 @@ button.btn.watch-demobtn:hover span.text {
   }
 
   .navbar-light .navbar-brand img {
-    /* width: 132px; */
-    height: 60px;
+    height: 50px;
+    /* width: 55px; */
   }
   .navbar-collapse {
     position: absolute;
