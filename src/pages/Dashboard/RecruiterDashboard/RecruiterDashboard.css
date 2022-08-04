@@ -173,12 +173,21 @@
     font-size: value;
     }   
 
-/* recruiter-dashboard-carousel
---------------------------------- */
+/* recruiter-dashboard-carousel responsiveness with media query
+----------------------------------------------------------------*/
+
+/* recruiter-dashboard-carousel for mobile device
+--------------------------------------------------*/
 @media only screen and (max-width:600px) {
   .dashboard-carousel-card {
     margin: 0;
     height: auto !important;
     padding: 25px 115px 0 14px;
 }
+.dashboard-carousel-card .seeker-img img {
+  width: 100% !important;
+  height: 200px !important;
+  margin: auto !important;
+}
+
 }

@@ -105,7 +105,7 @@ const RecruiterDashboard = () => {
       <section className="recruiter-dashboard py-5 min-vh-100">
         <div className="container">
           {dashboardBanner && (
-            <div className="row mb-4">
+            <div className="row mb-4 gy-lg-0 gy-md-0 gy-2">
               <div className="col-lg-7 col-md-5 d-flex justify-content-lg-start justify-content-md-start justify-content-between">
                 <div className="dashboard-title-box">
                   <h5 className="text-light">Your Dashboard</h5>
@@ -136,7 +136,7 @@ const RecruiterDashboard = () => {
             </div>
           )}
           {dashboardBanner && (
-            <div className="row gy-4">
+            <div className="row gy-4 mt-lg-0 mt-md-0 mt-2">
               <div className="col-lg-8">
                 <div className="border border-secondary div-bg rounded">
                   <div className="d-flex justify-content-between align-items-center px-3 pt-4 ">
