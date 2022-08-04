@@ -34,7 +34,7 @@ const SkillsStep = ({ setTitleStep, setSkillsStep, setScopeStep }) => {
             <span>Salary</span>
           </div>
           <div className="step1-title">
-            <h2 className=" text-white mt-5 fs-2 w-90">
+            <h2 className="text-white mt-5 fs-sm-4 fs-lg-2 fs-md-2 w-90">
               What are the main skill required for your work?
             </h2>
           </div>
@@ -192,7 +192,7 @@ const SkillsStep = ({ setTitleStep, setSkillsStep, setScopeStep }) => {
               </div>
             )}
           </div>
-          <div className="action d-flex justify-content-end align-items-end">
+          <div className="action d-flex justify-content-start justify-content-lg-end justify-content-md-end align-items-end">
             <button
               onClick={scopeStepBackBtn}
               className="btn outlined-button rounded-pill me-4"

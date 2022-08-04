@@ -103,3 +103,21 @@
     background-color: #2d7714;
     border: 1px solid #2d7714;
   }
+
+  /* job-category-title responsiveness with media query
+  ------------------------------------------------------- */
+
+  @media only screen and (max-width:600px) {
+    .step1-title {
+      margin-top: 3em;
+  }
+    .step1-title h2 {
+      font-size: 21px;
+  }
+  .w-90{
+    width: 100%;
+  }
+  .m-top {
+    margin-top: 10px;
+}
+  }

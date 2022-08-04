@@ -22,7 +22,7 @@ const SalaryStep = ({setScopeStep,setSalaryStep}) => {
             <span className="text-green">Salary</span>
           </div>
           <div className="step1-title">
-            <h2 className=" text-white mt-5 fs-2 w-90">
+            <h2 className=" text-white mt-5 fs-sm-4 fs-lg-2 fs-md-2 w-90">
               Tell us about your salary.
             </h2>
             <p className="text-white">
@@ -94,7 +94,7 @@ const SalaryStep = ({setScopeStep,setSalaryStep}) => {
           </div> 
           </div>
 
-          <div className="action d-flex justify-content-end align-items-end">
+          <div className="action d-flex justify-content-start justify-content-lg-end justify-content-md-end align-items-end">
             <button onClick={salaryScopeBackBtn} className="btn outlined-button rounded-pill me-4">
               Back
             </button>

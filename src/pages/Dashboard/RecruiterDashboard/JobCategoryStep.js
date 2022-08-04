@@ -30,7 +30,7 @@ const JobCategoryStep = ({ setGetStartedDiv, setSkillsStep, setTitleStep }) => {
             <span>Salary</span>
           </div>
           <div className="step1-title">
-            <h2 className=" text-white mt-5 fs-2 w-90">
+            <h2 className="text-white mt-5 mb-3 fs-sm-4 fs-lg-2 fs-md-2 w-90">
               Let's start with a strong title.
             </h2>
             <p className="text-white">
@@ -95,7 +95,7 @@ const JobCategoryStep = ({ setGetStartedDiv, setSkillsStep, setTitleStep }) => {
               See all categories
             </a>
           </div>
-          <div className="action d-flex justify-content-end align-items-end">
+          <div className="action d-flex justify-content-start justify-content-lg-end justify-content-md-end align-items-end">
             <button
               onClick={jobCateStepBackBtn}
               className="btn outlined-button rounded-pill me-4"
