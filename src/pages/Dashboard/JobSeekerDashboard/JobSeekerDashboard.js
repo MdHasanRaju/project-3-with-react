@@ -196,7 +196,7 @@ const JobSeekerDashboard = () => {
                     necessitatibus ex.
                   </p>
                 </div>
-                <hr className="mx-3 " />
+                <hr className="mx-3 bg-secondary" />
                 <div className="px-4 py-3 ">
                   <p className="text-light">
                     Job name2{" "}
@@ -244,7 +244,7 @@ const JobSeekerDashboard = () => {
                     necessitatibus ex.
                   </p>
                 </div>
-                <hr className="mx-3 " />
+                <hr className="mx-3 bg-secondary" />
                 <div className="px-4 py-3 ">
                   <p className="text-light">
                     Job name2{" "}
