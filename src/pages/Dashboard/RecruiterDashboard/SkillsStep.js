@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import "./SkillsStep.css";
-
+ 
 const SkillsStep = ({ setTitleStep, setSkillsStep, setScopeStep }) => {
   const [popularIcon, setPopularIcon] = useState(false);
 
