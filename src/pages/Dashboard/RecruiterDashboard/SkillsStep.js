@@ -1,9 +1,64 @@
 import React, { useMemo, useState } from "react";
+import SearchBar from "../../Shared/SearchFilter/SearchBar";
 import "./SkillsStep.css";
  
-const SkillsStep = ({ setTitleStep, setSkillsStep, setScopeStep }) => {
-  const [popularIcon, setPopularIcon] = useState(false);
+const data = [
+  { id: 1, name: "Web Development" },
+  { id: 2, name: "Artificial Intelligence" },
+  { id: 3, name: "Natural Language Processing" },
+  { id: 4, name: "Machine Learning" },
+  { id: 5, name: "Data Science" },
+  { id: 6, name: "Data Structure and Algorithm" },
+  { id: 7, name: "Front End Development" },
+  { id: 8, name: "Back End Development" },
+  { id: 9, name: "Web Design" },
+  { id: 10, name: "Software Engineer" },
+  { id: 11, name: "MERN Stack" },
+  { id: 12, name: "MERN Stack" },
+  { id: 13, name: "Problem Solving" },
+];
 
+const FetchedSkill = ({ skills }) => {
+  //  const deleteIssue = (id) => {
+  //    const skills = JSON.parse(localStorage.getItem("skills"));
+  //    const remainingSkills = skills.filter(
+  //      (skill) => parseInt(skill.id) !== id
+  //    );
+  //    localStorage.setItem("issues", JSON.stringify(remainingSkills));
+  //    window.location.reload();
+  //  }; 
+  // const skills = JSON.parse(localStorage.getItem("skills"));
+  
+  if (skills === null) {
+    console.log("No Skills Found");
+    return;
+  } 
+
+  return (
+    <div className="d-flex flex-wrap">
+      {skills.map((skill, index) => (
+        <button
+          key={index}
+          type="button"
+          className="btn btn-remove-style rounded-pill me-3 mt-2"
+        >
+          {skill.name}{" "}
+          <span
+            className="badge text-bg-secondary"
+            // onClick={() => deleteIssue(skill.id)}
+          >
+            <i className="fa-solid fa-xmark"></i>
+          </span>
+        </button>
+      ))}
+    </div>
+  );
+};
+
+
+const SkillsStep = ({ setTitleStep, setSkillsStep, setScopeStep }) => {
+  const [popularIcon, setPopularIcon] = useState(false); 
+  
   const popularIconToggle = () => {
     setPopularIcon(!popularIcon);
   };
@@ -17,6 +72,38 @@ const SkillsStep = ({ setTitleStep, setSkillsStep, setScopeStep }) => {
     setSkillsStep(false);
     setTitleStep(true);
   };
+
+  /* Search and Filter Data */
+  const [skills, setSkills] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+
+  const handleFilter = (e) => {
+    const searchWord = e.target.value;
+    const newFilter = data.filter((value) => {
+      return value.name.toLowerCase().indexOf(searchWord.toLowerCase()) > -1;
+    });
+
+    if (searchWord === "") {
+      setFilteredData([]);
+    } else {
+      setFilteredData(newFilter);
+    }
+  };
+
+  const handleClick = (skillId, name, e) => { 
+  const alreadyExistSkill = skills.filter((skill) => skill.id !== skillId);
+  setSkills(alreadyExistSkill);
+
+  const addedSkill = { id: skillId, name };
+  setSkills((skill) => [...skill, addedSkill]); 
+    // if (localStorage.getItem("skills")) {
+    //   skills = JSON.parse(localStorage.getItem("skills"));
+    // }
+
+    // skills.push(skill);
+    // localStorage.setItem("skills", JSON.stringify(skills));
+  }; 
+
   return (
     <section className="container p-3">
       <div className="row">
@@ -42,18 +129,19 @@ const SkillsStep = ({ setTitleStep, setSkillsStep, setScopeStep }) => {
 
         <div className="col-md-6 p-5 step-right d-flex flex-column">
           <h5 className="text-white m-top">Search or add up to 10 skills</h5>
-          {/* <input
-            type="text"
-            value="Create an AI engines for ATS"
-            className="w-100 text-small input rounded mt-2 mb-4"
-          /> */}
           <div className="form-group has-search mt-2 mb-4">
-            <span className="fa fa-search form-control-feedback "></span>
-            <input
+            {/* <span className="fa fa-search form-control-feedback "></span> */}
+            {/* <input
               type="text"
               className="form-control input"
               placeholder="Search"
-            />
+            /> */}
+             <SearchBar
+            placeholder={"Search"}
+            filteredData={filteredData}
+            handleFilter={handleFilter}
+            handleClick={handleClick}
+          />
           </div>
 
           <p className="text-green skill-text">
@@ -61,6 +149,8 @@ const SkillsStep = ({ setTitleStep, setSkillsStep, setScopeStep }) => {
             skills
           </p>
           <h6 className="text-white mb-3">Selected Skill</h6>
+          <FetchedSkill skills={skills} />
+
           <div className="d-flex flex-wrap">
             <button
               type="button"

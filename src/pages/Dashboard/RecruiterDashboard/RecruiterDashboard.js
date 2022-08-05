@@ -30,16 +30,21 @@ const RecruiterDashboard = () => {
   // const navigate = useNavigate();
   
   const handlePostAJob = () => {
-    // localStorage.setItem('getStartedDiv', JSON.stringify(getStartedDiv));
-    setGetStartedDiv(true); 
     setDashboardBanner(false); 
+    setGetStartedDiv(true); 
+    console.log("dashboard banner",dashboardBanner)
+    localStorage.setItem('getStartedDiv', JSON.stringify(getStartedDiv));
+    localStorage.removeItem("dashboardBanner")
+    if (!dashboardBanner) {
+      localStorage.setItem('dashboardBanner', JSON.stringify(dashboardBanner));
+    }
   }; 
   
 
-  // useEffect(() => {
-  //   localStorage.setItem('getStartedDiv', JSON.stringify(getStartedDiv));
-  //   localStorage.setItem('dashboardBanner', JSON.stringify(dashboardBanner));
-  // }, [dashboardBanner,getStartedDiv]);
+  useEffect(() => {
+    localStorage.setItem('getStartedDiv', JSON.stringify(getStartedDiv));
+    localStorage.setItem('dashboardBanner', JSON.stringify(dashboardBanner));
+  }, [dashboardBanner,getStartedDiv]);
 
   const getStartedContinueBtn = () => {
     setTitleStep(true);
