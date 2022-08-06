@@ -32,19 +32,19 @@ const RecruiterDashboard = () => {
   const handlePostAJob = () => {
     setDashboardBanner(false); 
     setGetStartedDiv(true); 
-    console.log("dashboard banner",dashboardBanner)
-    localStorage.setItem('getStartedDiv', JSON.stringify(getStartedDiv));
-    localStorage.removeItem("dashboardBanner")
-    if (!dashboardBanner) {
-      localStorage.setItem('dashboardBanner', JSON.stringify(dashboardBanner));
-    }
+    // console.log("dashboard banner",dashboardBanner)
+    // localStorage.setItem('getStartedDiv', JSON.stringify(getStartedDiv));
+    // localStorage.removeItem("dashboardBanner")
+    // if (!dashboardBanner) {
+    //   localStorage.setItem('dashboardBanner', JSON.stringify(dashboardBanner));
+    // }
   }; 
   
 
-  useEffect(() => {
-    localStorage.setItem('getStartedDiv', JSON.stringify(getStartedDiv));
-    localStorage.setItem('dashboardBanner', JSON.stringify(dashboardBanner));
-  }, [dashboardBanner,getStartedDiv]);
+  // useEffect(() => {
+  //   localStorage.setItem('getStartedDiv', JSON.stringify(getStartedDiv));
+  //   localStorage.setItem('dashboardBanner', JSON.stringify(dashboardBanner));
+  // }, [dashboardBanner,getStartedDiv]);
 
   const getStartedContinueBtn = () => {
     setTitleStep(true);
@@ -58,7 +58,7 @@ const RecruiterDashboard = () => {
     setSkillsStep(false);
     setScopeStep(false);
     setSalaryStep(false);
-    localStorage.setItem('dashboardBanner', JSON.stringify(dashboardBanner));
+    // localStorage.setItem('dashboardBanner', JSON.stringify(dashboardBanner));
   };
 
   // const jobCateStepBackBtn = () => {
