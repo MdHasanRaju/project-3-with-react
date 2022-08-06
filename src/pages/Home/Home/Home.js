@@ -19,7 +19,7 @@ const Home = () => {
             <JobAvailable/>
             <Startup/>
             <HomeTestimonial/>
-            <ScanApp/>
+            {/* <ScanApp/> */}
             <Footer/>
         </div>
     );
