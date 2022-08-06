@@ -1,8 +1,5 @@
-import React from 'react'; 
-import DemoLogin from '../../Login/DemoLogin';
-import Login from '../../Login/Login';
-import Footer from '../../Shared/Footer/Footer';
-import Navbar from '../../Shared/Navbar/Navbar';
+import React from 'react';   
+import Footer from '../../Shared/Footer/Footer'; 
 import ScanApp from '../../Shared/ScanApp/ScanApp';
 import Banner from '../Banner/Banner';
 import HireChat from '../HireChat/HireChat';
@@ -12,8 +9,7 @@ import Startup from '../Startup/Startup';
 
 const Home = () => {
     return (
-        <div>
-            {/* <Navbar/> */}
+        <div> 
             <Banner/> 
             <HireChat/>
             <JobAvailable/>
