@@ -42,7 +42,7 @@
   font-size: 24px;
   font-weight: 700;
   line-height: normal;
-  text-align: left;
+  text-align: center;
   margin-bottom: 12px;
 }
 .seeker-testimonial .testimonial-card1 p {
@@ -51,7 +51,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  text-align: left;
+  text-align: justify;
 }
 
 /* seeker-testimonial-section responsiveness with media query

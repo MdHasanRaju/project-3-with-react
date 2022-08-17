@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import DemoLogin from "./DemoLogin";
+import React, { useState } from "react"; 
 import "./Login.css";
 import CandidateLogin from "./CandidateLogin/CandidateLogin";
 import RecruiterLogin from "./RecruiterLogin/RecruiterLogin";
